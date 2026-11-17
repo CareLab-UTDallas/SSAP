@@ -1,0 +1,7 @@
+{
+ "type": "compute",
+ "title": "Module 14 Practice: Simple Regression",
+ "budget": "25",
+ "gen": "regr",
+ "intro": "Compute the slope, intercept, prediction, residual, and R squared from raw data."
+}

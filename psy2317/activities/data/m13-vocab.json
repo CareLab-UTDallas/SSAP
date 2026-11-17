@@ -1,0 +1,108 @@
+{
+ "type": "quiz",
+ "title": "Module 13 Vocabulary Check",
+ "budget": "10",
+ "intro": "Answer each item. Feedback comes right away. Items you miss come back for a retry round.",
+ "items": [
+  {
+   "q": "The null hypothesis for a test of a Pearson correlation is",
+   "o": [
+    "The population correlation rho equals zero",
+    "The sample correlation equals zero",
+    "The slope equals one",
+    "The means are equal"
+   ],
+   "why": "It states there is no linear relationship in the population."
+  },
+  {
+   "q": "Degrees of freedom for testing a Pearson correlation are",
+   "o": [
+    "n minus 2",
+    "n minus 1",
+    "n",
+    "2n"
+   ],
+   "why": "Two means are estimated, one for each variable."
+  },
+  {
+   "q": "A correlation is statistically significant when",
+   "o": [
+    "The absolute value of r exceeds the critical value for the df",
+    "r is positive",
+    "r exceeds .50",
+    "The sample is larger than 30"
+   ],
+   "why": "Critical values of r depend on df and alpha, and shrink as n grows."
+  },
+  {
+   "q": "With n = 30, the critical r at alpha = .05 two-tailed is about",
+   "o": [
+    ".36",
+    ".10",
+    ".50",
+    ".80"
+   ],
+   "why": "With df = 28 the critical r is .361. An obtained r of .41 would be significant."
+  },
+  {
+   "q": "The Spearman correlation is used when",
+   "o": [
+    "The data are ranks or the relationship is monotonic but not linear",
+    "Both variables are nominal",
+    "There are three variables",
+    "The data are normal"
+   ],
+   "why": "It applies Pearson's formula to ranks."
+  },
+  {
+   "q": "The point-biserial correlation relates",
+   "o": [
+    "A dichotomous variable to a numeric variable",
+    "Two numeric variables",
+    "Two ranked variables",
+    "Two dichotomous variables"
+   ],
+   "why": "For example, gender (coded 0 and 1) and a test score."
+  },
+  {
+   "q": "The phi coefficient relates",
+   "o": [
+    "Two dichotomous variables",
+    "Two numeric variables",
+    "A nominal variable with three levels and a numeric variable",
+    "Ranks"
+   ],
+   "why": "It is Pearson r computed on two variables coded 0 and 1."
+  },
+  {
+   "q": "Reliability refers to",
+   "o": [
+    "The consistency of a measure",
+    "Whether a measure assesses what it claims to",
+    "The sample size",
+    "The size of an effect"
+   ],
+   "why": "A reliable scale gives similar results under the same conditions."
+  },
+  {
+   "q": "Validity refers to",
+   "o": [
+    "Whether a measure assesses what it is intended to measure",
+    "The consistency of scores over time",
+    "The significance of r",
+    "The sample size"
+   ],
+   "why": "A measure can be reliable without being valid, but it cannot be valid without being reliable."
+  },
+  {
+   "q": "Cronbach's alpha estimates",
+   "o": [
+    "Internal consistency reliability",
+    "Test-retest reliability",
+    "Criterion validity",
+    "Effect size"
+   ],
+   "why": "It reflects how strongly the items on a scale correlate with one another."
+  }
+ ]
+}

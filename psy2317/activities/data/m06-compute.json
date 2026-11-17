@@ -1,0 +1,7 @@
+{
+ "type": "compute",
+ "title": "Module 6 Practice: The z Test in Four Steps",
+ "budget": "20",
+ "gen": "ztest",
+ "intro": "Walk through all four steps of a hypothesis test with a known population standard deviation."
+}

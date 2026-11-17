@@ -1,0 +1,41 @@
+{
+ "type": "transfer",
+ "title": "Module 10 Challenge: Three Treatments",
+ "budget": "15",
+ "scenario": "<p>Thirty participants with insomnia are randomly assigned to one of three conditions for four weeks: sleep hygiene education only (Group 1), sleep hygiene plus relaxation training (Group 2), or sleep hygiene plus a structured cognitive behavioral program (Group 3). The outcome is hours of additional sleep per week. Each group has 10 people. The means are 10, 12, and 15. SS between = 126.67 and SS within = 270. The analysis gives F(2, 27) = 6.33, p = .006, and eta squared = .32.</p>",
+ "parts": [
+  {
+   "type": "mc",
+   "q": "What does the significant F allow the researchers to conclude?",
+   "o": [
+    "At least one group mean differs from another",
+    "Group 3 is better than Group 1",
+    "All three groups differ",
+    "The CBT program causes better sleep in every participant"
+   ],
+   "why": "The omnibus test does not identify which pairs differ."
+  },
+  {
+   "type": "mc",
+   "q": "Why shouldn't the researchers just run three t tests?",
+   "o": [
+    "Each test at .05 inflates the overall Type I error rate to about .14",
+    "t tests are not valid for three groups",
+    "ANOVA has more power than all t tests",
+    "It would require unequal variances"
+   ],
+   "why": "1 minus .95 cubed is about .14. ANOVA with a post hoc test controls it."
+  },
+  {
+   "type": "write",
+   "q": "Write a results paragraph for a journal article. Report F, df, p, and eta squared, interpret the effect size, and say what follow-up analysis is needed before naming the best treatment.",
+   "model": "A one-way ANOVA showed that the three conditions differed in additional weekly sleep, F(2, 27) = 6.33, p = .006, eta squared = .32. About 32 percent of the variability in additional sleep was associated with condition, which is a large effect. The group means were 10, 12, and 15 hours for sleep hygiene alone, hygiene plus relaxation, and hygiene plus CBT. Because the omnibus F does not reveal which means differ, a post hoc test such as Tukey HSD is needed to compare the pairs, with particular attention to whether the CBT group exceeds the other two. Random assignment supports a causal reading of the group differences, though a sample of 10 per group limits precision.",
+   "check": [
+    "I reported F with both df, p, and eta squared",
+    "I interpreted eta squared as a proportion of variability",
+    "I said a post hoc test is needed to find which means differ",
+    "I did not claim every group differs or every person benefited"
+   ]
+  }
+ ]
+}

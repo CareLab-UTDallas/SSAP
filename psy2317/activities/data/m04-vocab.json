@@ -1,0 +1,108 @@
+{
+ "type": "quiz",
+ "title": "Module 4 Vocabulary Check",
+ "budget": "10",
+ "intro": "Answer each item. Feedback comes right away. Items you miss come back for a retry round.",
+ "items": [
+  {
+   "q": "A z score tells you",
+   "o": [
+    "How many standard deviations a score is from the mean, and in which direction",
+    "The raw score",
+    "The percentile rank only",
+    "The probability of the mean"
+   ],
+   "why": "z = (X minus mean) divided by SD. The sign gives the direction."
+  },
+  {
+   "q": "A score exactly at the mean has a z score of",
+   "o": [
+    "0",
+    "1",
+    "−1",
+    "The SD"
+   ],
+   "why": "The score equals the mean, so the deviation is zero."
+  },
+  {
+   "q": "The mean of a complete set of z scores is",
+   "o": [
+    "0",
+    "1",
+    "The original mean",
+    "Undefined"
+   ],
+   "why": "Standardizing centers the distribution at zero. The SD of z scores is 1."
+  },
+  {
+   "q": "In a normal distribution, about what proportion of scores fall within one standard deviation of the mean?",
+   "o": [
+    "About .68",
+    "About .50",
+    "About .95",
+    "About .99"
+   ],
+   "why": "The 68, 95, 99.7 pattern describes one, two, and three standard deviations."
+  },
+  {
+   "q": "The proportion of a normal distribution above z = 0 is",
+   "o": [
+    ".5000",
+    ".0000",
+    "1.0000",
+    ".3413"
+   ],
+   "why": "The normal curve is symmetric, so half the area lies on each side of the mean."
+  },
+  {
+   "q": "To find the raw score that goes with a given z, you compute",
+   "o": [
+    "X = mean + z times SD",
+    "X = z divided by SD",
+    "X = SD minus z",
+    "X = mean times z"
+   ],
+   "why": "This reverses the z formula. Start from the mean and move z standard deviations."
+  },
+  {
+   "q": "The \"tail\" column of the Unit Normal Table gives the proportion",
+   "o": [
+    "Beyond a z score, in the smaller part of the distribution",
+    "Between the mean and z",
+    "Below z for positive z",
+    "Above the mean"
+   ],
+   "why": "For positive z the tail is the upper area beyond z. Use symmetry for negative z."
+  },
+  {
+   "q": "Probability in a normal distribution equals",
+   "o": [
+    "The proportion of the area under the curve in the region of interest",
+    "The height of the curve at one point",
+    "The z score",
+    "The standard deviation"
+   ],
+   "why": "Area corresponds to proportion, and proportion corresponds to probability."
+  },
+  {
+   "q": "A z score of −2.00 is",
+   "o": [
+    "Two standard deviations below the mean",
+    "Two points below the mean",
+    "Impossible",
+    "Above the mean"
+   ],
+   "why": "The negative sign puts the score below the mean. The 2.00 is measured in SD units."
+  },
+  {
+   "q": "Standardizing scores makes it possible to",
+   "o": [
+    "Compare scores from different scales on a common metric",
+    "Make the data normal",
+    "Remove outliers",
+    "Increase the SD"
+   ],
+   "why": "Standardizing changes the units and leaves the shape alone. It does not make skewed data normal."
+  }
+ ]
+}

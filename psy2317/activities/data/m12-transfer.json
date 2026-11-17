@@ -1,0 +1,41 @@
+{
+ "type": "transfer",
+ "title": "Module 12 Challenge: Why Does the Correlation Look Weak?",
+ "budget": "15",
+ "scenario": "<p>A selective graduate program admits only applicants who score in the top 15 percent on an entrance exam. The program's researchers find a correlation of r = .12 between exam score and first year grades among admitted students. A faculty member says the exam \"clearly doesn't predict success, so we should drop it.\" In a nationwide sample of all applicants, a validation study found r = .58 between exam scores and first year grades.</p>",
+ "parts": [
+  {
+   "type": "mc",
+   "q": "What proportion of grade variability does the national correlation of .58 account for?",
+   "o": [
+    "About .34",
+    ".58",
+    ".42",
+    ".12"
+   ],
+   "why": ".58 squared = .336."
+  },
+  {
+   "type": "mc",
+   "q": "What is the best explanation for the weak correlation within the program?",
+   "o": [
+    "Range restriction among admitted students",
+    "The exam is unreliable",
+    "Grades are normally distributed",
+    "The program is too small"
+   ],
+   "why": "Only high scorers were admitted, so exam scores vary very little among them."
+  },
+  {
+   "type": "write",
+   "q": "Respond to the faculty member. Explain in plain language why r = .12 in the program can coexist with r = .58 nationally, what a scatterplot would help you see, and what you would check before dropping the exam.",
+   "model": "Among admitted students, exam scores are bunched at the top of the scale. When X varies so little, the cloud of points is short and wide, and r shrinks even if the exam predicts well across the full range. The national sample includes low, middle, and high scorers, so the trend is easy to see there (r = .58, r squared = .34). A scatterplot of the admitted students would show a narrow band of scores with a weak tilt, while the national plot would show a clearer rise. Before dropping the exam I would correct for range restriction or compare grade outcomes for admitted students across score bands, check the reliability of the grade measure, and look for outliers. I would also ask whether the exam is the only reason students were admitted. If so, the grades of rejected applicants cannot be observed.",
+   "check": [
+    "I named range restriction and explained it",
+    "I contrasted what the plots would show",
+    "I proposed checks such as reliability or outliers",
+    "I avoided concluding that the exam does not predict"
+   ]
+  }
+ ]
+}

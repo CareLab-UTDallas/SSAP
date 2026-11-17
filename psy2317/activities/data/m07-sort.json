@@ -1,0 +1,48 @@
+{
+ "type": "sort",
+ "title": "Module 7 Misconception Sort",
+ "budget": "8",
+ "intro": "Decide whether each statement is true, false, or depends. These are the misconceptions that cost students points on exams.",
+ "items": [
+  {
+   "s": "The t distribution is the same as the normal distribution.",
+   "t": "F",
+   "why": "It resembles the normal curve but has heavier tails, especially for small df."
+  },
+  {
+   "s": "With the same data, a one-sample t test gives a larger critical value than the corresponding z test.",
+   "t": "T",
+   "why": "Estimating sigma from s adds uncertainty, so the cutoff moves farther out."
+  },
+  {
+   "s": "A larger sample always gives a larger t.",
+   "t": "D",
+   "why": "A larger n shrinks the standard error, which tends to raise t, but t also depends on the size of the difference and on s."
+  },
+  {
+   "s": "Cohen's d depends on the sample size.",
+   "t": "F",
+   "why": "d uses s as the standardizer, not the standard error, so it does not shrink or grow with n."
+  },
+  {
+   "s": "If the 95 percent CI for the mean difference contains zero, the effect is exactly zero.",
+   "t": "F",
+   "why": "The CI contains zero as one plausible value. The true difference could still be nonzero."
+  },
+  {
+   "s": "The one-sample t test requires that the population is normal, or that n is reasonably large.",
+   "t": "T",
+   "why": "Normality of the sampling distribution of the mean is the key assumption."
+  },
+  {
+   "s": "We can find the exact p value for t from the t table.",
+   "t": "F",
+   "why": "The t table shows critical values for selected alpha levels. Software gives exact p values."
+  },
+  {
+   "s": "The degrees of freedom for a one-sample t test equal the sample size.",
+   "t": "F",
+   "why": "They equal n minus 1."
+  }
+ ]
+}

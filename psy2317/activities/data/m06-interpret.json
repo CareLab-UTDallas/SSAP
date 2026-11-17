@@ -1,0 +1,58 @@
+{
+ "type": "quiz",
+ "title": "Module 6 Interpretation Check",
+ "budget": "8",
+ "intro": "Each item gives you a short research situation. Decide what the evidence supports.",
+ "items": [
+  {
+   "q": "A researcher tests whether a program changes test scores in a population with mean 75 and sigma 12. A sample of 36 has M = 79. The z is 2.00. At alpha = .05 two-tailed, what is the decision?",
+   "o": [
+    "Reject the null, since 2.00 exceeds the critical value of 1.96",
+    "Retain the null, since 2.00 is small",
+    "Accept the alternative as proven",
+    "The decision depends on the effect size"
+   ],
+   "why": "The critical values at alpha = .05 two-tailed are plus and minus 1.96. The test statistic falls in the critical region."
+  },
+  {
+   "q": "For the same study, Cohen's d is the mean difference divided by sigma. What is d?",
+   "o": [
+    "About .33",
+    "About 2.00",
+    "About 12.00",
+    "About 4.00"
+   ],
+   "why": "d = (79 minus 75)/12 = .33, a small to medium effect. The z of 2.00 mixes effect size with sample size."
+  },
+  {
+   "q": "A study fails to find a significant difference with n = 8 per group. A colleague concludes the treatment has no effect. What is the best reply?",
+   "o": [
+    "The study had little power, so the result is inconclusive rather than proof of no effect",
+    "The colleague is right",
+    "The study should have used alpha = .20",
+    "The null is now proven"
+   ],
+   "why": "Small samples have low power. Look at the effect size and confidence interval before concluding anything."
+  },
+  {
+   "q": "A pharmaceutical study of 50,000 people finds a significant drop of 0.2 points on a 100 point symptom scale, an effect size near zero. What is the appropriate conclusion?",
+   "o": [
+    "The effect is statistically significant but practically trivial",
+    "The drug is highly effective",
+    "The result must be a Type II error",
+    "The null was proven"
+   ],
+   "why": "Large samples can detect minuscule effects. Significance and importance are different questions."
+  },
+  {
+   "q": "A researcher gets p = .06 and says, \"This is nearly significant, so the effect is almost real.\" What is wrong?",
+   "o": [
+    "The decision rule was set at .05 in advance. A result either meets it or does not, and the effect size and CI should be reported instead",
+    "Nothing is wrong",
+    "p = .06 proves the null",
+    "The researcher should switch to a one-tailed test"
+   ],
+   "why": "Treating p values as degrees of reality blurs the logic of the test. Report the estimate and its uncertainty."
+  }
+ ]
+}

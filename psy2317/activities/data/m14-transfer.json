@@ -1,0 +1,41 @@
+{
+ "type": "transfer",
+ "title": "Module 14 Challenge: Predict and Explain",
+ "budget": "15",
+ "scenario": "<p>An advisor predicts first-year GPA from two variables for 40 students: weekly study hours and high school GPA. Together the predictors give R squared = .30, F(2, 37) = 7.93, p = .001. The advisor tells a student, \"You need about five more hours of studying a week to raise your GPA by half a point, because the model proves that studying causes higher grades.\"</p>",
+ "parts": [
+  {
+   "type": "mc",
+   "q": "What does R squared = .30 mean here?",
+   "o": [
+    "The two predictors together account for 30 percent of the variability in GPA",
+    "The model predicts 30 percent of students correctly",
+    "30 percent of students studied more",
+    "Each predictor accounts for 30 percent"
+   ],
+   "why": "Seventy percent of the variability is left unexplained."
+  },
+  {
+   "type": "mc",
+   "q": "Which statement about the omnibus F is correct?",
+   "o": [
+    "It shows the predictors together explain more than zero variability",
+    "It shows each predictor is significant",
+    "It shows that studying causes higher grades",
+    "It shows the model is perfect"
+   ],
+   "why": "Individual coefficients need individual tests."
+  },
+  {
+   "type": "write",
+   "q": "Evaluate the advisor's statement. Address causation, the limit of prediction for one student, and the risk of extrapolating, and offer a better wording.",
+   "model": "The advisor treats a prediction model as a causal one. The data are observational, so students who study more might also be more motivated or better prepared, and high school GPA is already in the model for a reason. R squared of .30 means 70 percent of the variability in GPA is unexplained, so predictions for any one student carry a lot of error and the standard error of estimate should be reported. Promising a half-point gain also assumes a straight line continues beyond the range of the data, which is extrapolation. A better statement is \"Among students like those we studied, those who study more tend to have higher GPAs after accounting for high school GPA, but individual results vary widely.\"",
+   "check": [
+    "I said the model does not show causation",
+    "I noted the large unexplained variability for an individual",
+    "I mentioned extrapolation or the linearity assumption",
+    "My rewrite described tendencies and variation"
+   ]
+  }
+ ]
+}

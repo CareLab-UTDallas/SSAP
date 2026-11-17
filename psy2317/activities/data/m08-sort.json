@@ -1,0 +1,48 @@
+{
+ "type": "sort",
+ "title": "Module 8 Misconception Sort",
+ "budget": "8",
+ "intro": "Decide whether each statement is true, false, or depends. These are the misconceptions that cost students points on exams.",
+ "items": [
+  {
+   "s": "An independent-measures t test can be used when the same people are measured twice.",
+   "t": "F",
+   "why": "Repeated measurements on the same people are related. Use a related-samples test."
+  },
+  {
+   "s": "Equal sample sizes make the pooled variance simply the average of the two sample variances.",
+   "t": "T",
+   "why": "With n1 equal to n2, the weights are equal."
+  },
+  {
+   "s": "A significant independent t test shows which specific people benefited from the treatment.",
+   "t": "F",
+   "why": "It tests a difference between group means, not individual responses."
+  },
+  {
+   "s": "If both groups are large, the assumption of equal variances no longer matters.",
+   "t": "D",
+   "why": "Equal n and similar variances protect the test, but with unequal n and very different variances the Type I error rate can be off even with large groups."
+  },
+  {
+   "s": "The t statistic compares the mean difference with the amount of difference expected by sampling error.",
+   "t": "T",
+   "why": "It is a signal to noise ratio."
+  },
+  {
+   "s": "A big mean difference guarantees a significant t.",
+   "t": "F",
+   "why": "Large variability or small samples can make the standard error large enough to hide the difference."
+  },
+  {
+   "s": "Two groups with the same mean must have the same variance.",
+   "t": "F",
+   "why": "Mean and variance are separate properties of a distribution."
+  },
+  {
+   "s": "A study can show a large effect (d near .9) and still not reach significance.",
+   "t": "T",
+   "why": "Small samples can produce a large d with a large standard error."
+  }
+ ]
+}

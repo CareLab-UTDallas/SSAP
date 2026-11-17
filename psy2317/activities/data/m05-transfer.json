@@ -1,0 +1,41 @@
+{
+ "type": "transfer",
+ "title": "Module 5 Challenge: How Surprising Is This Sample?",
+ "budget": "12",
+ "scenario": "<p>A national exam has a population mean of 25 and a standard deviation of 10. A school district that tried a new tutoring program tested 64 students and found a mean of 27.5. The district claims the program \"obviously works because the students scored 2.5 points above the national mean.\"</p>",
+ "parts": [
+  {
+   "type": "mc",
+   "q": "What is the standard error for samples of 64?",
+   "o": [
+    "1.25",
+    "10",
+    "0.16",
+    "2.50"
+   ],
+   "why": "SE = 10 divided by 8 = 1.25."
+  },
+  {
+   "type": "mc",
+   "q": "What is the z score for the district's sample mean?",
+   "o": [
+    "+2.00",
+    "+0.25",
+    "+2.50",
+    "+1.25"
+   ],
+   "why": "z = (27.5 minus 25)/1.25 = 2.00."
+  },
+  {
+   "type": "write",
+   "q": "Explain what the z score tells you about the district's claim. Say how likely a mean this high would be if the program did nothing, what that probability does and does not show, and how a sample of 16 students would change your confidence.",
+   "model": "A z of 2.00 means the sample mean is two standard errors above the national mean. If the tutoring did nothing and these students were a random sample, a mean this high or higher would occur about 2.3 percent of the time (the tail beyond z = 2.00 is .0228). That is fairly unlikely, so the result is more than plausible chance variation. It does not prove the program works, because the students were not randomly assigned to tutoring, and other differences could explain the gain. With only 16 students, the standard error would be 10/4 = 2.50, and the same 2.5 point gap would give z = 1.00. A mean that high would happen about 16 percent of the time by chance, so we would be much less confident.",
+   "check": [
+    "I interpreted z as distance in standard errors",
+    "I reported the tail probability for z = 2.00 (about .02)",
+    "I noted the design cannot prove the program caused the gain",
+    "I showed how n = 16 changes the standard error and z"
+   ]
+  }
+ ]
+}

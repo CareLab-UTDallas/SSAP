@@ -1,0 +1,41 @@
+{
+ "type": "transfer",
+ "title": "Module 7 Challenge: A Small Sample, a Medium Effect",
+ "budget": "15",
+ "scenario": "<p>A clinic wants to know whether a brief mindfulness program changes scores on a well-validated wellbeing scale. The scale has a published mean of 50 in the general population. Ten participants complete the program and score a mean of 55 with a standard deviation of 8. The clinic uses alpha = .05, two-tailed, and finds t(9) = 1.98, p = .08. The staff concludes, \"The program does nothing.\"</p>",
+ "parts": [
+  {
+   "type": "mc",
+   "q": "What is Cohen's d for these results?",
+   "o": [
+    ".63",
+    "1.98",
+    ".08",
+    "5.00"
+   ],
+   "why": "d = (55 minus 50)/8 = .625, a medium effect by conventional benchmarks."
+  },
+  {
+   "type": "mc",
+   "q": "Why did the test fail to reach significance?",
+   "o": [
+    "With n = 10 the estimated standard error is large (2.53), so a medium effect produces only t = 1.98",
+    "Because the program has no effect",
+    "Because alpha was too large",
+    "Because the t distribution is skewed"
+   ],
+   "why": "The size of the effect is meaningful. The sample is simply too small to separate it from sampling error with confidence."
+  },
+  {
+   "type": "write",
+   "q": "Respond to the staff's conclusion. Use the confidence interval (49.3 to 60.7) and the effect size, and recommend a next step.",
+   "model": "The staff conclusion goes beyond the evidence. Failing to reject the null does not show the program does nothing. The effect size is medium (d = .63), and the 95 percent CI for the mean runs from about 49.3 to 60.7, which includes 50 but also includes values 10 points higher. The interval is wide because only ten people took part. The study had low power, so the result is inconclusive rather than negative. A reasonable next step is a larger study. For a medium effect, a power analysis would suggest a sample of several dozen, with random assignment to a comparison group so that improvement can be attributed to the program.",
+   "check": [
+    "I said failing to reject does not mean no effect",
+    "I used d and the CI to describe what the data do show",
+    "I connected the wide interval to small n and low power",
+    "I recommended a larger or better designed study"
+   ]
+  }
+ ]
+}

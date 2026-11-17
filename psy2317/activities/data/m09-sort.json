@@ -1,0 +1,48 @@
+{
+ "type": "sort",
+ "title": "Module 9 Misconception Sort",
+ "budget": "8",
+ "intro": "Decide whether each statement is true, false, or depends. These are the misconceptions that cost students points on exams.",
+ "items": [
+  {
+   "s": "A repeated-measures t test is just an independent t test with the same group measured twice.",
+   "t": "F",
+   "why": "The scores are dependent, so the correct analysis uses difference scores. Using the independent formula ignores the relationship between measures."
+  },
+  {
+   "s": "A repeated-measures design usually has more power than an independent-measures design with the same number of scores.",
+   "t": "T",
+   "why": "Removing stable individual differences shrinks the error term, particularly when the paired scores correlate."
+  },
+  {
+   "s": "For a related-samples test with 12 people measured twice, df = 22.",
+   "t": "F",
+   "why": "There are 12 difference scores, so df = 11."
+  },
+  {
+   "s": "Counterbalancing the order of conditions helps control order effects.",
+   "t": "T",
+   "why": "Half the participants do condition A first and half do B first."
+  },
+  {
+   "s": "A related-samples t test needs the difference scores to be roughly normal, or n large.",
+   "t": "T",
+   "why": "The distribution of mean differences should be approximately normal."
+  },
+  {
+   "s": "A significant related-samples t tells you every participant improved.",
+   "t": "F",
+   "why": "It tests the mean difference. Some individuals may not have changed or may have gotten worse."
+  },
+  {
+   "s": "A confidence interval gives the same information as a hypothesis test and nothing more.",
+   "t": "F",
+   "why": "It also shows the range of plausible effect sizes, which a p value alone does not."
+  },
+  {
+   "s": "Whether a pretest-posttest design with no control group shows that the treatment works",
+   "t": "D",
+   "why": "A significant improvement shows change over time. Without a comparison group, history, maturation, and testing effects could explain it."
+  }
+ ]
+}

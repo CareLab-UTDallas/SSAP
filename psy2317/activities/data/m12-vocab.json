@@ -1,0 +1,108 @@
+{
+ "type": "quiz",
+ "title": "Module 12 Vocabulary Check",
+ "budget": "10",
+ "intro": "Answer each item. Feedback comes right away. Items you miss come back for a retry round.",
+ "items": [
+  {
+   "q": "In a scatterplot, a strong positive linear relationship looks like",
+   "o": [
+    "Points close to a line rising from lower left to upper right",
+    "Points scattered evenly",
+    "Points close to a line falling",
+    "Points in a circle"
+   ],
+   "why": "The tighter the points cluster around the line, the larger the absolute value of r."
+  },
+  {
+   "q": "r can be computed as the average of the products of",
+   "o": [
+    "Paired z scores",
+    "Raw scores",
+    "Deviations from the median",
+    "Variances"
+   ],
+   "why": "r equals the sum of z X times z Y divided by N (population formula). Same sign pairs push r up."
+  },
+  {
+   "q": "Covariance is",
+   "o": [
+    "A measure of how two variables vary together, in raw units",
+    "A standardized relationship",
+    "The slope of the line",
+    "The correlation squared"
+   ],
+   "why": "Dividing the covariance by the product of the SDs standardizes it into r."
+  },
+  {
+   "q": "Restriction of range typically",
+   "o": [
+    "Reduces the size of r",
+    "Increases r",
+    "Makes r negative",
+    "Has no effect"
+   ],
+   "why": "When only part of the range of one variable is sampled, the trend is harder to see."
+  },
+  {
+   "q": "An outlier far from the other points",
+   "o": [
+    "Can substantially raise or lower r",
+    "Never changes r",
+    "Always makes r zero",
+    "Only matters with small sample sizes"
+   ],
+   "why": "r depends on squared deviations, so extreme points have big influence."
+  },
+  {
+   "q": "If the true relationship is curved, Pearson r",
+   "o": [
+    "Understates the relationship",
+    "Is always 1",
+    "Is always negative",
+    "Is accurate"
+   ],
+   "why": "Pearson r measures only linear relationships."
+  },
+  {
+   "q": "Combining two groups that differ in both variables can",
+   "o": [
+    "Create or hide a correlation that is not present within the groups",
+    "Always strengthen r",
+    "Make r equal to 0",
+    "Remove outliers"
+   ],
+   "why": "The pooled correlation can reflect group differences rather than the relationship within each group."
+  },
+  {
+   "q": "r squared of .36 means",
+   "o": [
+    "36 percent of the variability in Y is accounted for by its linear relationship with X",
+    "The correlation is .36",
+    "36 percent of cases are on the line",
+    "The relationship is weak"
+   ],
+   "why": "r is .60 in that case."
+  },
+  {
+   "q": "A correlation measures",
+   "o": [
+    "The association between variables, not causation",
+    "Cause and effect",
+    "Differences between group means",
+    "Percentages of agreement"
+   ],
+   "why": "Experimental manipulation is needed for causal claims."
+  },
+  {
+   "q": "Measurement error in either variable tends to",
+   "o": [
+    "Lower the observed correlation",
+    "Raise the observed correlation",
+    "Make r negative",
+    "Not affect r"
+   ],
+   "why": "Noise in the scores weakens the observable association, which is why reliability matters."
+  }
+ ]
+}

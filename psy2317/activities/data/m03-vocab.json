@@ -1,0 +1,108 @@
+{
+ "type": "quiz",
+ "title": "Module 3 Vocabulary Check",
+ "budget": "10",
+ "intro": "Answer each item. Feedback comes right away. Items you miss come back for a retry round.",
+ "items": [
+  {
+   "q": "Why does the sample variance divide SS by n minus 1 instead of n?",
+   "o": [
+    "Dividing by n would underestimate the population variance on average",
+    "Samples are always smaller than populations",
+    "It makes the answer an integer",
+    "It removes outliers"
+   ],
+   "why": "A sample is centered on its own mean, which makes deviations smaller than they would be from the true mean. Dividing by n minus 1 corrects that bias."
+  },
+  {
+   "q": "Degrees of freedom for a single sample variance equal",
+   "o": [
+    "n minus 1",
+    "n",
+    "n plus 1",
+    "n squared"
+   ],
+   "why": "Once the sample mean is fixed, only n minus 1 scores are free to vary."
+  },
+  {
+   "q": "A statistic that is unbiased",
+   "o": [
+    "Averages out to the population value across many samples",
+    "Always equals the population value",
+    "Is computed from the whole population",
+    "Has no sampling error"
+   ],
+   "why": "Unbiased does not mean any single estimate is correct. It means the long run average is right."
+  },
+  {
+   "q": "The Pearson correlation measures",
+   "o": [
+    "The direction and strength of a linear relationship",
+    "Whether one variable causes another",
+    "The difference between two means",
+    "The spread of a single variable"
+   ],
+   "why": "It ranges from negative one to positive one and describes straight line association."
+  },
+  {
+   "q": "A correlation of zero means",
+   "o": [
+    "No linear relationship",
+    "No relationship of any kind",
+    "A perfect relationship",
+    "The variables are independent in cause"
+   ],
+   "why": "A curved relationship can produce r near zero. Zero is about linear association only."
+  },
+  {
+   "q": "The sum of products (SP) in the correlation formula",
+   "o": [
+    "Adds up, for each person, the X deviation times the Y deviation",
+    "Is the sum of squared X deviations",
+    "Equals SS for Y",
+    "Is always positive"
+   ],
+   "why": "SP captures how X and Y deviate together. Positive products dominate when high X goes with high Y."
+  },
+  {
+   "q": "The coefficient of determination r squared is",
+   "o": [
+    "The proportion of variability in one variable accounted for by its linear relationship with the other",
+    "The probability the correlation is real",
+    "The slope of the line",
+    "The square root of r"
+   ],
+   "why": "If r = .50, then r squared = .25, so 25 percent of the variability is shared."
+  },
+  {
+   "q": "A negative correlation means",
+   "o": [
+    "As one variable increases the other tends to decrease",
+    "The relationship is weak",
+    "The data contain an error",
+    "One variable causes the other to fall"
+   ],
+   "why": "The sign gives direction. The magnitude gives strength."
+  },
+  {
+   "q": "Which correlation is strongest?",
+   "o": [
+    "−.85",
+    "+.60",
+    "+.10",
+    "0"
+   ],
+   "why": "Strength depends on the absolute value, not the sign."
+  },
+  {
+   "q": "A population variance is computed with",
+   "o": [
+    "Division by N",
+    "Division by N minus 1",
+    "Division by SS",
+    "Division by the mean"
+   ],
+   "why": "When you have every score in the population, no estimation is involved and you divide by N."
+  }
+ ]
+}

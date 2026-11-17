@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sampling Distribution Lab</title>
+<style>
+:root{--green:#154734;--orange:#e87500;--ink:#1f2a24;--muted:#4a5a52;--line:#c9d8cf;--tint:#eef3f0;--good:#e3f2e8;--goodb:#2e7d4f;--bad:#fdecea;--badb:#b3261e;--amber:#fff4e0;--amberb:#b25e00}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Arial,sans-serif;color:var(--ink);line-height:1.5}
+.wrap{max-width:840px;margin:0 auto;padding:14px 16px 40px}h1{font-family:Georgia,serif;font-size:24px;color:var(--green);margin:4px 0}
+.budget{display:inline-block;background:var(--tint);border-radius:999px;padding:3px 12px;font-size:14px;color:var(--green);margin-bottom:10px}
+.card{border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:12px 0}
+label{font-weight:600}select,input[type=text]{font:inherit;padding:6px 8px;border:1px solid #8aa597;border-radius:6px}input[type=text]{width:110px}
+button{font:inherit;cursor:pointer;border-radius:8px;border:1px solid var(--green);background:var(--green);color:#fff;padding:7px 14px;margin:4px 6px 4px 0}button.alt{background:#fff;color:var(--green)}
+button.opt{display:block;width:100%;text-align:left;background:#fff;color:var(--ink);border:1px solid var(--line);margin:6px 0;padding:10px 12px}button.opt:hover:not(:disabled){background:var(--tint)}
+button.opt.right{background:var(--good);border-color:var(--goodb)}button.opt.wrong{background:var(--bad);border-color:var(--badb)}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
+.row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}@media(max-width:640px){.row{grid-template-columns:1fr}}
+.stat{background:var(--tint);border-radius:8px;padding:8px 12px}.stat b{display:block;font-size:20px;color:var(--green)}
+.fb{margin-top:8px;padding:8px 12px;border-radius:8px}.fb.good{background:var(--good);border-left:4px solid var(--goodb)}.fb.bad{background:var(--bad);border-left:4px solid var(--badb)}.fb.hint{background:var(--amber);border-left:4px solid var(--amberb)}
+svg{width:100%;height:auto;display:block}.small{font-size:14px;color:var(--muted)}
+</style></head><body><div class="wrap"><main>
+<h1>Sampling Distribution Lab</h1><div class="budget">Budget: 20 min &middot; Complete every part</div>
+<p>Every population here has a mean of 100 and a standard deviation of 15. You choose a sample size, draw many random samples, and watch where the sample means land. Start with the prediction below. Everything is simulated for practice.</p>
+<div class="card"><div class="row">
+<div><label for="pop">Population shape</label><br><select id="pop"><option value="normal">Normal</option><option value="skew">Strongly skewed</option><option value="uni">Uniform</option><option value="bi">Two humps</option></select></div>
+<div><label for="n">Sample size n</label><br><select id="n"><option>1</option><option>2</option><option>4</option><option>9</option><option>16</option><option>25</option><option selected>36</option><option>100</option></select></div>
+<div><button id="b1">Draw 1 sample</button><button id="b2">Draw 100</button><button id="b3">Draw 1,000</button><button id="rs" class="alt">Clear</button></div></div>
+<p class="small" style="margin-bottom:2px">Top: the population. Bottom: the sample means you have drawn. The orange curve is what the central limit theorem predicts.</p>
+<svg id="p1" viewBox="0 0 700 150" role="img" aria-label="Histogram of the population"></svg>
+<svg id="p2" viewBox="0 0 700 190" role="img" aria-label="Histogram of sample means with the predicted normal curve"></svg>
+<div class="row"><div class="stat">Samples drawn<b id="k">0</b></div><div class="stat">Mean of the sample means<b id="mm">&ndash;</b></div><div class="stat">SD of the sample means<b id="sdm">&ndash;</b><span class="small" id="pred"></span></div></div>
+</div>
+<div id="qs"></div>
+</main></div>
+<script>
+const $=id=>document.getElementById(id);const MU=100,SG=15;
+function rn(){let u=0,v=0;while(!u)u=Math.random();while(!v)v=Math.random();return Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*v)}
+const raw={normal:()=>rn(),skew:()=>-Math.log(1-Math.random())-1,uni:()=>(Math.random()-.5)*Math.sqrt(12),bi:()=>(Math.random()<.5?-1:1)*.9+.436*rn()};
+/* standardize bimodal: sd of mixture sqrt(.81+.19)=1 */
+const gen=()=>MU+SG*raw[$('pop').value]();
+let means=[],popS=[];
+function newpop(){popS=[];for(let i=0;i<20000;i++)popS.push(gen());means=[];draw();}
+function hist(vals,lo,hi,bins){const h=new Array(bins).fill(0);vals.forEach(v=>{let i=Math.floor((v-lo)/(hi-lo)*bins);if(i>=0&&i<bins)h[i]++});return h}
+function bars(svg,h,lo,hi,hh,color,extra){const W=700,L=30,R=680,B=hh-26,n=h.length,mx=Math.max(...h,1),bw=(R-L)/n;let s='<rect width="700" height="'+hh+'" fill="#fff"/>';
+ h.forEach((c,i)=>{const bh=c/mx*(B-8);s+='<rect x="'+(L+i*bw+1)+'" y="'+(B-bh)+'" width="'+(bw-2)+'" height="'+bh+'" fill="'+color+'"/>'});
+ s+='<line x1="'+L+'" y1="'+B+'" x2="'+R+'" y2="'+B+'" stroke="#4a5a52"/>';
+ for(let v=40;v<=160;v+=20){const x=L+(v-lo)/(hi-lo)*(R-L);if(x>=L&&x<=R)s+='<text x="'+x+'" y="'+(B+16)+'" font-size="12" text-anchor="middle" fill="#4a5a52">'+v+'</text>'}
+ if(extra)s+=extra(L,R,B,mx);svg.innerHTML=s}
+function draw(){
+  const n=+$('n').value;bars($('p1'),hist(popS,40,160,48),40,160,150,'#5e8c73');
+  const se=SG/Math.sqrt(n),k=means.length;$('k').textContent=k.toLocaleString();$('pred').textContent=' Predicted by &sigma;/&radic;n: '+se.toFixed(2);$('pred').innerHTML=' Predicted &sigma;/&radic;n = '+se.toFixed(2);
+  if(k>1){const m=means.reduce((a,b)=>a+b)/k,sd=Math.sqrt(means.reduce((a,b)=>a+(b-m)*(b-m),0)/(k-1));$('mm').textContent=m.toFixed(2);$('sdm').textContent=sd.toFixed(2)}else{$('mm').innerHTML='&ndash;';$('sdm').innerHTML='&ndash;'}
+  const bins=48,h=hist(means,40,160,bins);
+  bars($('p2'),h,40,160,190,'#154734',(L,R,B,mx)=>{if(k<30)return '';const bw=(R-L)/bins,wbin=120/bins;let d='';for(let i=0;i<=200;i++){const v=40+i*120/200,y=Math.exp(-0.5*((v-MU)/se)**2)/(se*Math.sqrt(2*Math.PI))*k*wbin;d+=(i?'L':'M')+(L+(v-40)/120*(R-L)).toFixed(1)+','+(B-y/mx*(B-8)).toFixed(1)}return '<path d="'+d+'" fill="none" stroke="#e87500" stroke-width="2.5"/>'})}
+function take(c){const n=+$('n').value;for(let j=0;j<c;j++){let s=0;for(let i=0;i<n;i++)s+=gen();means.push(s/n)}draw()}
+$('b1').onclick=()=>take(1);$('b2').onclick=()=>take(100);$('b3').onclick=()=>take(1000);$('rs').onclick=()=>{means=[];draw()};
+$('pop').onchange=newpop;$('n').onchange=()=>{means=[];draw()};newpop();
+/* questions */
+const qs=[
+ {p:'<strong>Predict first.</strong> With n = 36, what do you expect the standard deviation of the sample means to be? Type your prediction, then set n to 36 and draw 1,000 samples to test it.',num:true,ans:2.5,tol:0.2,why:'&sigma;/&radic;n = 15/6 = 2.5. The means cluster far more tightly than individual scores, whose SD is 15.'},
+ {p:'Keep n at 36 and choose "Strongly skewed." Draw 1,000 samples. What shape do the sample means have?',o:['Close to a normal curve, even though the population is skewed','Skewed like the population','Uniform'],why:'This is the central limit theorem. With n around 30 or more, the means are close to normal even when the population is not.'},
+ {p:'Set n = 1 and draw 1,000 samples from the skewed population. What does the lower graph look like?',o:['The same shape as the population, because each "mean" is one score','A narrow normal curve','A flat line'],why:'With n = 1 a sample mean is just a score, so the distribution of means is the population.'},
+ {p:'Compare n = 4 and n = 16 (draw 1,000 each). By what factor does the SD of the means shrink when n goes up by a factor of 4?',o:['It is cut in half','It is cut to one quarter','It does not change'],why:'&sigma;/&radic;n: quadrupling n divides the standard error by &radic;4 = 2. To halve the standard error you need four times as many people.'},
+ {p:'A researcher says, "My sample mean is 104, so the population mean must be 104." Using what you saw, what is the best response?',o:['The sample mean lands near the population mean, but with sampling error that shrinks as n grows','It must be exactly 104 if the sample was random','Sample means are unrelated to the population mean'],why:'Sample means scatter around the population mean. The standard error tells you how far they typically land.'}];
+const box=$('qs');qs.forEach((q,i)=>{const c=document.createElement('div');c.className='card';c.innerHTML='<div>'+(q.num?'':'<strong>Question '+i+'.</strong> ')+q.p+'</div>';const fb=document.createElement('div');
+ if(q.num){c.insertAdjacentHTML('beforeend','<label for="q0" style="font-weight:400">Your prediction: </label><input type="text" id="q0" inputmode="decimal"> <button type="button">Check</button>');c.querySelector('button').onclick=()=>{const v=parseFloat(c.querySelector('input').value);fb.className=Math.abs(v-q.ans)<=q.tol?'fb good':'fb bad';fb.innerHTML=isNaN(v)?'Enter a number.':(Math.abs(v-q.ans)<=q.tol?'<strong>Correct.</strong> ':'<strong>The answer is '+q.ans+'.</strong> ')+q.why}}
+ else{let done=false;const idx=q.o.map((t,k)=>k).sort(()=>Math.random()-.5);idx.forEach(k=>{const b=document.createElement('button');b.type='button';b.className='opt';b.textContent=q.o[k];b.onclick=()=>{if(done)return;done=true;c.querySelectorAll('button.opt').forEach((e,j)=>{e.disabled=true;if(idx[j]===0)e.classList.add('right')});if(k!==0)b.classList.add('wrong');fb.className='fb '+(k===0?'good':'bad');fb.innerHTML='<strong>'+(k===0?'Correct.':'Not quite.')+'</strong> '+q.why};c.appendChild(b)})}
+ c.appendChild(fb);box.appendChild(c)});
+</script></body></html>

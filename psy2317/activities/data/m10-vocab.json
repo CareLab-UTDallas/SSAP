@@ -1,0 +1,108 @@
+{
+ "type": "quiz",
+ "title": "Module 10 Vocabulary Check",
+ "budget": "10",
+ "intro": "Answer each item. Feedback comes right away. Items you miss come back for a retry round.",
+ "items": [
+  {
+   "q": "ANOVA is used to compare",
+   "o": [
+    "Means of two or more groups",
+    "Only two means",
+    "Correlations",
+    "Proportions"
+   ],
+   "why": "It generalizes the independent t test to any number of groups."
+  },
+  {
+   "q": "Why not run several t tests instead of one ANOVA for three groups?",
+   "o": [
+    "Each extra test raises the overall Type I error rate",
+    "ANOVA is faster",
+    "t tests need equal variances",
+    "t tests cannot compare means"
+   ],
+   "why": "With three tests at .05 the chance of at least one false alarm is about 14 percent, not 5."
+  },
+  {
+   "q": "The F ratio is",
+   "o": [
+    "Variance between groups divided by variance within groups",
+    "Variance within divided by variance between",
+    "The mean difference divided by SD",
+    "SS total divided by SS between"
+   ],
+   "why": "F = MS between divided by MS within. Under the null it is near 1."
+  },
+  {
+   "q": "MS within groups reflects",
+   "o": [
+    "Random variability among participants in the same condition",
+    "The effect of the treatment",
+    "The difference between group means",
+    "The total variability"
+   ],
+   "why": "Within-group variability is error. It is the same whether or not the treatment works."
+  },
+  {
+   "q": "MS between groups reflects",
+   "o": [
+    "Differences among group means, plus error",
+    "Only random error",
+    "Only the treatment effect",
+    "The number of participants"
+   ],
+   "why": "If the null is true, between-group variance estimates the same error as within-group variance, so F is near 1."
+  },
+  {
+   "q": "For k groups and N total participants, df between is",
+   "o": [
+    "k minus 1",
+    "N minus 1",
+    "N minus k",
+    "k"
+   ],
+   "why": "df within is N minus k, and df total is N minus 1."
+  },
+  {
+   "q": "If the null hypothesis is true, the expected value of F is about",
+   "o": [
+    "1",
+    "0",
+    "The number of groups",
+    "The sample size"
+   ],
+   "why": "Both mean squares estimate the same error variance."
+  },
+  {
+   "q": "Eta squared is",
+   "o": [
+    "The proportion of total variability accounted for by the grouping variable",
+    "The probability of the null",
+    "The p value",
+    "The F critical value"
+   ],
+   "why": "It is SS between divided by SS total, an effect size for ANOVA."
+  },
+  {
+   "q": "A significant F tells you",
+   "o": [
+    "At least one group mean differs from another, but not which",
+    "All means differ",
+    "Which pair differs",
+    "The effect is large"
+   ],
+   "why": "Follow-up post hoc tests identify the specific differences."
+  },
+  {
+   "q": "A post hoc test such as Tukey HSD",
+   "o": [
+    "Compares pairs of means while controlling the overall Type I error",
+    "Replaces ANOVA",
+    "Is run only when F is not significant",
+    "Increases the alpha level"
+   ],
+   "why": "Post hoc tests are used after a significant F and keep the familywise error rate in check."
+  }
+ ]
+}

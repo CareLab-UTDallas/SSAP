@@ -1,0 +1,108 @@
+{
+ "type": "quiz",
+ "title": "Module 15 Vocabulary Check",
+ "budget": "10",
+ "intro": "Answer each item. Feedback comes right away. Items you miss come back for a retry round.",
+ "items": [
+  {
+   "q": "A chi-square test is used when the data are",
+   "o": [
+    "Frequencies in categories",
+    "Numeric scores",
+    "Ranks only",
+    "Correlations"
+   ],
+   "why": "It compares observed frequencies with expected frequencies."
+  },
+  {
+   "q": "The chi-square goodness-of-fit test asks whether",
+   "o": [
+    "A single categorical variable matches a hypothesized distribution",
+    "Two variables are related",
+    "Means differ",
+    "Variances differ"
+   ],
+   "why": "For example, whether choices are spread equally over three options."
+  },
+  {
+   "q": "The chi-square test of independence asks whether",
+   "o": [
+    "Two categorical variables are related",
+    "One variable fits a distribution",
+    "Two means differ",
+    "A correlation is significant"
+   ],
+   "why": "It uses a contingency table."
+  },
+  {
+   "q": "The expected frequency for a cell in a test of independence is",
+   "o": [
+    "(Row total times column total) divided by N",
+    "N divided by the number of cells",
+    "The observed frequency",
+    "Row total times N"
+   ],
+   "why": "It is the count we would expect if the variables were independent."
+  },
+  {
+   "q": "Degrees of freedom for a goodness-of-fit test with C categories are",
+   "o": [
+    "C minus 1",
+    "C",
+    "N minus 1",
+    "C times 2"
+   ],
+   "why": "df for a test of independence is (rows minus 1) times (columns minus 1)."
+  },
+  {
+   "q": "Chi-square is computed as",
+   "o": [
+    "The sum over cells of (observed minus expected) squared divided by expected",
+    "The sum of (observed minus expected)",
+    "The sum of observed divided by expected",
+    "The square root of the sum of squares"
+   ],
+   "why": "Squaring makes every discrepancy positive and gives larger discrepancies more weight."
+  },
+  {
+   "q": "A common rule for the chi-square test is that",
+   "o": [
+    "Expected frequencies should be at least 5 in each cell",
+    "Observed frequencies must be equal",
+    "N must be 100",
+    "Variables must be numeric"
+   ],
+   "why": "Small expected counts make the chi-square approximation unreliable."
+  },
+  {
+   "q": "Cramer's V and phi are",
+   "o": [
+    "Effect size measures for chi-square",
+    "Reliability indices",
+    "Types of ANOVA",
+    "Post hoc tests"
+   ],
+   "why": "For a 2 by 2 table the phi coefficient is the square root of chi-square divided by N."
+  },
+  {
+   "q": "An odds ratio of 1.0 means",
+   "o": [
+    "Equal odds in the two groups, no association",
+    "The outcome is certain",
+    "The groups differ greatly",
+    "A perfect association"
+   ],
+   "why": "Values above 1 indicate higher odds in the first group."
+  },
+  {
+   "q": "An odds ratio of 4 means the odds of the outcome in the first group are",
+   "o": [
+    "Four times the odds in the second group",
+    "Four percent higher",
+    "Equal to a probability of .25",
+    "Four times the probability"
+   ],
+   "why": "Odds and probability are different. Odds of 4 correspond to a probability of .80."
+  }
+ ]
+}

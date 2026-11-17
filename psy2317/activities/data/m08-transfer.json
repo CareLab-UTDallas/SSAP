@@ -1,0 +1,41 @@
+{
+ "type": "transfer",
+ "title": "Module 8 Challenge: Two Groups, One Decision",
+ "budget": "15",
+ "scenario": "<p>A psychologist randomly assigns 16 students to study either by rereading notes or by testing themselves on the material. Each group has 8 students. After one week, the rereading group scores M = 19 (s = 5) and the self-testing group scores M = 24 (s = 6). The researcher tests with alpha = .05, two-tailed, and obtains t(14) = 1.81, p = .09. A student in the lab says the data prove self-testing \"makes no difference.\"</p>",
+ "parts": [
+  {
+   "type": "mc",
+   "q": "Which statement about the effect size is correct?",
+   "o": [
+    "d = .91, a large effect",
+    "d = 1.81, a very large effect",
+    "d = .09, a small effect",
+    "d cannot be computed because the result was not significant"
+   ],
+   "why": "d is the mean difference divided by the pooled SD, 5/5.52 = .91. It can be computed whether or not the test is significant."
+  },
+  {
+   "type": "mc",
+   "q": "Which conclusion is best supported?",
+   "o": [
+    "The study is inconclusive. The difference is large in size but the groups are too small to rule out chance",
+    "Self-testing does not work",
+    "Self-testing works",
+    "Rereading is better"
+   ],
+   "why": "Failing to reject the null does not show that the null is true."
+  },
+  {
+   "type": "write",
+   "q": "Explain to the student why \"no difference\" is the wrong conclusion. Cover the effect size, the role of sample size, and what design change would make the next study more informative.",
+   "model": "The student is treating a nonsignificant result as proof of no effect. The sample means differ by 5 points, d is .91, and the result is large by conventional benchmarks. With only 8 per group the standard error of the difference is large (2.76), so even this size of effect produces only t = 1.81, short of the 2.145 needed. The test shows that the data are compatible with no difference, not that there is none. The study had low power. Because participants were randomly assigned, a clear result would support a causal claim, so it is worth running again with more students. A power analysis for a large effect would suggest roughly 25 to 30 per group.",
+   "check": [
+    "I distinguished no evidence of an effect from evidence of no effect",
+    "I used d to describe the size of the observed difference",
+    "I explained how small n inflates the standard error",
+    "I proposed a larger sample as the next step"
+   ]
+  }
+ ]
+}

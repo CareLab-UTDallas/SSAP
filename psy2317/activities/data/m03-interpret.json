@@ -1,0 +1,58 @@
+{
+ "type": "quiz",
+ "title": "Module 3 Interpretation Check",
+ "budget": "8",
+ "intro": "Each item gives you a short research situation. Decide what the evidence supports.",
+ "items": [
+  {
+   "q": "A study finds r = +.62 between hours studied and exam score. What proportion of exam score variability is accounted for by study time in this linear relationship?",
+   "o": [
+    "About .38",
+    ".62",
+    ".79",
+    ".24"
+   ],
+   "why": ".62 squared = .384. The other roughly 62 percent comes from everything else, including prior knowledge and test conditions."
+  },
+  {
+   "q": "Ice cream sales and drownings are positively correlated across months. What best explains this?",
+   "o": [
+    "A third variable, warm weather, likely drives both",
+    "Ice cream causes drowning",
+    "Drowning raises ice cream sales",
+    "The correlation must be a calculation error"
+   ],
+   "why": "Season is a classic confounding variable. A correlation alone cannot separate these explanations."
+  },
+  {
+   "q": "Five scores have SS = 40. What is the sample variance?",
+   "o": [
+    "10",
+    "8",
+    "5",
+    "40"
+   ],
+   "why": "Variance = SS divided by (n minus 1) = 40/4 = 10. Dividing by n would give 8, which is the population formula."
+  },
+  {
+   "q": "A scatterplot shows a clear U shape and the correlation is r = .02. What should you conclude?",
+   "o": [
+    "A strong relationship exists, but it is not linear, so r misses it",
+    "The variables are unrelated",
+    "The data are wrong",
+    "r should be larger"
+   ],
+   "why": "Pearson r detects only straight line patterns. Always plot your data."
+  },
+  {
+   "q": "A researcher says, \"My correlation was r = −.45, so something went wrong because the effect should be positive.\" What is the best reply?",
+   "o": [
+    "A negative r is not an error. It means one variable tends to go down as the other goes up",
+    "Correlations must be positive",
+    "The sign does not matter at all",
+    "Take the absolute value and ignore the direction"
+   ],
+   "why": "The sign tells you the direction. A negative correlation can be perfectly meaningful, for example more practice and fewer errors."
+  }
+ ]
+}

@@ -1,0 +1,7 @@
+{
+ "type": "compute",
+ "title": "Module 3 Practice: Sample Variance and Degrees of Freedom",
+ "budget": "15",
+ "gen": "svar",
+ "intro": "Compute the sample variance and standard deviation from a small sample, and see how n minus 1 changes the answer."
+}

@@ -1,0 +1,48 @@
+{
+ "type": "sort",
+ "title": "Module 14 Misconception Sort",
+ "budget": "8",
+ "intro": "Decide whether each statement is true, false, or depends. These are the misconceptions that cost students points on exams.",
+ "items": [
+  {
+   "s": "A regression equation shows that X causes Y.",
+   "t": "F",
+   "why": "It describes prediction. Causal claims depend on the design."
+  },
+  {
+   "s": "If r = 0, the best prediction of Y for any X is the mean of Y.",
+   "t": "T",
+   "why": "With no linear relationship the line is flat at the mean of Y."
+  },
+  {
+   "s": "A steeper slope means a stronger correlation.",
+   "t": "F",
+   "why": "The slope depends on the units of X and Y. Strength is captured by r."
+  },
+  {
+   "s": "The regression line is the best linear predictor in the sense of minimizing squared error.",
+   "t": "T",
+   "why": "That is the least squares principle."
+  },
+  {
+   "s": "In simple regression, R squared equals the square of Pearson r.",
+   "t": "T",
+   "why": "For one predictor the two are the same."
+  },
+  {
+   "s": "Adding more predictors always improves the prediction of the sample, even if the predictors are meaningless.",
+   "t": "T",
+   "why": "R squared never decreases when predictors are added, which is why adjusted R squared exists."
+  },
+  {
+   "s": "Predictions for X values outside the observed range are as trustworthy as those within it.",
+   "t": "F",
+   "why": "Extrapolation assumes the pattern continues without evidence."
+  },
+  {
+   "s": "Whether to drop a predictor that is not significant in a multiple regression",
+   "t": "D",
+   "why": "A predictor may be nonsignificant because it overlaps with others. Theory and the purpose of the model matter alongside the p value."
+  }
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "type": "sort",
+ "title": "Module 12 Misconception Sort",
+ "budget": "8",
+ "intro": "Decide whether each statement is true, false, or depends. These are the misconceptions that cost students points on exams.",
+ "items": [
+  {
+   "s": "A correlation of zero means the scatterplot shows no pattern at all.",
+   "t": "F",
+   "why": "A clear curved pattern can have r near zero."
+  },
+  {
+   "s": "One extreme point can create a strong correlation that the rest of the data do not show.",
+   "t": "T",
+   "why": "Always plot the data and consider the influence of outliers."
+  },
+  {
+   "s": "Studying only top-scoring students gives an accurate estimate of the correlation in the full population.",
+   "t": "F",
+   "why": "Range restriction shrinks the observed correlation."
+  },
+  {
+   "s": "If r is high within each of two groups, it will be high when the groups are pooled.",
+   "t": "D",
+   "why": "Pooling can raise, lower, or even reverse the correlation depending on how the groups differ on both variables."
+  },
+  {
+   "s": "Correlations are bounded between negative one and positive one.",
+   "t": "T",
+   "why": "Values outside the range indicate a calculation error."
+  },
+  {
+   "s": "A correlation of .30 is twice as strong as a correlation of .15 in terms of shared variance.",
+   "t": "F",
+   "why": "Shared variance is r squared. .09 versus .0225 is four times as much."
+  },
+  {
+   "s": "Unreliable measures can hide a real relationship.",
+   "t": "T",
+   "why": "Measurement error attenuates the observed correlation."
+  },
+  {
+   "s": "Seeing the scatterplot is optional once you have computed r.",
+   "t": "F",
+   "why": "Different patterns can produce the same r, so always look at the plot."
+  }
+ ]
+}

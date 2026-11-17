@@ -1,0 +1,41 @@
+{
+ "type": "transfer",
+ "title": "Module 1 Challenge: Read a Research Claim",
+ "budget": "12",
+ "scenario": "<p>A university counseling center emails every student and gets 500 replies out of 12,000 invited. Respondents report a mean of 6.1 hours of sleep per night. The center announces: \"University students average only 6.1 hours of sleep, and students who sleep less report more stress, so we should push later class times to reduce student stress.\"</p>",
+ "parts": [
+  {
+   "type": "mc",
+   "q": "Which pair correctly names the population and the sample?",
+   "o": [
+    "Population: all 12,000 invited students. Sample: the 500 who replied",
+    "Population: the 500 who replied. Sample: all 12,000 invited",
+    "Population: 6.1 hours. Sample: 500 students",
+    "Both are the 500 who replied"
+   ],
+   "why": "The students the center wanted to describe form the population. Those who actually provided data form the sample."
+  },
+  {
+   "type": "mc",
+   "q": "Sleep in hours is measured on which scale?",
+   "o": [
+    "Ratio",
+    "Nominal",
+    "Ordinal",
+    "Interval"
+   ],
+   "why": "Zero hours means no sleep, and 8 hours is twice 4 hours."
+  },
+  {
+   "type": "write",
+   "q": "Write a short evaluation of the center's announcement. Address (1) whether 6.1 is a parameter or a statistic, (2) one reason the sample may not represent the population, and (3) whether the data support the later class time recommendation.",
+   "model": "The 6.1 hours is a statistic because it comes from the sample of 500 respondents. It estimates the parameter, the true mean sleep of all students, but sampling error means the two will differ somewhat. Only 500 of 12,000 replied (about 4 percent), and students who choose to reply may differ from those who do not, for example students who care more about sleep or feel more stressed. That is a threat to representativeness that a larger number of replies would not necessarily fix. The sleep and stress link comes from a survey, which is correlational. It shows that the two variables go together but cannot show that short sleep causes stress. Stress could shorten sleep, or workload could drive both. A later class time may or may not help. A better test would randomly assign sections to different start times and compare stress.",
+   "check": [
+    "I called 6.1 a statistic and the true campus mean a parameter",
+    "I named a specific reason the 500 may not represent the 12,000",
+    "I said the survey is correlational and cannot establish cause",
+    "I suggested what kind of evidence would support the recommendation"
+   ]
+  }
+ ]
+}

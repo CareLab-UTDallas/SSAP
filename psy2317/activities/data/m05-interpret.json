@@ -1,0 +1,58 @@
+{
+ "type": "quiz",
+ "title": "Module 5 Interpretation Check",
+ "budget": "8",
+ "intro": "Each item gives you a short research situation. Decide what the evidence supports.",
+ "items": [
+  {
+   "q": "A population has sigma = 10. What is the standard error for samples of n = 64?",
+   "o": [
+    "1.25",
+    "10",
+    "0.16",
+    "5"
+   ],
+   "why": "SE = 10 divided by the square root of 64, which is 10/8 = 1.25."
+  },
+  {
+   "q": "Population mean is 25, sigma = 10, and n = 64. A sample has M = 27.5. What is its z score?",
+   "o": [
+    "+2.00",
+    "+0.25",
+    "+1.25",
+    "+2.50"
+   ],
+   "why": "z = (27.5 minus 25)/1.25 = 2.00."
+  },
+  {
+   "q": "Scores in a skewed population have mean 100 and SD 15. For samples of n = 4 and n = 100, in which case are the sample means more normally distributed?",
+   "o": [
+    "n = 100",
+    "n = 4",
+    "They are equal",
+    "Neither is normal"
+   ],
+   "why": "The central limit theorem applies more strongly as n grows."
+  },
+  {
+   "q": "Which sample mean is more surprising if the population mean is 100 and sigma is 15?",
+   "o": [
+    "M = 108 with n = 36",
+    "M = 108 with n = 9",
+    "They are equally surprising",
+    "Neither is surprising"
+   ],
+   "why": "With n = 36, SE = 2.5 and z = 3.2. With n = 9, SE = 5 and z = 1.6. The same difference is more surprising with a larger sample."
+  },
+  {
+   "q": "A researcher says, \"My sample SD was 12, so the standard error is 12.\" What is the error?",
+   "o": [
+    "The standard error is the SD divided by the square root of n, not the SD itself",
+    "No error",
+    "The standard error should be 24",
+    "The standard error is the variance"
+   ],
+   "why": "The standard error is smaller than the SD whenever n exceeds 1."
+  }
+ ]
+}

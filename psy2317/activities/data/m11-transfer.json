@@ -1,0 +1,41 @@
+{
+ "type": "transfer",
+ "title": "Module 11 Challenge: When Does Practice Pay Off?",
+ "budget": "15",
+ "scenario": "<p>A researcher compares two study methods across two test delays with 10 students in each of the four cells. The numbers below are illustrative. Mean test scores were 16 (reread, immediate), 8 (reread, one week), 14 (retrieval, immediate), and 12 (retrieval, one week). With MS within = 15 and df within = 36, the ANOVA gave F for method = 0.67 (p = .42), F for delay = 16.67 (p &lt; .001), and F for the interaction = 6.00 (p = .019).</p>",
+ "parts": [
+  {
+   "type": "mc",
+   "q": "Which statement about main effects is correct?",
+   "o": [
+    "Delay has a main effect and method does not",
+    "Method has a main effect and delay does not",
+    "Both have main effects",
+    "Neither has a main effect"
+   ],
+   "why": "Delay F = 16.67 is significant. Method F = .67 is not."
+  },
+  {
+   "type": "mc",
+   "q": "The significant interaction means",
+   "o": [
+    "The advantage of retrieval practice depends on how long the delay is",
+    "Retrieval practice always beats rereading",
+    "Delay matters equally for both methods",
+    "The two factors are unrelated"
+   ],
+   "why": "Rereading looked better immediately (16 vs 14), but retrieval looked better after a week (12 vs 8)."
+  },
+  {
+   "type": "write",
+   "q": "Write two or three sentences for a student audience explaining what the results mean for how to study. Include the interaction, why the method main effect is misleading by itself, and one caution about the data.",
+   "model": "The best study method depends on when the test is. When the test came right after studying, rereading scored a little higher (16 vs 14). After a week, retrieval practice scored much higher (12 vs 8). The overall method effect is small because these opposite patterns average out, which is why a main effect alone would mislead. If the exam is days or weeks away, the interaction suggests practicing retrieval will pay off. The numbers here are illustrative and only 10 students were in each cell. A real conclusion would rest on replication, and it would also need to rule out other differences between students.",
+   "check": [
+    "I described the interaction using the cell means",
+    "I explained why the method main effect hides the pattern",
+    "I tied the result to a practical recommendation",
+    "I mentioned a limitation of the data"
+   ]
+  }
+ ]
+}

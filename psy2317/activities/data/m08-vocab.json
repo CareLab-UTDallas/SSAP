@@ -1,0 +1,108 @@
+{
+ "type": "quiz",
+ "title": "Module 8 Vocabulary Check",
+ "budget": "10",
+ "intro": "Answer each item. Feedback comes right away. Items you miss come back for a retry round.",
+ "items": [
+  {
+   "q": "An independent-measures design uses",
+   "o": [
+    "Separate groups of participants in each condition",
+    "The same participants in each condition",
+    "Matched pairs",
+    "A single sample"
+   ],
+   "why": "Different people provide the scores in each condition, so the scores are independent."
+  },
+  {
+   "q": "The null hypothesis for an independent-measures t test is typically",
+   "o": [
+    "mu1 minus mu2 equals zero",
+    "mu1 equals M1",
+    "M1 equals M2",
+    "mu equals zero"
+   ],
+   "why": "It says the two populations have the same mean."
+  },
+  {
+   "q": "Degrees of freedom for the independent-measures t are",
+   "o": [
+    "n1 plus n2 minus 2",
+    "n1 plus n2",
+    "n minus 1",
+    "n1 times n2"
+   ],
+   "why": "Each group contributes n minus 1 degrees of freedom, so the total is n1 plus n2 minus 2."
+  },
+  {
+   "q": "The pooled variance is",
+   "o": [
+    "A weighted average of the two sample variances",
+    "The sum of the two means",
+    "The difference between SS values",
+    "The larger of the two variances"
+   ],
+   "why": "It combines information from both samples into one estimate of the common population variance."
+  },
+  {
+   "q": "Homogeneity of variance means",
+   "o": [
+    "The two populations have equal variances",
+    "The two samples have equal means",
+    "The scores are normally distributed",
+    "The sample sizes are equal"
+   ],
+   "why": "Pooling is justified only when the variances are similar."
+  },
+  {
+   "q": "The standard error of the difference between means",
+   "o": [
+    "Estimates how far a difference between two sample means typically falls from the true difference",
+    "Equals the SD of the scores",
+    "Is always smaller than either sample SE",
+    "Is the difference itself"
+   ],
+   "why": "It is the denominator of the independent-measures t."
+  },
+  {
+   "q": "If the two groups have unequal sample sizes and very different variances, a good practice is to",
+   "o": [
+    "Use a version of the test that does not assume equal variances",
+    "Use the pooled formula anyway",
+    "Delete the larger group",
+    "Switch to a z test"
+   ],
+   "why": "Welch's test adjusts the degrees of freedom and does not pool variances."
+  },
+  {
+   "q": "Cohen's d for two independent groups divides the mean difference by",
+   "o": [
+    "The pooled standard deviation",
+    "The standard error of the difference",
+    "The larger group mean",
+    "n"
+   ],
+   "why": "The pooled SD puts the difference in standard deviation units, independent of sample size."
+  },
+  {
+   "q": "A larger difference between sample means, with all else equal, will",
+   "o": [
+    "Increase the t statistic",
+    "Decrease the t statistic",
+    "Not affect t",
+    "Change the degrees of freedom"
+   ],
+   "why": "The mean difference is the numerator of t."
+  },
+  {
+   "q": "Random assignment of participants to two groups helps ensure that",
+   "o": [
+    "The groups are comparable before treatment, supporting causal inference",
+    "The samples are representative of the population",
+    "The variances are equal",
+    "The null hypothesis is true"
+   ],
+   "why": "It controls for pre-existing differences on average, which is what gives the design its causal leverage."
+  }
+ ]
+}

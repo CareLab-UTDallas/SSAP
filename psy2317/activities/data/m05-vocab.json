@@ -1,0 +1,108 @@
+{
+ "type": "quiz",
+ "title": "Module 5 Vocabulary Check",
+ "budget": "10",
+ "intro": "Answer each item. Feedback comes right away. Items you miss come back for a retry round.",
+ "items": [
+  {
+   "q": "The distribution of sample means is",
+   "o": [
+    "The distribution of means from all possible samples of a given size",
+    "The distribution of scores in one sample",
+    "The population distribution",
+    "The distribution of z scores"
+   ],
+   "why": "It is a theoretical distribution. Each point is a sample mean, not a person."
+  },
+  {
+   "q": "The standard error of the mean is",
+   "o": [
+    "The standard deviation of the distribution of sample means",
+    "The standard deviation of the population",
+    "The mean of the sample",
+    "The difference between two means"
+   ],
+   "why": "It measures how much sample means typically differ from the population mean."
+  },
+  {
+   "q": "The standard error is computed as",
+   "o": [
+    "Population SD divided by the square root of n",
+    "Population SD times the square root of n",
+    "Population SD divided by n",
+    "The variance divided by 2"
+   ],
+   "why": "SE = sigma divided by square root of n. Larger samples give smaller standard errors."
+  },
+  {
+   "q": "The central limit theorem says that the distribution of sample means",
+   "o": [
+    "Approaches a normal shape as n increases, whatever the population shape",
+    "Always equals the population distribution",
+    "Is always skewed",
+    "Has a mean equal to zero"
+   ],
+   "why": "With n of about 30 or more, the distribution of means is close to normal even for skewed populations."
+  },
+  {
+   "q": "The mean of the distribution of sample means equals",
+   "o": [
+    "The population mean",
+    "The sample mean of one sample",
+    "Zero",
+    "The standard error"
+   ],
+   "why": "Sample means are unbiased. They center on the population mean."
+  },
+  {
+   "q": "If you quadruple the sample size, the standard error",
+   "o": [
+    "Is cut in half",
+    "Is cut to one quarter",
+    "Doubles",
+    "Does not change"
+   ],
+   "why": "The square root of 4 is 2, so SE is divided by 2."
+  },
+  {
+   "q": "Which is true of a larger sample compared with a smaller one drawn from the same population?",
+   "o": [
+    "Its mean is likely closer to the population mean",
+    "Its mean is always exactly the population mean",
+    "Its scores are less variable",
+    "Its population SD is smaller"
+   ],
+   "why": "Larger samples have smaller standard errors, so their means tend to land closer to the parameter."
+  },
+  {
+   "q": "A z score for a sample mean is computed as",
+   "o": [
+    "(M minus mu) divided by the standard error",
+    "(X minus mu) divided by sigma",
+    "M divided by sigma",
+    "(M minus mu) times n"
+   ],
+   "why": "The standard error replaces the standard deviation because we are locating a mean in the distribution of means."
+  },
+  {
+   "q": "Sampling error is",
+   "o": [
+    "The natural difference between a sample statistic and its parameter",
+    "A mistake made by the researcher",
+    "Bias in the measure",
+    "The same as a sample SD"
+   ],
+   "why": "It is unavoidable but measurable, and the standard error quantifies it."
+  },
+  {
+   "q": "The distribution of sample means is less variable than the population because",
+   "o": [
+    "Averaging cancels out some extreme scores",
+    "Samples are chosen without error",
+    "The mean is always correct",
+    "Variances are always smaller"
+   ],
+   "why": "Extreme high and low scores offset one another within a sample mean."
+  }
+ ]
+}

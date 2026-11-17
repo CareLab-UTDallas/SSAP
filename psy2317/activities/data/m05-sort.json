@@ -1,0 +1,48 @@
+{
+ "type": "sort",
+ "title": "Module 5 Misconception Sort",
+ "budget": "8",
+ "intro": "Decide whether each statement is true, false, or depends. These are the misconceptions that cost students points on exams.",
+ "items": [
+  {
+   "s": "The standard error and the standard deviation are the same thing.",
+   "t": "F",
+   "why": "The standard deviation describes spread of scores. The standard error describes spread of sample means."
+  },
+  {
+   "s": "Increasing sample size reduces the standard error.",
+   "t": "T",
+   "why": "SE = sigma divided by square root of n, so it shrinks as n grows."
+  },
+  {
+   "s": "The central limit theorem means that any sample of scores becomes normal if it is large enough.",
+   "t": "F",
+   "why": "It concerns the distribution of sample means. A large sample of scores keeps the shape of the population."
+  },
+  {
+   "s": "Sample means from a skewed population can still form a nearly normal distribution when n is large.",
+   "t": "T",
+   "why": "This is the central limit theorem in action."
+  },
+  {
+   "s": "A sample mean will equal the population mean if the sample is random.",
+   "t": "F",
+   "why": "A random sample mean is unbiased, but any single sample mean will differ from mu by sampling error."
+  },
+  {
+   "s": "To cut the standard error in half you need twice as many participants.",
+   "t": "F",
+   "why": "You need four times as many participants because SE depends on the square root of n."
+  },
+  {
+   "s": "A sample of 30 is always large enough for the central limit theorem to work.",
+   "t": "D",
+   "why": "Thirty is a common rule of thumb, but extreme skew can require more. For a normal population any n works."
+  },
+  {
+   "s": "The distribution of sample means has the same mean as the population.",
+   "t": "T",
+   "why": "Sample means center on mu."
+  }
+ ]
+}

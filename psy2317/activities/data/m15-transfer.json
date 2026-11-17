@@ -1,0 +1,41 @@
+{
+ "type": "transfer",
+ "title": "Module 15 Challenge: Which Test, and What Does It Say?",
+ "budget": "20",
+ "scenario": "<p>A psychology department asks 60 students whether they studied for the last exam in a group or alone, and records whether each passed. In the group condition, 20 of 30 passed. Alone, 10 of 30 passed. The department head says, \"Group study obviously works. Look at the percentages.\" A faculty member answers, \"Percentages can be misleading at small samples.\"</p>",
+ "parts": [
+  {
+   "type": "mc",
+   "q": "Which test examines whether study setting and passing are related?",
+   "o": [
+    "Chi-square test of independence",
+    "Independent-measures t test",
+    "Pearson correlation",
+    "One-way ANOVA"
+   ],
+   "why": "Both variables are categorical, and the data are frequencies."
+  },
+  {
+   "type": "mc",
+   "q": "The test gives chi-square(1, N = 60) = 6.67, p = .010. What does it show?",
+   "o": [
+    "The two variables are related in this sample, which is unlikely if they were independent",
+    "Group study causes passing",
+    "Group study works for every student",
+    "The odds ratio is 1"
+   ],
+   "why": "Students were not randomly assigned to settings, so the association does not show causation."
+  },
+  {
+   "type": "write",
+   "q": "Write a short results paragraph that includes the test, an effect size, the odds ratio, and a cautious interpretation. Then identify one assumption of the test that holds here.",
+   "model": "A chi-square test of independence showed an association between study setting and passing, chi-square(1, N = 60) = 6.67, p = .010. Of the students who studied in a group, 67 percent passed, compared with 33 percent of those who studied alone. The association was medium in size, phi = .33. The odds of passing were four times as high for group studiers (odds of 2.0 versus 0.5, odds ratio = 4.0). Students chose their own study setting, so the association does not show that group study caused the higher pass rate. Motivated students may be more likely to join groups. The assumption of expected counts of at least 5 holds, since each expected count is 15, and each student appears in only one cell.",
+   "check": [
+    "I reported chi-square, df, N, and p",
+    "I included an effect size and the odds ratio",
+    "I avoided causal language",
+    "I checked at least one assumption"
+   ]
+  }
+ ]
+}

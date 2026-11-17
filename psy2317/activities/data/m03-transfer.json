@@ -1,0 +1,40 @@
+{
+ "type": "transfer",
+ "title": "Module 3 Challenge: What Does the Correlation Tell You?",
+ "budget": "12",
+ "scenario": "<p>A researcher studying 40 undergraduates reports r = +.45 between weekly hours of social media use and self-reported loneliness. A news site writes: \"Social media makes students lonely. The study found that 45 percent of loneliness comes from social media use.\"</p>",
+ "parts": [
+  {
+   "type": "mc",
+   "q": "What proportion of variability in loneliness is accounted for by social media use in this linear relationship?",
+   "o": [
+    "About .20",
+    ".45",
+    ".55",
+    ".67"
+   ],
+   "why": ".45 squared = .2025. About 20 percent, not 45 percent."
+  },
+  {
+   "type": "mc",
+   "q": "Which statement about the direction of this relationship is correct?",
+   "o": [
+    "Students who use more social media tend to report more loneliness",
+    "Students who use more social media report less loneliness",
+    "Social media use has no connection to loneliness",
+    "Loneliness decreases as r increases"
+   ],
+   "why": "The positive sign means the two variables rise together on average."
+  },
+  {
+   "type": "write",
+   "q": "The headline makes two errors. Identify each, and write a corrected one-sentence summary of what the study actually found.",
+   "model": "The first error is the causal claim. A correlation of .45 from a survey cannot show that social media causes loneliness. Lonely students may turn to social media more, or a third variable such as stress could affect both. The second error is treating r as a percentage. The proportion of shared variability is r squared, .45 squared = about .20, so about 20 percent of the variability in loneliness is linked to social media use. A corrected statement is \"Across 40 students, more hours of social media use went along with higher loneliness, and the two variables shared about 20 percent of their variability.\"",
+   "check": [
+    "I rejected the causal claim and named a reverse direction or third variable",
+    "I corrected 45 percent to r squared, about 20 percent",
+    "My rewrite described association rather than cause"
+   ]
+  }
+ ]
+}

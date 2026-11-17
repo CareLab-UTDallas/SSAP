@@ -1,0 +1,108 @@
+{
+ "type": "quiz",
+ "title": "Module 6 Vocabulary Check",
+ "budget": "10",
+ "intro": "Answer each item. Feedback comes right away. Items you miss come back for a retry round.",
+ "items": [
+  {
+   "q": "The null hypothesis states that",
+   "o": [
+    "There is no effect or no difference in the population",
+    "The treatment works",
+    "The sample mean equals the population mean exactly",
+    "The alpha level is zero"
+   ],
+   "why": "The null is the claim we test against. It says any difference is due to sampling error."
+  },
+  {
+   "q": "The alternative hypothesis states that",
+   "o": [
+    "There is an effect or difference in the population",
+    "The null is true",
+    "The sample is biased",
+    "The p value is large"
+   ],
+   "why": "It is the research claim. We never prove it. We decide whether the data are inconsistent with the null."
+  },
+  {
+   "q": "The alpha level is",
+   "o": [
+    "The probability of rejecting a true null hypothesis that the researcher is willing to accept",
+    "The probability the null is true",
+    "The size of the effect",
+    "The sample size"
+   ],
+   "why": "Alpha is set before the study. A common value is .05."
+  },
+  {
+   "q": "The critical region consists of",
+   "o": [
+    "Sample outcomes so unlikely under the null that we reject it",
+    "The most likely outcomes under the null",
+    "All possible sample means",
+    "The area in the middle of the distribution"
+   ],
+   "why": "If the test statistic lands in the critical region, the result is statistically significant."
+  },
+  {
+   "q": "A Type I error occurs when",
+   "o": [
+    "The null is true and we reject it",
+    "The null is false and we fail to reject it",
+    "The null is false and we reject it",
+    "The null is true and we retain it"
+   ],
+   "why": "A false alarm. Its probability equals alpha when the null is true."
+  },
+  {
+   "q": "A Type II error occurs when",
+   "o": [
+    "The null is false and we fail to reject it",
+    "The null is true and we reject it",
+    "We use the wrong test",
+    "Alpha is too small"
+   ],
+   "why": "A miss. Its probability is beta."
+  },
+  {
+   "q": "Statistical power is",
+   "o": [
+    "The probability of rejecting the null when it is false",
+    "The probability of a Type I error",
+    "The size of the effect",
+    "Alpha minus beta"
+   ],
+   "why": "Power equals 1 minus beta. Researchers aim for about .80."
+  },
+  {
+   "q": "Cohen's d measures",
+   "o": [
+    "The size of an effect in standard deviation units",
+    "Whether the result is significant",
+    "The probability of the null",
+    "The sample size"
+   ],
+   "why": "It is a mean difference divided by a standard deviation. Benchmarks of .2, .5, and .8 are conventionally small, medium, and large."
+  },
+  {
+   "q": "A 95 percent confidence interval for a mean is",
+   "o": [
+    "A range of plausible values for the population mean",
+    "The range containing 95 percent of the scores",
+    "The range containing 95 percent of the sample means",
+    "A guarantee the mean is inside"
+   ],
+   "why": "It is built from the sample mean and its standard error, and it expresses uncertainty about the parameter."
+  },
+  {
+   "q": "A p value is",
+   "o": [
+    "The probability of results at least this extreme if the null were true",
+    "The probability the null is true",
+    "The probability the result will replicate",
+    "The size of the effect"
+   ],
+   "why": "It is a statement about the data given the null, not about the null given the data."
+  }
+ ]
+}

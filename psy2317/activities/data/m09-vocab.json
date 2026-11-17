@@ -1,0 +1,108 @@
+{
+ "type": "quiz",
+ "title": "Module 9 Vocabulary Check",
+ "budget": "10",
+ "intro": "Answer each item. Feedback comes right away. Items you miss come back for a retry round.",
+ "items": [
+  {
+   "q": "A repeated-measures design",
+   "o": [
+    "Measures the same participants under both conditions",
+    "Uses two separate groups",
+    "Has no control condition",
+    "Requires random sampling"
+   ],
+   "why": "Each person serves as his or her own comparison, which removes stable individual differences from the error."
+  },
+  {
+   "q": "A matched-subjects design",
+   "o": [
+    "Pairs participants on a relevant variable and assigns one of each pair to each condition",
+    "Uses the same people twice",
+    "Uses unmatched random groups",
+    "Has no pairs"
+   ],
+   "why": "Matched pairs are treated like repeated measures because each pair's scores are related."
+  },
+  {
+   "q": "For a related-samples t test, the analysis is performed on",
+   "o": [
+    "The difference scores (D)",
+    "The raw scores of each group separately",
+    "The pooled variance",
+    "The sums of squares between groups"
+   ],
+   "why": "The test reduces two scores per person to one difference score and runs a one-sample t on those differences."
+  },
+  {
+   "q": "Degrees of freedom for a related-samples t test are",
+   "o": [
+    "n minus 1, where n is the number of pairs or difference scores",
+    "n1 plus n2 minus 2",
+    "2n minus 2",
+    "n"
+   ],
+   "why": "df depends on the number of difference scores."
+  },
+  {
+   "q": "The null hypothesis for a related-samples t is",
+   "o": [
+    "The mean difference in the population is zero",
+    "The two sample means are equal",
+    "The correlation is zero",
+    "The variances are equal"
+   ],
+   "why": "Written mu D = 0."
+  },
+  {
+   "q": "A major advantage of a related-samples design is",
+   "o": [
+    "It removes individual differences from the error term, which often increases power",
+    "It needs more participants",
+    "It guarantees equal variances",
+    "It eliminates order effects"
+   ],
+   "why": "People differ in stable ways. Comparing each person with himself or herself cancels that variability."
+  },
+  {
+   "q": "A potential problem with repeated measures is",
+   "o": [
+    "Order effects such as practice or fatigue",
+    "Unequal group sizes",
+    "Lack of random sampling",
+    "Pooled variance"
+   ],
+   "why": "Counterbalancing the order of conditions addresses this threat."
+  },
+  {
+   "q": "Cohen's d for a related-samples t is commonly computed as",
+   "o": [
+    "Mean difference divided by the SD of the difference scores",
+    "Mean difference divided by the standard error",
+    "t divided by n",
+    "Mean difference divided by the sample mean"
+   ],
+   "why": "It expresses the average change in units of the standard deviation of the changes."
+  },
+  {
+   "q": "The assumption of independence for an independent-measures t means",
+   "o": [
+    "Each score is unrelated to every other score",
+    "The two groups are the same size",
+    "The group means are equal",
+    "The data are normal"
+   ],
+   "why": "A violation, such as measuring the same people twice, requires a different test."
+  },
+  {
+   "q": "A confidence interval for the mean difference that does not include zero indicates that",
+   "o": [
+    "A two-tailed test at the matching alpha would reject the null",
+    "The sample is biased",
+    "The effect is large",
+    "The null is true"
+   ],
+   "why": "Zero is not a plausible value for the true difference."
+  }
+ ]
+}

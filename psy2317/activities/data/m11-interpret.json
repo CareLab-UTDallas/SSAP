@@ -1,0 +1,58 @@
+{
+ "type": "quiz",
+ "title": "Module 11 Interpretation Check",
+ "budget": "8",
+ "intro": "Each item gives you a short research situation. Decide what the evidence supports.",
+ "items": [
+  {
+   "q": "A study crosses study method (reread, retrieval practice) with test delay (immediate, one week). Rereading is better immediately, and retrieval practice is better after a week. The lines on the graph cross. What does this show?",
+   "o": [
+    "An interaction between study method and delay",
+    "Only a main effect of method",
+    "Only a main effect of delay",
+    "No effects"
+   ],
+   "why": "The effect of method reverses depending on the delay. That is the signature of an interaction."
+  },
+  {
+   "q": "Illustrative cell means (n = 10 per cell): reread-immediate 16, reread-week 8, retrieval-immediate 14, retrieval-week 12. What are the marginal means for method?",
+   "o": [
+    "Reread 12, retrieval 13",
+    "Reread 16, retrieval 14",
+    "Reread 8, retrieval 12",
+    "Reread 15, retrieval 10"
+   ],
+   "why": "Average each row: (16 + 8)/2 = 12 and (14 + 12)/2 = 13."
+  },
+  {
+   "q": "Using those cell means, what are the marginal means for delay?",
+   "o": [
+    "Immediate 15, week 10",
+    "Immediate 12, week 13",
+    "Immediate 16, week 8",
+    "Immediate 14, week 12"
+   ],
+   "why": "Average each column: (16 + 14)/2 = 15 and (8 + 12)/2 = 10."
+  },
+  {
+   "q": "With MS within = 15 and df within = 36, SS for delay is 250 with df = 1. What is F for delay?",
+   "o": [
+    "16.67",
+    "250",
+    "1.00",
+    "0.07"
+   ],
+   "why": "MS delay = 250/1 = 250 and F = 250/15 = 16.67. The critical F(1, 36) at .05 is 4.11."
+  },
+  {
+   "q": "For the same data, F for method is .67 (ns) while the interaction F is 6.00 (p = .019). What is the best interpretation?",
+   "o": [
+    "Method has no overall effect, but its effect depends on the delay",
+    "Method does not matter",
+    "Delay does not matter",
+    "The study failed"
+   ],
+   "why": "The small main effect of method hides opposite effects at the two delays. The interaction is the story."
+  }
+ ]
+}

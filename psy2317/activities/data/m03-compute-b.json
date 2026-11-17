@@ -1,0 +1,7 @@
+{
+ "type": "compute",
+ "title": "Module 3 Practice: The Pearson Correlation",
+ "budget": "20",
+ "gen": "corr",
+ "intro": "Compute SP, SS, and r from a small set of paired scores, then interpret the result."
+}

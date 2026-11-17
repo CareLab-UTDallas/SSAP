@@ -1,0 +1,108 @@
+{
+ "type": "quiz",
+ "title": "Module 14 Vocabulary Check",
+ "budget": "10",
+ "intro": "Answer each item. Feedback comes right away. Items you miss come back for a retry round.",
+ "items": [
+  {
+   "q": "The regression line is the line that",
+   "o": [
+    "Minimizes the sum of squared prediction errors",
+    "Passes through the most points",
+    "Is the same as the median",
+    "Has a slope of 1"
+   ],
+   "why": "This is the least squares criterion."
+  },
+  {
+   "q": "In the equation Y-hat = bX + a, b is",
+   "o": [
+    "The slope, the predicted change in Y for each one unit increase in X",
+    "The intercept",
+    "The correlation",
+    "The standard error"
+   ],
+   "why": "The slope is computed as SP divided by SS of X."
+  },
+  {
+   "q": "The intercept a is",
+   "o": [
+    "The predicted value of Y when X is zero",
+    "The slope",
+    "The correlation",
+    "The average of X"
+   ],
+   "why": "It is computed as the mean of Y minus b times the mean of X."
+  },
+  {
+   "q": "A residual is",
+   "o": [
+    "The difference between an observed Y and the predicted Y",
+    "The slope",
+    "The correlation",
+    "The predictor"
+   ],
+   "why": "Residuals show prediction error for each case."
+  },
+  {
+   "q": "The standard error of estimate measures",
+   "o": [
+    "The typical distance between actual Y values and the regression line",
+    "The variability in X",
+    "The slope",
+    "The correlation"
+   ],
+   "why": "Smaller values mean better prediction."
+  },
+  {
+   "q": "R squared in regression is",
+   "o": [
+    "The proportion of variability in Y accounted for by the predictor(s)",
+    "The slope squared",
+    "The probability of the null",
+    "The standard error"
+   ],
+   "why": "In simple regression it equals r squared."
+  },
+  {
+   "q": "The regression line always passes through",
+   "o": [
+    "The point (mean of X, mean of Y)",
+    "The origin",
+    "The highest point",
+    "The median of both variables"
+   ],
+   "why": "This follows from how the intercept is computed."
+  },
+  {
+   "q": "Multiple regression uses",
+   "o": [
+    "Two or more predictors to predict one outcome",
+    "One predictor",
+    "Two outcomes",
+    "No predictors"
+   ],
+   "why": "Each coefficient reflects the unique contribution of that predictor with the others held constant."
+  },
+  {
+   "q": "Multicollinearity occurs when",
+   "o": [
+    "Predictors are highly correlated with each other",
+    "Predictors are uncorrelated with Y",
+    "The outcome is nominal",
+    "The sample is small"
+   ],
+   "why": "It makes the individual coefficients unstable and hard to interpret."
+  },
+  {
+   "q": "Predicting Y for an X value far outside the range of the data is",
+   "o": [
+    "Extrapolation, which is risky",
+    "Interpolation, which is safe",
+    "Impossible",
+    "Standardization"
+   ],
+   "why": "The linear pattern may not continue beyond the observed range."
+  }
+ ]
+}

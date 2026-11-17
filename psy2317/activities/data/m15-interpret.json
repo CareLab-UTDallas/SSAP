@@ -1,0 +1,58 @@
+{
+ "type": "quiz",
+ "title": "Module 15 Interpretation Check",
+ "budget": "8",
+ "intro": "Each item gives you a short research situation. Decide what the evidence supports.",
+ "items": [
+  {
+   "q": "Sixty students choose a study setting: 20 of 30 who studied in a group passed, and 10 of 30 who studied alone passed. What is the expected frequency of passing in each cell if setting and passing were independent?",
+   "o": [
+    "15",
+    "20",
+    "10",
+    "30"
+   ],
+   "why": "Row total 30 times column total 30 divided by N 60 = 15."
+  },
+  {
+   "q": "Using observed 20, 10, 10, 20 and expected 15 in each cell, what is chi-square?",
+   "o": [
+    "6.67",
+    "3.33",
+    "10.00",
+    "1.67"
+   ],
+   "why": "Each cell contributes 25/15 = 1.667, and four cells give 6.67."
+  },
+  {
+   "q": "For a 2 by 2 table the degrees of freedom are 1 and the critical value at .05 is 3.84. What is the decision?",
+   "o": [
+    "Reject the null. Setting and passing are related",
+    "Retain the null. They are independent",
+    "Retain the null since N is small",
+    "Reject the null since the odds ratio is 1"
+   ],
+   "why": "6.67 exceeds 3.84 (p = .0098)."
+  },
+  {
+   "q": "What is the odds ratio for group study versus studying alone?",
+   "o": [
+    "4.0",
+    "2.0",
+    "0.25",
+    "1.0"
+   ],
+   "why": "Group odds = 20/10 = 2. Alone odds = 10/20 = .5. The ratio is 2/.5 = 4."
+  },
+  {
+   "q": "What is phi for these data?",
+   "o": [
+    "About .33",
+    "About .67",
+    "About .11",
+    "About 6.67"
+   ],
+   "why": "Phi = the square root of 6.67/60 = .333, a medium association."
+  }
+ ]
+}

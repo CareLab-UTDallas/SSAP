@@ -1,0 +1,48 @@
+{
+ "type": "sort",
+ "title": "Module 11 Misconception Sort",
+ "budget": "8",
+ "intro": "Decide whether each statement is true, false, or depends. These are the misconceptions that cost students points on exams.",
+ "items": [
+  {
+   "s": "If there is a significant interaction, you should interpret the main effects first.",
+   "t": "F",
+   "why": "A significant interaction means the factors work together, so the main effects can be misleading. Interpret the pattern of cell means first."
+  },
+  {
+   "s": "You can have a significant interaction with no significant main effects.",
+   "t": "T",
+   "why": "A crossover pattern can cancel out in the marginal means."
+  },
+  {
+   "s": "A main effect for factor A tells you how A affects the outcome at every level of B.",
+   "t": "F",
+   "why": "It tells you the average effect across B. The effect may differ by level of B."
+  },
+  {
+   "s": "In a two-factor ANOVA, the same MS within is the denominator for all three F ratios.",
+   "t": "T",
+   "why": "The error term comes from variability within cells."
+  },
+  {
+   "s": "A 3 by 4 design has 7 cells.",
+   "t": "F",
+   "why": "It has 3 times 4 = 12 cells."
+  },
+  {
+   "s": "Parallel lines on an interaction plot indicate no interaction.",
+   "t": "T",
+   "why": "The effect of one factor is the same at each level of the other."
+  },
+  {
+   "s": "Adding a second factor always increases the F for the first factor.",
+   "t": "D",
+   "why": "It can, because the second factor removes variance that would otherwise be error, but only if the new factor accounts for real variability."
+  },
+  {
+   "s": "A significant interaction proves that one factor causes the effect of the other.",
+   "t": "F",
+   "why": "It describes dependence in the pattern of means. Causal claims still rely on design and random assignment."
+  }
+ ]
+}

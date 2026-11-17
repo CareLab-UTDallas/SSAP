@@ -1,0 +1,58 @@
+{
+ "type": "quiz",
+ "title": "Module 10 Interpretation Check",
+ "budget": "8",
+ "intro": "Each item gives you a short research situation. Decide what the evidence supports.",
+ "items": [
+  {
+   "q": "Three groups of 10 have means 10, 12, and 15, and SS within = 270. What is MS within?",
+   "o": [
+    "10",
+    "27",
+    "9",
+    "90"
+   ],
+   "why": "df within = 30 minus 3 = 27, so MS within = 270/27 = 10."
+  },
+  {
+   "q": "SS between for those groups is 126.67. What is MS between?",
+   "o": [
+    "63.33",
+    "126.67",
+    "42.2",
+    "10"
+   ],
+   "why": "df between = 3 minus 1 = 2, so MS between = 126.67/2 = 63.33."
+  },
+  {
+   "q": "What is F, and is it significant at alpha = .05?",
+   "o": [
+    "F = 6.33 with df (2, 27). It exceeds the critical value of 3.35, so yes",
+    "F = 0.16, no",
+    "F = 6.33, but it is not significant",
+    "F = 63.3, yes"
+   ],
+   "why": "F = 63.33/10 = 6.33. The critical F(2, 27) at .05 is 3.354. The exact p is about .006."
+  },
+  {
+   "q": "What is eta squared?",
+   "o": [
+    "About .32",
+    "About .06",
+    "About .67",
+    "About 6.33"
+   ],
+   "why": "SS total = 126.67 + 270 = 396.67, so eta squared = 126.67/396.67 = .319, a large effect by common benchmarks."
+  },
+  {
+   "q": "After a significant F, the researcher says \"all three groups differ.\" What should be done?",
+   "o": [
+    "Run a post hoc test to see which pairs differ",
+    "Nothing, since F is significant",
+    "Rerun the ANOVA with alpha = .10",
+    "Use three independent t tests at .05"
+   ],
+   "why": "The omnibus test is silent about which pairs differ."
+  }
+ ]
+}

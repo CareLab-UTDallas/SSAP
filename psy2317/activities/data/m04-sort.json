@@ -1,0 +1,48 @@
+{
+ "type": "sort",
+ "title": "Module 4 Misconception Sort",
+ "budget": "8",
+ "intro": "Decide whether each statement is true, false, or depends. These are the misconceptions that cost students points on exams.",
+ "items": [
+  {
+   "s": "A negative z score means the data point is wrong or impossible.",
+   "t": "F",
+   "why": "A negative z simply marks a score below the mean."
+  },
+  {
+   "s": "Converting scores to z scores makes a skewed distribution normal.",
+   "t": "F",
+   "why": "Standardizing is a linear transformation. The shape stays exactly the same."
+  },
+  {
+   "s": "A z score of +1.50 on one test and +1.50 on another test mean the same relative standing in each group.",
+   "t": "T",
+   "why": "Each z is measured against its own distribution, so both scores sit 1.5 SDs above their group mean."
+  },
+  {
+   "s": "The proportion above z = +1.00 equals the proportion below z = −1.00 in a normal distribution.",
+   "t": "T",
+   "why": "The normal curve is symmetric."
+  },
+  {
+   "s": "The probability of any exact single score in a continuous distribution is large.",
+   "t": "F",
+   "why": "For a continuous variable, the area at a single point is zero. Probabilities are for ranges of scores."
+  },
+  {
+   "s": "You can use the Unit Normal Table for any distribution.",
+   "t": "F",
+   "why": "The table applies only to normal distributions. For skewed data the proportions will be wrong."
+  },
+  {
+   "s": "Whether the body or the tail column answers a question about the proportion above a positive z",
+   "t": "D",
+   "why": "For a positive z, the area above is the tail. For a negative z, the area above is the body. Sketch the curve first."
+  },
+  {
+   "s": "A raw score of 70 on one test beats a raw score of 60 on a different test.",
+   "t": "D",
+   "why": "It depends on each test's mean and SD. A 70 against a mean of 80 and SD of 5 has z = −2, while a 60 against a mean of 50 and SD of 5 has z = +2."
+  }
+ ]
+}

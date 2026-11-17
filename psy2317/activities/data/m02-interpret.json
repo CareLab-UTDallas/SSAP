@@ -1,0 +1,58 @@
+{
+ "type": "quiz",
+ "title": "Module 2 Interpretation Check",
+ "budget": "8",
+ "intro": "Each item gives you a short research situation. Decide what the evidence supports.",
+ "items": [
+  {
+   "q": "Eight response times (seconds) are 2, 3, 3, 4, 5, 5, 6, and 40. The mean is 8.5 and the median is 4.5. Which summary describes a typical response best?",
+   "o": [
+    "The median, because one extreme score pulls the mean upward",
+    "The mean, because it uses every score",
+    "The mode, because it is largest",
+    "Neither, because the data are nominal"
+   ],
+   "why": "The score of 40 distorts the mean. The median stays near where most responses fall."
+  },
+  {
+   "q": "Two classes both have a mean of 75 on a quiz. Class A has SD = 3 and Class B has SD = 12. Which statement is correct?",
+   "o": [
+    "Class A scores are tightly clustered and Class B scores are widely spread",
+    "Class B did better",
+    "Class A has more students",
+    "The classes have identical score distributions"
+   ],
+   "why": "Equal means can hide very different spreads. The standard deviation shows how much scores differ from that mean."
+  },
+  {
+   "q": "A teacher adds 5 bonus points to every exam score. What happens to the mean and standard deviation?",
+   "o": [
+    "The mean rises by 5 and the SD is unchanged",
+    "Both rise by 5",
+    "The mean is unchanged and the SD rises by 5",
+    "Both are unchanged"
+   ],
+   "why": "Every score moves up together, so the center moves and the spread does not."
+  },
+  {
+   "q": "A histogram has a long tail to the left, and most scores are bunched at the high end. The skew is",
+   "o": [
+    "Negative",
+    "Positive",
+    "Zero",
+    "Bimodal"
+   ],
+   "why": "Skew is named for the tail. A long left tail means negative skew, and the mean falls below the median."
+  },
+  {
+   "q": "Scores are 4, 6, 8, 10, and 12. A student says the SD is 8 because the mean is 8. The error is",
+   "o": [
+    "Confusing the mean with the SD. Variability must come from deviations from the mean",
+    "None. The student is right",
+    "Using the median",
+    "Forgetting to add the scores"
+   ],
+   "why": "The mean is 8, and the SD is about 3.16 (SS = 40, sample variance = 10). The SD measures spread, not center."
+  }
+ ]
+}

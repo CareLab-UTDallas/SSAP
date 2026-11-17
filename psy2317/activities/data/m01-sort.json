@@ -1,0 +1,48 @@
+{
+ "type": "sort",
+ "title": "Module 1 Misconception Sort",
+ "budget": "8",
+ "intro": "Decide whether each statement is true, false, or depends. These are the misconceptions that cost students points on exams.",
+ "items": [
+  {
+   "s": "A larger sample always eliminates sampling error.",
+   "t": "F",
+   "why": "Larger samples reduce sampling error on average, but a sample is never the whole population, so some error always remains."
+  },
+  {
+   "s": "A statistic and a parameter are the same thing as long as the sample is random.",
+   "t": "F",
+   "why": "They are different quantities. A random sample makes the statistic a good estimate of the parameter, but they are rarely identical."
+  },
+  {
+   "s": "A correlational study can show that one variable causes another.",
+   "t": "F",
+   "why": "Without manipulation and random assignment, a third variable or reverse direction can explain the relationship."
+  },
+  {
+   "s": "Ordinal data tell you the order of cases but not how far apart they are.",
+   "t": "T",
+   "why": "That is the defining limit of the ordinal scale."
+  },
+  {
+   "s": "A score of 0 on an interval scale means the complete absence of the attribute.",
+   "t": "F",
+   "why": "An arbitrary zero is the mark of an interval scale. Only ratio scales have a true zero."
+  },
+  {
+   "s": "Whether a rating scale from 1 to 7 is treated as interval or ordinal",
+   "t": "D",
+   "why": "Researchers often treat summed rating scales as interval, but a single item is arguably ordinal. The decision is a judgment about what the numbers mean."
+  },
+  {
+   "s": "Descriptive statistics let you draw conclusions about a population.",
+   "t": "F",
+   "why": "Descriptive statistics summarize the data in hand. Inferential statistics generalize to a population."
+  },
+  {
+   "s": "Random sampling and random assignment are the same thing.",
+   "t": "F",
+   "why": "Random sampling is how you select participants and supports generalizing. Random assignment is how you place them in conditions and supports cause and effect."
+  }
+ ]
+}

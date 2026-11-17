@@ -1,0 +1,7 @@
+{
+ "type": "compute",
+ "title": "Module 4 Practice: Probability and the Normal Distribution",
+ "budget": "20",
+ "gen": "zprob",
+ "intro": "Use the Unit Normal Table logic to find proportions above, below, and between scores."
+}

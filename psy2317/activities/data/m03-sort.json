@@ -1,0 +1,48 @@
+{
+ "type": "sort",
+ "title": "Module 3 Misconception Sort",
+ "budget": "8",
+ "intro": "Decide whether each statement is true, false, or depends. These are the misconceptions that cost students points on exams.",
+ "items": [
+  {
+   "s": "A correlation of −.80 is weaker than a correlation of +.40.",
+   "t": "F",
+   "why": "Strength is the absolute value. Negative .80 is stronger than positive .40."
+  },
+  {
+   "s": "A correlation of .50 means that 50 percent of the variability is shared.",
+   "t": "F",
+   "why": "You need r squared. .50 squared is .25, so 25 percent of the variability is shared."
+  },
+  {
+   "s": "Correlation proves causation if the sample is large enough.",
+   "t": "F",
+   "why": "Sample size changes confidence in the estimate. It does not change the research design."
+  },
+  {
+   "s": "r can take a value of 1.35 if the relationship is very strong.",
+   "t": "F",
+   "why": "r is bounded by negative one and positive one. A value outside that range signals a computational error."
+  },
+  {
+   "s": "Sample variance divided by n gives a biased estimate of the population variance.",
+   "t": "T",
+   "why": "On average it falls short of the true value, which is why the n minus 1 correction is used."
+  },
+  {
+   "s": "A scatterplot should be examined before trusting a correlation.",
+   "t": "T",
+   "why": "Outliers, curves, and restricted ranges can make r misleading."
+  },
+  {
+   "s": "Whether you divide by N or n minus 1 when computing variance",
+   "t": "D",
+   "why": "Divide by N if your scores are the whole population. Divide by n minus 1 if you are estimating from a sample, which is the usual case."
+  },
+  {
+   "s": "Two variables with r = 0 are unrelated in every way.",
+   "t": "F",
+   "why": "Pearson r only detects linear association. A strong curved relationship can produce r near zero."
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "type": "transfer",
+ "title": "Module 9 Challenge: Before and After",
+ "budget": "15",
+ "scenario": "<p>A counseling center offers a workshop on test anxiety. Twelve students complete an anxiety scale before and after the workshop. The mean change is a drop of 3.0 points (anxiety went down), and the standard deviation of the difference scores is 4.2. The analysis gives t(11) = 2.47, p = .031, d = .71, and a 95 percent CI for the mean drop of .33 to 5.67. The center advertises: \"Our workshop reduces anxiety for every participant.\"</p>",
+ "parts": [
+  {
+   "type": "mc",
+   "q": "Which test is appropriate for these data, and why?",
+   "o": [
+    "A related-samples t test, because the same students were measured twice",
+    "An independent-measures t test, because there are two time points",
+    "A z test, because the sample is small",
+    "A one-sample t test against the scale midpoint"
+   ],
+   "why": "The before and after scores belong to the same people and are dependent."
+  },
+  {
+   "type": "mc",
+   "q": "What does the CI of .33 to 5.67 tell you?",
+   "o": [
+    "The true average drop is plausibly anywhere from a trivial amount to a large one",
+    "Every student dropped between .33 and 5.67 points",
+    "The true average drop is exactly 3",
+    "95 percent of students dropped"
+   ],
+   "why": "The interval is wide with n = 12. Zero is excluded, but the lower limit is close to no change."
+  },
+  {
+   "type": "write",
+   "q": "Identify two problems with the center's advertisement and propose how to describe and test the workshop's effect more convincingly.",
+   "model": "The advertisement claims every participant improved, but the test addresses only the mean change. The SD of the difference scores is 4.2, which means some students probably changed little or got worse. The claim of cause is also weak. With no control group, anxiety may have dropped for reasons that have nothing to do with the workshop, such as the passing of an exam period, regression toward the mean among students who enrolled when they felt worst, or the effect of taking the scale twice. A stronger approach randomly assigns students to the workshop or a waitlist and compares change scores between the groups. The center could say that the average anxiety was 3 points lower after the workshop, d = .71, with a 95 percent CI of .33 to 5.67.",
+   "check": [
+    "I said the mean change does not mean every person improved",
+    "I named a threat such as history, maturation, or regression to the mean",
+    "I suggested a control or waitlist group with random assignment",
+    "I rewrote the claim using the mean, d, and CI"
+   ]
+  }
+ ]
+}

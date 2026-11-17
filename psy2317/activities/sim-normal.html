@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Normal Curve Explorer</title>
+<style>
+:root{--green:#154734;--orange:#e87500;--ink:#1f2a24;--muted:#4a5a52;--line:#c9d8cf;--tint:#eef3f0;--good:#e3f2e8;--goodb:#2e7d4f;--bad:#fdecea;--badb:#b3261e}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Arial,sans-serif;color:var(--ink);line-height:1.5}
+.wrap{max-width:840px;margin:0 auto;padding:14px 16px 40px}h1{font-family:Georgia,serif;font-size:24px;color:var(--green);margin:4px 0}
+.budget{display:inline-block;background:var(--tint);border-radius:999px;padding:3px 12px;font-size:14px;color:var(--green);margin-bottom:10px}
+.card{border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:12px 0}
+label{font-weight:600}input[type=range]{width:100%}input[type=text]{font:inherit;padding:6px 8px;border:1px solid #8aa597;border-radius:6px;width:120px}
+select{font:inherit;padding:6px;border-radius:6px}button{font:inherit;cursor:pointer;border-radius:8px;border:1px solid var(--green);background:var(--green);color:#fff;padding:7px 14px;margin:4px 6px 4px 0}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
+.read{font-size:20px;font-weight:700;color:var(--green)}.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}@media(max-width:600px){.row{grid-template-columns:1fr}}
+.fb{margin-top:8px;padding:8px 12px;border-radius:8px}.fb.good{background:var(--good);border-left:4px solid var(--goodb)}.fb.bad{background:var(--bad);border-left:4px solid var(--badb)}
+svg{width:100%;height:auto;display:block}.small{font-size:14px;color:var(--muted)}
+</style></head><body><div class="wrap"><main>
+<h1>Normal Curve Explorer</h1><div class="budget">Budget: 15 min &middot; Complete every task</div>
+<p>This curve is a normal distribution with <strong>&mu; = 100</strong> and <strong>&sigma; = 15</strong>. Move the sliders to shade a region. The readout shows the proportion of scores in that region. Use it to build a feel for the Unit Normal Table, then answer the five tasks below. Everything here is simulated for practice.</p>
+<div class="card">
+<label for="mode">Region to shade</label>
+<select id="mode"><option value="above">Above a score</option><option value="below">Below a score</option><option value="between">Between two scores</option><option value="outside">Outside two scores (both tails)</option></select>
+<div style="margin-top:8px"><label for="s1">First score: <span id="v1"></span></label><input id="s1" type="range" min="55" max="145" step="0.5" value="120"></div>
+<div id="w2" style="display:none"><label for="s2">Second score: <span id="v2"></span></label><input id="s2" type="range" min="55" max="145" step="0.5" value="85"></div>
+<svg id="plot" viewBox="0 0 700 280" role="img" aria-label="Normal curve with the selected region shaded"></svg>
+<div class="row"><div>z score(s): <span class="read" id="zr"></span></div><div>Proportion shaded: <span class="read" id="pr"></span></div></div>
+<p class="small" id="note"></p>
+</div>
+<div id="tasks"></div>
+</main></div>
+<script src="stats.js"></script>
+<script>
+const mu=100,sg=15,$=id=>document.getElementById(id);
+const W=700,H=280,L=30,R=670,T=20,B=240;const xs=z=>L+(z+3.5)/7*(R-L),ys=p=>B-p/0.42*(B-T);
+function draw(){
+  const mode=$('mode').value,a=+$('s1').value,b=+$('s2').value;$('w2').style.display=(mode==='between'||mode==='outside')?'block':'none';
+  $('v1').textContent=a;$('v2').textContent=b;
+  const za=(a-mu)/sg,zb=(b-mu)/sg,lo=Math.min(za,zb),hi=Math.max(za,zb);let reg=[],p,zt;
+  if(mode==='above'){reg=[[za,3.5]];p=1-STATS.normCdf(za);zt='z = '+za.toFixed(2)}
+  else if(mode==='below'){reg=[[-3.5,za]];p=STATS.normCdf(za);zt='z = '+za.toFixed(2)}
+  else if(mode==='between'){reg=[[lo,hi]];p=STATS.normCdf(hi)-STATS.normCdf(lo);zt=lo.toFixed(2)+' and '+hi.toFixed(2)}
+  else{reg=[[-3.5,lo],[hi,3.5]];p=STATS.normCdf(lo)+1-STATS.normCdf(hi);zt=lo.toFixed(2)+' and '+hi.toFixed(2)}
+  let s='<rect width="700" height="280" fill="#fff"/>';
+  const pts=z=>{let d='';for(let i=0;i<=140;i++){const zz=-3.5+i*7/140;d+=(i?'L':'M')+xs(zz).toFixed(1)+','+ys(STATS.normPdf(zz)).toFixed(1)}return d};
+  reg.forEach(r=>{let d='M'+xs(r[0]).toFixed(1)+','+B;for(let i=0;i<=60;i++){const zz=r[0]+(r[1]-r[0])*i/60;d+='L'+xs(zz).toFixed(1)+','+ys(STATS.normPdf(zz)).toFixed(1)}d+='L'+xs(r[1]).toFixed(1)+','+B+'Z';s+='<path d="'+d+'" fill="#e87500" fill-opacity=".55"/>'});
+  s+='<path d="'+pts()+'" fill="none" stroke="#154734" stroke-width="2.5"/><line x1="'+L+'" y1="'+B+'" x2="'+R+'" y2="'+B+'" stroke="#4a5a52"/>';
+  for(let z=-3;z<=3;z++){s+='<line x1="'+xs(z)+'" y1="'+B+'" x2="'+xs(z)+'" y2="'+(B+5)+'" stroke="#4a5a52"/><text x="'+xs(z)+'" y="'+(B+20)+'" font-size="13" text-anchor="middle" fill="#1f2a24">'+(mu+z*sg)+'</text><text x="'+xs(z)+'" y="'+(B+36)+'" font-size="12" text-anchor="middle" fill="#4a5a52">z='+z+'</text>'}
+  $('plot').innerHTML=s;$('zr').textContent=zt;$('pr').textContent=p.toFixed(4)+' ('+(p*100).toFixed(1)+'%)';
+  $('note').textContent=mode==='outside'?'Both tails together. Add the two tail areas.':mode==='between'?'The area between two scores is the larger body minus the smaller body.':'The tail is the smaller part beyond z. The body is the larger part.'}
+['mode','s1','s2'].forEach(i=>$(i).addEventListener('input',draw));draw();
+const tasks=[
+ ['Find the proportion of scores <strong>above 120</strong>.',0.0918,0.004,'z = 20/15 = 1.33, and the tail beyond 1.33 is .0918.'],
+ ['Find the proportion of scores <strong>between 85 and 115</strong>.',0.6827,0.005,'z = &minus;1 and +1. About 68% of scores fall within one standard deviation of the mean.'],
+ ['Find the proportion of scores <strong>below 90</strong>.',0.2525,0.004,'z = &minus;10/15 = &minus;0.67. The tail below is about .25.'],
+ ['What <strong>score</strong> marks the top 10% of the distribution? (Slide until the shaded area above is about .10.)',119.2,0.9,'The z with .10 in the tail is 1.28, so X = 100 + 1.28(15) = 119.2.'],
+ ['What <strong>z score</strong> (use the positive value) bounds the middle 95% of the distribution? (Use the "outside two scores" mode and look for .05 in the two tails.)',1.96,0.03,'z = &plusmn;1.96 leaves 2.5% in each tail. This is the critical value behind most two-tailed tests.']];
+const box=$('tasks');tasks.forEach((t,i)=>{const c=document.createElement('div');c.className='card';
+ c.innerHTML='<div><strong>Task '+(i+1)+'.</strong> '+t[0]+'</div><label for="t'+i+'" style="font-weight:400">Your answer: </label><input type="text" id="t'+i+'" inputmode="decimal"> <button type="button">Check</button><div class="fb" style="display:none"></div>';
+ const inp=c.querySelector('input'),fb=c.querySelector('.fb');c.querySelector('button').onclick=()=>{const v=parseFloat(inp.value);fb.style.display='block';
+  if(isNaN(v)){fb.className='fb bad';fb.textContent='Enter a number.';return}
+  if(Math.abs(v-t[1])<=t[2]){fb.className='fb good';fb.innerHTML='<strong>Correct.</strong> '+t[3]}else{fb.className='fb bad';fb.innerHTML='<strong>Not quite.</strong> Use the sliders to check your estimate. '+(Math.abs(v-t[1])<t[2]*4?'You are close.':'')}};
+ box.appendChild(c)});
+</script></body></html>

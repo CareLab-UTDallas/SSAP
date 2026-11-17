@@ -1,0 +1,108 @@
+{
+ "type": "quiz",
+ "title": "Module 11 Vocabulary Check",
+ "budget": "10",
+ "intro": "Answer each item. Feedback comes right away. Items you miss come back for a retry round.",
+ "items": [
+  {
+   "q": "A factor in a factorial design is",
+   "o": [
+    "An independent variable with two or more levels",
+    "A dependent variable",
+    "A participant",
+    "A control"
+   ],
+   "why": "In a 2 by 3 design there are two factors, one with two levels and one with three."
+  },
+  {
+   "q": "A 2 by 2 design has how many cells?",
+   "o": [
+    "4",
+    "2",
+    "3",
+    "6"
+   ],
+   "why": "Multiply the number of levels of each factor."
+  },
+  {
+   "q": "A main effect is",
+   "o": [
+    "The overall effect of one factor, averaging across the levels of the other",
+    "The effect of both factors together",
+    "The difference within a single cell",
+    "The effect of random error"
+   ],
+   "why": "It is evaluated using the marginal means."
+  },
+  {
+   "q": "An interaction occurs when",
+   "o": [
+    "The effect of one factor depends on the level of the other factor",
+    "Both factors have main effects",
+    "The groups are the same size",
+    "The sample is small"
+   ],
+   "why": "It is a difference in differences. Parallel lines in an interaction plot mean no interaction."
+  },
+  {
+   "q": "On a plot of cell means, non-parallel lines suggest",
+   "o": [
+    "An interaction",
+    "No effects",
+    "A significant main effect of both factors",
+    "A violation of normality"
+   ],
+   "why": "Whether the departure from parallel is larger than chance is tested by the interaction F."
+  },
+  {
+   "q": "A two-factor ANOVA produces how many F ratios?",
+   "o": [
+    "Three: factor A, factor B, and the interaction",
+    "One",
+    "Two",
+    "Four"
+   ],
+   "why": "Each of the two main effects and the interaction gets its own F, all using MS within as the denominator."
+  },
+  {
+   "q": "SS total in a two-factor ANOVA equals",
+   "o": [
+    "SS A plus SS B plus SS AxB plus SS within",
+    "SS A times SS B",
+    "SS between plus SS A",
+    "SS within only"
+   ],
+   "why": "The total variability is partitioned into four parts."
+  },
+  {
+   "q": "Degrees of freedom for the AxB interaction in a 2 by 2 design are",
+   "o": [
+    "1",
+    "2",
+    "4",
+    "3"
+   ],
+   "why": "df AxB = (levels of A minus 1) times (levels of B minus 1) = 1 times 1."
+  },
+  {
+   "q": "Marginal means are",
+   "o": [
+    "The means for each level of one factor, averaged over the other factor",
+    "The means of individual cells",
+    "The grand mean",
+    "The difference between cells"
+   ],
+   "why": "Row means and column means."
+  },
+  {
+   "q": "A factorial design has an advantage over two separate one-factor studies because it",
+   "o": [
+    "Tests how factors combine, which separate studies cannot",
+    "Needs no random assignment",
+    "Is always cheaper",
+    "Eliminates error"
+   ],
+   "why": "Only a factorial design can reveal whether one factor's effect depends on another."
+  }
+ ]
+}

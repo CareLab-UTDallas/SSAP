@@ -1,0 +1,108 @@
+{
+ "type": "quiz",
+ "title": "Module 7 Vocabulary Check",
+ "budget": "10",
+ "intro": "Answer each item. Feedback comes right away. Items you miss come back for a retry round.",
+ "items": [
+  {
+   "q": "We use a t statistic instead of z when",
+   "o": [
+    "The population standard deviation is unknown and must be estimated from the sample",
+    "The sample is large",
+    "The data are skewed",
+    "We have two populations"
+   ],
+   "why": "The sample standard deviation replaces sigma, which adds uncertainty. The t distribution captures that uncertainty."
+  },
+  {
+   "q": "The estimated standard error for a one-sample t is",
+   "o": [
+    "s divided by the square root of n",
+    "sigma divided by the square root of n",
+    "s times the square root of n",
+    "s divided by n"
+   ],
+   "why": "It has the same form as the z standard error, with s in place of sigma."
+  },
+  {
+   "q": "Degrees of freedom for a one-sample t test are",
+   "o": [
+    "n minus 1",
+    "n",
+    "n minus 2",
+    "2 times n"
+   ],
+   "why": "df is the number of scores free to vary once the sample mean is fixed."
+  },
+  {
+   "q": "Compared with the normal distribution, the t distribution",
+   "o": [
+    "Has heavier tails and approaches normal as df increases",
+    "Is narrower",
+    "Is always skewed",
+    "Has a mean of 1"
+   ],
+   "why": "With small df, extreme values are more likely, so critical values are larger."
+  },
+  {
+   "q": "As degrees of freedom increase, the critical t value",
+   "o": [
+    "Gets smaller and approaches the z value",
+    "Gets larger",
+    "Does not change",
+    "Becomes negative"
+   ],
+   "why": "With df = 9 the two-tailed critical t at .05 is 2.262. With very large df it approaches 1.96."
+  },
+  {
+   "q": "A one-sample t test compares",
+   "o": [
+    "A sample mean with a hypothesized population mean",
+    "Two sample means",
+    "Three or more means",
+    "Two correlations"
+   ],
+   "why": "It is used when the population mean is known or hypothesized but sigma is not."
+  },
+  {
+   "q": "Cohen's d for a one-sample t is",
+   "o": [
+    "(M minus mu) divided by s",
+    "(M minus mu) divided by SE",
+    "M divided by s",
+    "t divided by n"
+   ],
+   "why": "Using s as the standardizer expresses the difference in standard deviation units, independent of n."
+  },
+  {
+   "q": "A 95 percent confidence interval for mu is",
+   "o": [
+    "M plus or minus t(critical) times the estimated standard error",
+    "M plus or minus 1.96 times s",
+    "mu plus or minus SE",
+    "M plus or minus d"
+   ],
+   "why": "Use the critical t for df, not z, because sigma is unknown."
+  },
+  {
+   "q": "If a 95 percent CI for the mean difference includes the null value, the two-tailed test at alpha = .05",
+   "o": [
+    "Fails to reject the null",
+    "Rejects the null",
+    "Cannot be performed",
+    "Has p less than .05"
+   ],
+   "why": "The CI and the test agree. A null value inside the interval is a plausible value."
+  },
+  {
+   "q": "The t statistic is a ratio of",
+   "o": [
+    "The obtained mean difference to the estimated standard error",
+    "The mean to the SD",
+    "Two variances",
+    "The sample size to df"
+   ],
+   "why": "It is how many estimated standard errors the sample mean is from the hypothesized mean."
+  }
+ ]
+}

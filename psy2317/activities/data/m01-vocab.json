@@ -1,0 +1,108 @@
+{
+ "type": "quiz",
+ "title": "Module 1 Vocabulary Check",
+ "budget": "10",
+ "intro": "Answer each item. Feedback comes right away. Items you miss come back for a retry round.",
+ "items": [
+  {
+   "q": "A researcher measures anxiety in 120 students at one university to learn about all college students. The 120 students are the",
+   "o": [
+    "Sample",
+    "Population",
+    "Parameter",
+    "Variable"
+   ],
+   "why": "The sample is the group actually measured. The population is the larger group the researcher wants to describe."
+  },
+  {
+   "q": "A value that describes a sample, such as the mean anxiety of the 120 students, is called a",
+   "o": [
+    "Statistic",
+    "Parameter",
+    "Population",
+    "Constant"
+   ],
+   "why": "Statistics describe samples. Parameters describe populations."
+  },
+  {
+   "q": "A value that describes an entire population is called a",
+   "o": [
+    "Parameter",
+    "Statistic",
+    "Sample",
+    "Variable"
+   ],
+   "why": "A parameter is a population value. It is usually unknown, which is why we estimate it from a sample statistic."
+  },
+  {
+   "q": "The difference between a sample statistic and the population parameter it estimates is",
+   "o": [
+    "Sampling error",
+    "A bias in the instrument",
+    "A type of variable",
+    "Random assignment"
+   ],
+   "why": "Sampling error is the natural discrepancy that arises because a sample is only part of the population."
+  },
+  {
+   "q": "Eye color recorded as brown, blue, green, or hazel is measured on which scale?",
+   "o": [
+    "Nominal",
+    "Ordinal",
+    "Interval",
+    "Ratio"
+   ],
+   "why": "Categories with no order or numeric meaning are nominal."
+  },
+  {
+   "q": "Finishing positions in a race (1st, 2nd, 3rd) are measured on which scale?",
+   "o": [
+    "Ordinal",
+    "Nominal",
+    "Interval",
+    "Ratio"
+   ],
+   "why": "Rank order is meaningful but the gaps between ranks are not necessarily equal, so the scale is ordinal."
+  },
+  {
+   "q": "Temperature in degrees Fahrenheit is measured on which scale?",
+   "o": [
+    "Interval",
+    "Ordinal",
+    "Ratio",
+    "Nominal"
+   ],
+   "why": "Equal intervals but no true zero. Zero degrees Fahrenheit does not mean no temperature, so 80 is not twice as hot as 40."
+  },
+  {
+   "q": "Reaction time in milliseconds is measured on which scale?",
+   "o": [
+    "Ratio",
+    "Interval",
+    "Ordinal",
+    "Nominal"
+   ],
+   "why": "Zero means no time, and ratios make sense. 600 ms is twice as long as 300 ms."
+  },
+  {
+   "q": "Which design includes random assignment of participants to conditions?",
+   "o": [
+    "Experimental",
+    "Correlational",
+    "Nonexperimental",
+    "Quasi-experimental"
+   ],
+   "why": "Random assignment is what defines a true experiment and is what supports cause and effect claims."
+  },
+  {
+   "q": "A variable that can take any value along a continuum, such as time or weight, is",
+   "o": [
+    "Continuous",
+    "Discrete",
+    "Nominal",
+    "A constant"
+   ],
+   "why": "Continuous variables can be divided into finer and finer units. Discrete variables take separate, countable values."
+  }
+ ]
+}

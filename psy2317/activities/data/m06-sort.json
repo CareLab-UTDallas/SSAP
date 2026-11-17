@@ -1,0 +1,58 @@
+{
+ "type": "sort",
+ "title": "Module 6 Misconception Sort",
+ "budget": "10",
+ "intro": "Decide whether each statement is true, false, or depends. These are the misconceptions that cost students points on exams.",
+ "items": [
+  {
+   "s": "A p value of .03 means there is a 3 percent chance the null hypothesis is true.",
+   "t": "F",
+   "why": "The p value is the probability of data this extreme if the null were true. It is not the probability that the null is true."
+  },
+  {
+   "s": "Failing to reject the null proves the null is true.",
+   "t": "F",
+   "why": "It means the data did not provide enough evidence against it. The study may have lacked power."
+  },
+  {
+   "s": "A statistically significant result is always a large or important effect.",
+   "t": "F",
+   "why": "With a big sample even a tiny effect can be significant. Effect size tells you how large it is."
+  },
+  {
+   "s": "Increasing the sample size increases power.",
+   "t": "T",
+   "why": "A larger n shrinks the standard error, so a real effect is easier to detect."
+  },
+  {
+   "s": "Making alpha smaller, such as .01 instead of .05, reduces the chance of a Type I error but raises the chance of a Type II error.",
+   "t": "T",
+   "why": "Stricter criteria make false alarms rarer and misses more likely."
+  },
+  {
+   "s": "The alternative hypothesis is proven when we reject the null.",
+   "t": "F",
+   "why": "Rejecting the null supports the alternative, but a single study does not prove anything."
+  },
+  {
+   "s": "Researchers should decide alpha after seeing the data.",
+   "t": "F",
+   "why": "Alpha is chosen in advance. Choosing it afterward inflates the Type I error rate."
+  },
+  {
+   "s": "A 95 percent confidence interval means 95 percent of individual scores lie inside it.",
+   "t": "F",
+   "why": "It describes plausible values for the mean, not the spread of individual scores."
+  },
+  {
+   "s": "A two-tailed test is more conservative than a one-tailed test at the same alpha.",
+   "t": "T",
+   "why": "The alpha is split across both tails, so the cutoff is farther from the mean."
+  },
+  {
+   "s": "Whether to use a one-tailed or two-tailed test",
+   "t": "D",
+   "why": "A one-tailed test is justified only when the direction was predicted in advance and a result in the other direction would be meaningless. Otherwise use two tails."
+  }
+ ]
+}

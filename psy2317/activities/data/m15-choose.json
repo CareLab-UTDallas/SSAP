@@ -1,0 +1,108 @@
+{
+ "type": "quiz",
+ "title": "Module 15 Capstone: Choose the Test",
+ "budget": "20",
+ "intro": "This is the skill the whole course builds. Each item describes a study. Pick the analysis that fits the design and the data.",
+ "items": [
+  {
+   "q": "Compare the mean anxiety of 40 students with the published population mean. The population SD is unknown.",
+   "o": [
+    "One-sample t test",
+    "z test",
+    "Independent-measures t test",
+    "Chi-square"
+   ],
+   "why": "One sample mean against a known population mean with unknown sigma calls for the one-sample t."
+  },
+  {
+   "q": "Compare the mean score of students randomly assigned to online or in-person teaching.",
+   "o": [
+    "Independent-measures t test",
+    "Related-samples t test",
+    "One-way ANOVA with three groups",
+    "Pearson correlation"
+   ],
+   "why": "Two separate groups with a numeric outcome."
+  },
+  {
+   "q": "Measure the same 25 patients before and after therapy and compare mean symptom scores.",
+   "o": [
+    "Related-samples t test",
+    "Independent-measures t test",
+    "Chi-square test of independence",
+    "One-factor ANOVA"
+   ],
+   "why": "The same people are measured twice."
+  },
+  {
+   "q": "Compare mean test scores across three teaching methods.",
+   "o": [
+    "One-way ANOVA",
+    "Independent-measures t test",
+    "Pearson correlation",
+    "Chi-square goodness of fit"
+   ],
+   "why": "Three or more independent groups call for ANOVA."
+  },
+  {
+   "q": "Examine whether hours of exercise are linearly related to mood scores.",
+   "o": [
+    "Pearson correlation",
+    "Chi-square",
+    "Independent-measures t test",
+    "One-way ANOVA"
+   ],
+   "why": "Two numeric variables and a question about association."
+  },
+  {
+   "q": "Use study hours and high school GPA to predict college GPA.",
+   "o": [
+    "Multiple regression",
+    "Chi-square",
+    "Related-samples t test",
+    "Point-biserial correlation"
+   ],
+   "why": "Two predictors, one numeric outcome."
+  },
+  {
+   "q": "Test whether choice of major (psychology, biology, business) is related to preferring online or in-person classes.",
+   "o": [
+    "Chi-square test of independence",
+    "One-way ANOVA",
+    "Pearson correlation",
+    "One-sample t test"
+   ],
+   "why": "Two categorical variables."
+  },
+  {
+   "q": "Test whether students pick each of four study locations equally often.",
+   "o": [
+    "Chi-square goodness of fit",
+    "Chi-square test of independence",
+    "One-way ANOVA",
+    "Independent t test"
+   ],
+   "why": "One categorical variable compared with an expected distribution."
+  },
+  {
+   "q": "Compare mean recall for two study methods crossed with two test delays.",
+   "o": [
+    "Two-factor ANOVA",
+    "One-way ANOVA",
+    "Independent-measures t test",
+    "Chi-square"
+   ],
+   "why": "Two factors and a possible interaction."
+  },
+  {
+   "q": "Relate a dichotomous variable (smoker or not) to a numeric score.",
+   "o": [
+    "Point-biserial correlation, or an independent t test",
+    "Chi-square goodness of fit",
+    "Multiple regression with three predictors",
+    "Spearman correlation"
+   ],
+   "why": "A two-category variable with a numeric outcome is handled by either approach."
+  }
+ ]
+}

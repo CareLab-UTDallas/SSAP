@@ -1,0 +1,41 @@
+{
+ "type": "transfer",
+ "title": "Module 6 Challenge: Run and Interpret a Hypothesis Test",
+ "budget": "15",
+ "scenario": "<p>A school psychologist wants to know whether a new reading program changes scores on a standardized test. Scores in the district follow a normal distribution with a mean of 75 and a standard deviation of 12. She gives the program to 36 students and finds a sample mean of 79. She uses alpha = .05, two-tailed.</p>",
+ "parts": [
+  {
+   "type": "mc",
+   "q": "What is the standard error of the mean?",
+   "o": [
+    "2.00",
+    "12.00",
+    "0.33",
+    "6.00"
+   ],
+   "why": "SE = 12 divided by the square root of 36 = 12/6 = 2.00."
+  },
+  {
+   "type": "mc",
+   "q": "What is the decision at alpha = .05 two-tailed?",
+   "o": [
+    "Reject the null, since z = 2.00 exceeds 1.96",
+    "Retain the null, since z = 2.00 is below 2.58",
+    "Reject the null, since d is large",
+    "Retain the null, since the sample is small"
+   ],
+   "why": "z = (79 minus 75)/2 = 2.00. The two-tailed critical value is 1.96, so z falls in the critical region (p = .0455)."
+  },
+  {
+   "type": "write",
+   "q": "Write a short results paragraph the psychologist could give to the school board. Include the test result, the effect size, one thing the test cannot tell the board, and a caution about interpretation.",
+   "model": "The 36 students who completed the reading program scored higher (M = 79) than the district mean of 75, z = 2.00, p = .046 (two-tailed), so the difference is unlikely to be due to sampling error alone. The effect size is small to medium, d = .33, meaning the program group scored about a third of a standard deviation higher. The test does not tell the board why the scores are higher. Students were not randomly assigned, so teacher quality, motivation, or other differences could explain the gain. The p value of .046 is only the probability of results this extreme if the program did nothing. It is not the probability that the program works. Replication with random assignment would give stronger evidence.",
+   "check": [
+    "I reported the z, the p value, and the decision",
+    "I reported d and described its size",
+    "I said the design cannot show the program caused the gain",
+    "I did not describe p as the probability the null is true"
+   ]
+  }
+ ]
+}

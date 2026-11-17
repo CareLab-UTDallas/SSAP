@@ -1,0 +1,7 @@
+{
+ "type": "compute",
+ "title": "Module 15 Practice: Chi-Square",
+ "budget": "25",
+ "gen": "chisq",
+ "intro": "Find expected frequencies, compute chi-square, find df, decide, and compute an effect size."
+}

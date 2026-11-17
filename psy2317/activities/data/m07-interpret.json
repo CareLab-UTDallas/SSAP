@@ -1,0 +1,58 @@
+{
+ "type": "quiz",
+ "title": "Module 7 Interpretation Check",
+ "budget": "8",
+ "intro": "Each item gives you a short research situation. Decide what the evidence supports.",
+ "items": [
+  {
+   "q": "A sample of 10 has M = 55 and s = 8. The hypothesized mean is 50. What is the estimated standard error?",
+   "o": [
+    "2.53",
+    "8.00",
+    "0.80",
+    "5.00"
+   ],
+   "why": "sM = 8 divided by the square root of 10 = 2.53."
+  },
+  {
+   "q": "Using that estimated standard error, what is t?",
+   "o": [
+    "1.98",
+    "5.00",
+    "0.63",
+    "2.26"
+   ],
+   "why": "t = (55 minus 50)/2.53 = 1.976, which rounds to 1.98."
+  },
+  {
+   "q": "With df = 9 and alpha = .05 two-tailed, the critical t is 2.262. What is the decision?",
+   "o": [
+    "Retain the null, because 1.98 is below 2.262",
+    "Reject the null, because t is positive",
+    "Reject the null, because the mean difference is 5",
+    "The test cannot be used"
+   ],
+   "why": "The obtained t falls outside the critical region. The exact p value is about .08."
+  },
+  {
+   "q": "Cohen's d for this sample is the mean difference divided by s. What is d?",
+   "o": [
+    "About .63, a medium effect",
+    "About 1.98",
+    "About .08",
+    "About 5.00"
+   ],
+   "why": "d = 5/8 = .625. The effect is medium in size even though the test is not significant, which is a sign of low power with only 10 people."
+  },
+  {
+   "q": "The 95 percent CI for the population mean is 55 plus or minus 2.262(2.53). What are the limits?",
+   "o": [
+    "About 49.3 to 60.7",
+    "About 50.0 to 60.0",
+    "About 52.5 to 57.5",
+    "About 47.0 to 63.0"
+   ],
+   "why": "2.262 times 2.53 is 5.72. The CI runs from 49.28 to 60.72 and includes 50, matching the nonsignificant test."
+  }
+ ]
+}

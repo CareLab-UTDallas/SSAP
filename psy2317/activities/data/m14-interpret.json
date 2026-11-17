@@ -1,0 +1,58 @@
+{
+ "type": "quiz",
+ "title": "Module 14 Interpretation Check",
+ "budget": "8",
+ "intro": "Each item gives you a short research situation. Decide what the evidence supports.",
+ "items": [
+  {
+   "q": "For a set of data, SP = 24 and SS of X = 16. What is the slope?",
+   "o": [
+    "1.5",
+    "0.67",
+    "24",
+    "8"
+   ],
+   "why": "b = SP/SSx = 24/16 = 1.5."
+  },
+  {
+   "q": "With M of X = 10, M of Y = 40, and b = 1.5, what is the intercept?",
+   "o": [
+    "25",
+    "15",
+    "40",
+    "55"
+   ],
+   "why": "a = 40 minus 1.5 times 10 = 25."
+  },
+  {
+   "q": "Using Y-hat = 1.5X + 25, what is the predicted Y when X = 12?",
+   "o": [
+    "43",
+    "37",
+    "25",
+    "54"
+   ],
+   "why": "1.5 times 12 = 18, plus 25 = 43."
+  },
+  {
+   "q": "A multiple regression with 2 predictors and n = 40 has R squared = .30. The test gives F(2, 37) = 7.93, p = .001. What is the correct conclusion?",
+   "o": [
+    "The predictors together account for a significant portion of the variability in the outcome",
+    "Each predictor is individually significant",
+    "The model proves causation",
+    "The model is not significant"
+   ],
+   "why": "The omnibus F tests whether R squared differs from zero. Individual coefficients need their own tests."
+  },
+  {
+   "q": "A student says, \"Since the slope is 1.5 and my friend's is .3 on a different outcome, the first relationship is five times stronger.\" What is wrong?",
+   "o": [
+    "Slopes depend on the units of measurement, so they cannot be compared across different variables",
+    "Nothing is wrong",
+    "The slope is the correlation",
+    "The intercept should be used"
+   ],
+   "why": "Standardize the variables or compare r and r squared."
+  }
+ ]
+}

@@ -1,0 +1,58 @@
+{
+ "type": "quiz",
+ "title": "Module 13 Interpretation Check",
+ "budget": "8",
+ "intro": "Each item gives you a short research situation. Decide what the evidence supports.",
+ "items": [
+  {
+   "q": "A researcher finds r = .41 between hours of sleep and a memory score for 30 students. The critical r for df = 28 at alpha = .05 two-tailed is .361. What is the decision?",
+   "o": [
+    "Reject the null. The correlation is significant",
+    "Retain the null. The correlation is weak",
+    "Reject the null. The correlation proves sleep improves memory",
+    "The test needs more data"
+   ],
+   "why": "The obtained r of .41 exceeds .361. A significant correlation still does not show causation."
+  },
+  {
+   "q": "What proportion of memory score variability does sleep account for in that sample?",
+   "o": [
+    "About .17",
+    ".41",
+    ".59",
+    "About .64"
+   ],
+   "why": ".41 squared = .168."
+  },
+  {
+   "q": "A new anxiety scale produces the same scores for the same people when given two weeks apart (r = .90). Which type of reliability is this?",
+   "o": [
+    "Test-retest",
+    "Internal consistency",
+    "Interrater",
+    "Criterion validity"
+   ],
+   "why": "The same measure is given at two times."
+  },
+  {
+   "q": "A scale reliably gives consistent scores but correlates poorly with other accepted anxiety measures. What is the problem?",
+   "o": [
+    "Weak validity. It is consistent but may not measure anxiety",
+    "Weak reliability",
+    "Low sample size",
+    "Range restriction only"
+   ],
+   "why": "Convergent validity is shown by correlating with other measures of the same construct."
+  },
+  {
+   "q": "Two raters score the same 40 essays. Their scores correlate at r = .85. This supports",
+   "o": [
+    "Interrater reliability",
+    "Test-retest reliability",
+    "Construct validity alone",
+    "Internal consistency"
+   ],
+   "why": "Agreement between independent raters is interrater reliability."
+  }
+ ]
+}

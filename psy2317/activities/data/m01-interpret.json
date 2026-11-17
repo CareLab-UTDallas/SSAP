@@ -1,0 +1,58 @@
+{
+ "type": "quiz",
+ "title": "Module 1 Interpretation Check",
+ "budget": "8",
+ "intro": "Each item gives you a short research situation. Decide what the evidence supports.",
+ "items": [
+  {
+   "q": "Researchers survey 300 volunteers who responded to a flyer in a gym about exercise habits. A reporter concludes that most adults exercise regularly. The main problem is",
+   "o": [
+    "The volunteer sample may not represent all adults, so the statistic may miss the parameter",
+    "The sample is too large",
+    "Exercise is measured on a nominal scale",
+    "Descriptive statistics were used"
+   ],
+   "why": "Gym volunteers are likely more active than the general population. A biased sample produces error that a larger sample would not fix."
+  },
+  {
+   "q": "Students who sleep more tend to have higher GPAs in a survey. Which conclusion is justified?",
+   "o": [
+    "Sleep and GPA are related in this sample, but the survey cannot show that sleep raises GPA",
+    "More sleep causes higher GPA",
+    "Higher GPA causes more sleep",
+    "There is no relationship"
+   ],
+   "why": "A survey is correlational. Both causal directions and third variables remain possible."
+  },
+  {
+   "q": "Participants are randomly assigned to practice a task for 10 or 30 minutes, then tested. Which conclusion is justified if the 30-minute group scores higher?",
+   "o": [
+    "Longer practice caused better performance, subject to sampling error",
+    "The result applies to everyone",
+    "The groups must have differed in motivation",
+    "Nothing can be concluded"
+   ],
+   "why": "Random assignment makes the groups equivalent on average before treatment, which supports a causal claim."
+  },
+  {
+   "q": "In a class of 400 students, 40 are chosen at random and their mean exam score is 78. The class mean is 80. This 2 point gap is",
+   "o": [
+    "Sampling error",
+    "A mistake in data entry",
+    "Evidence the sample was biased",
+    "A parameter"
+   ],
+   "why": "Random samples differ from the population by chance. A small gap like this is exactly what sampling error looks like."
+  },
+  {
+   "q": "A study records each participant's diagnosis (depression, anxiety, none). Which graph and summary fit this variable?",
+   "o": [
+    "A bar graph and the mode",
+    "A histogram and the mean",
+    "A line graph and the median",
+    "A scatterplot and r"
+   ],
+   "why": "Nominal categories are summarized with counts or proportions and the mode. A mean of diagnoses has no meaning."
+  }
+ ]
+}

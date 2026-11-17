@@ -1,0 +1,40 @@
+{
+ "type": "transfer",
+ "title": "Module 4 Challenge: Is This Score Unusual?",
+ "budget": "12",
+ "scenario": "<p>A concentration test is scaled so scores in the population are normally distributed with a mean of 50 and a standard deviation of 10. A clinic says that anyone scoring below 45 \"has serious concentration problems\" and that a score of 70 \"is a once in a lifetime result.\"</p>",
+ "parts": [
+  {
+   "type": "mc",
+   "q": "What proportion of the population scores below 45?",
+   "o": [
+    "About .31",
+    "About .05",
+    "About .69",
+    "About .02"
+   ],
+   "why": "z = −0.50. The proportion below is .3085. Nearly a third of the population scores below 45, so it is hardly a sign of serious problems."
+  },
+  {
+   "type": "mc",
+   "q": "What is the z score for a score of 70?",
+   "o": [
+    "+2.00",
+    "+0.20",
+    "+7.00",
+    "+20"
+   ],
+   "why": "z = (70 minus 50)/10 = 2.00. About 2.3 percent of people score higher."
+  },
+  {
+   "type": "write",
+   "q": "Evaluate both of the clinic's claims using proportions. Then say what cutoff you might use if you wanted to flag roughly the lowest 2 percent of scores.",
+   "model": "About 31 percent of people score below 45 (z = −0.50), so the first claim is unjustified because it labels nearly one in three people as having serious problems. A score of 70 has z = 2.00, and about 2.3 percent of people score at or above it, so it is unusual but not once in a lifetime. About one person in 44 scores that high. To flag the lowest 2 percent I would use a z near −2.05, which gives a raw score of 50 minus 2.05 times 10, about 29.5. A cutoff at about 30 would flag roughly the lowest 2 percent.",
+   "check": [
+    "I used z scores and proportions to judge the claims",
+    "I reported the share below 45 and the share above 70",
+    "I translated a z cutoff back into a raw score"
+   ]
+  }
+ ]
+}

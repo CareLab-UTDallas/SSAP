@@ -1,0 +1,40 @@
+{
+ "type": "transfer",
+ "title": "Module 2 Challenge: Describe a Distribution Honestly",
+ "budget": "12",
+ "scenario": "<p>A fitness app reports the number of minutes ten users spent exercising last week: 15, 20, 20, 25, 30, 30, 35, 40, 45, and 240. The company's marketing line reads \"The average user exercises 50 minutes a week.\"</p>",
+ "parts": [
+  {
+   "type": "mc",
+   "q": "What is the mean of these ten scores, and how does it compare to the median?",
+   "o": [
+    "Mean = 50 and median = 30, so the mean is well above the median",
+    "Mean = 30 and median = 50",
+    "Mean = 50 and median = 50",
+    "Mean = 240 and median = 30"
+   ],
+   "why": "The sum is 500, so the mean is 50. The median is the average of the 5th and 6th scores, (30 + 30)/2 = 30. The single score of 240 drags the mean upward."
+  },
+  {
+   "type": "mc",
+   "q": "Which distribution shape does this pattern suggest?",
+   "o": [
+    "Positively skewed",
+    "Negatively skewed",
+    "Symmetric",
+    "Uniform"
+   ],
+   "why": "One very high score creates a long tail to the right. The mean exceeds the median."
+  },
+  {
+   "type": "write",
+   "q": "Write two or three sentences telling the company how to describe its typical user more honestly. Name the measure you would report, why, and what you would add to describe the spread.",
+   "model": "I would report the median of 30 minutes, because the one user who exercised 240 minutes pulls the mean up to 50 and makes the typical user look more active than most are. I would pair it with a note on spread that resists the outlier, such as that nine of ten users exercised 45 minutes or less. Reporting the mean alone hides the skew. Listing both the mean and median, and saying why they differ, would let readers see the shape of the data.",
+   "check": [
+    "I chose the median and said why the mean misleads",
+    "I connected the choice to the one extreme score",
+    "I suggested a way to describe spread or shape"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,108 @@
+{
+ "type": "quiz",
+ "title": "Module 2 Vocabulary Check",
+ "budget": "10",
+ "intro": "Answer each item. Feedback comes right away. Items you miss come back for a retry round.",
+ "items": [
+  {
+   "q": "The mean of a set of scores is",
+   "o": [
+    "The sum of the scores divided by the number of scores",
+    "The middle score when ordered",
+    "The most frequent score",
+    "The highest score minus the lowest"
+   ],
+   "why": "The mean is the balance point of the distribution, computed as the sum of scores divided by n."
+  },
+  {
+   "q": "The median is",
+   "o": [
+    "The score that splits the ordered distribution into two equal halves",
+    "The average of all scores",
+    "The most common score",
+    "The sum of squared deviations"
+   ],
+   "why": "It is the 50th percentile. It depends on rank order, not on how extreme the extreme scores are."
+  },
+  {
+   "q": "The mode is",
+   "o": [
+    "The most frequently occurring score or category",
+    "The balance point",
+    "The middle score",
+    "The range"
+   ],
+   "why": "The mode is the only measure of central tendency that works for nominal data."
+  },
+  {
+   "q": "A deviation score is",
+   "o": [
+    "A score minus the mean",
+    "A score divided by the mean",
+    "The square root of the variance",
+    "The difference between the highest and lowest scores"
+   ],
+   "why": "X minus the mean. Deviations from the mean always sum to zero."
+  },
+  {
+   "q": "The sum of squared deviations from the mean is abbreviated",
+   "o": [
+    "SS",
+    "SD",
+    "IQR",
+    "MS"
+   ],
+   "why": "SS stands for sum of squares. It is the starting point for variance and standard deviation."
+  },
+  {
+   "q": "Which measure of variability depends only on two scores?",
+   "o": [
+    "Range",
+    "Variance",
+    "Standard deviation",
+    "SS"
+   ],
+   "why": "The range uses only the highest and lowest scores, which makes it sensitive to outliers."
+  },
+  {
+   "q": "The standard deviation can be described as",
+   "o": [
+    "The typical distance of scores from the mean",
+    "The average of the raw scores",
+    "The middle score",
+    "The sum of the deviations"
+   ],
+   "why": "It puts variability back into the original units of measurement."
+  },
+  {
+   "q": "A distribution with a long tail toward the high scores is",
+   "o": [
+    "Positively skewed",
+    "Negatively skewed",
+    "Symmetrical",
+    "Bimodal"
+   ],
+   "why": "The direction of skew is the direction of the tail, not the direction of the bulk of the scores."
+  },
+  {
+   "q": "If a constant is added to every score, the standard deviation",
+   "o": [
+    "Does not change",
+    "Increases by that constant",
+    "Doubles",
+    "Becomes zero"
+   ],
+   "why": "Adding a constant shifts all scores, including the mean, and leaves the spread unchanged."
+  },
+  {
+   "q": "If every score is multiplied by 3, the standard deviation",
+   "o": [
+    "Is multiplied by 3",
+    "Does not change",
+    "Is multiplied by 9",
+    "Is increased by 3"
+   ],
+   "why": "Multiplying by a constant stretches the scale, and the standard deviation stretches with it. The variance is multiplied by 9."
+  }
+ ]
+}

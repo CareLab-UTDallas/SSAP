@@ -1,0 +1,48 @@
+{
+ "type": "sort",
+ "title": "Module 15 Misconception Sort",
+ "budget": "8",
+ "intro": "Decide whether each statement is true, false, or depends. These are the misconceptions that cost students points on exams.",
+ "items": [
+  {
+   "s": "Chi-square tests whether the means of categories differ.",
+   "t": "F",
+   "why": "It compares counts, not means."
+  },
+  {
+   "s": "A significant chi-square tells you which cells are responsible for the association.",
+   "t": "F",
+   "why": "It says the variables are related. Look at observed against expected counts for the pattern."
+  },
+  {
+   "s": "Each person may appear in only one cell of the contingency table.",
+   "t": "T",
+   "why": "Independence of observations is a basic assumption."
+  },
+  {
+   "s": "A larger N makes a given proportional difference more likely to be significant.",
+   "t": "T",
+   "why": "Chi-square grows with N when the proportions are held constant."
+  },
+  {
+   "s": "An odds ratio and a relative risk are the same thing.",
+   "t": "F",
+   "why": "They are different measures that only approximate each other when the outcome is rare."
+  },
+  {
+   "s": "You can run a chi-square test on percentages instead of counts.",
+   "t": "F",
+   "why": "The test requires raw frequencies."
+  },
+  {
+   "s": "A 2 by 2 chi-square with df = 1 and a value of 6.67 is significant at .05.",
+   "t": "T",
+   "why": "The critical value for df = 1 is 3.84."
+  },
+  {
+   "s": "Whether a significant chi-square reflects a meaningful relationship",
+   "t": "D",
+   "why": "Report an effect size such as phi, Cramer's V, or the odds ratio, because large samples make small associations significant."
+  }
+ ]
+}

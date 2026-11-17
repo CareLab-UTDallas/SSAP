@@ -1,0 +1,58 @@
+{
+ "type": "quiz",
+ "title": "Module 9 Interpretation Check",
+ "budget": "8",
+ "intro": "Each item gives you a short research situation. Decide what the evidence supports.",
+ "items": [
+  {
+   "q": "Twelve students are tested before and after a workshop. The mean change is +3.0, and the SD of the difference scores is 4.2. What is the estimated standard error?",
+   "o": [
+    "1.21",
+    "4.20",
+    "0.35",
+    "3.00"
+   ],
+   "why": "sMD = 4.2 divided by the square root of 12 = 1.21."
+  },
+  {
+   "q": "What is t, and what are the degrees of freedom?",
+   "o": [
+    "t = 2.47, df = 11",
+    "t = 3.00, df = 12",
+    "t = 2.47, df = 22",
+    "t = 0.71, df = 11"
+   ],
+   "why": "t = 3.0/1.212 = 2.474 with df = 12 minus 1 = 11. The critical t at .05 two-tailed is 2.201, so the result is significant (p = .031)."
+  },
+  {
+   "q": "What is Cohen's d?",
+   "o": [
+    "About .71 (medium to large)",
+    "About 2.47",
+    "About 1.21",
+    "About .31"
+   ],
+   "why": "d = 3.0/4.2 = .714."
+  },
+  {
+   "q": "The 95 percent CI for the mean change is 3.0 plus or minus 2.201(1.212). What are the limits?",
+   "o": [
+    "About .33 to 5.67",
+    "About 1.8 to 4.2",
+    "About 0 to 6",
+    "About 2.4 to 3.6"
+   ],
+   "why": "2.201 times 1.212 = 2.67. The CI excludes zero, matching the significant test."
+  },
+  {
+   "q": "A researcher analyzes pre and post scores from the same 30 patients using an independent-measures t test. What is the main problem?",
+   "o": [
+    "The two sets of scores are dependent, so the independent test ignores the pairing and gives the wrong error term",
+    "The sample is too large",
+    "The test is too powerful",
+    "There is no problem"
+   ],
+   "why": "Use the related-samples test on the difference scores."
+  }
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "type": "sort",
+ "title": "Module 2 Misconception Sort",
+ "budget": "8",
+ "intro": "Decide whether each statement is true, false, or depends. These are the misconceptions that cost students points on exams.",
+ "items": [
+  {
+   "s": "The mean is always the best measure of central tendency.",
+   "t": "F",
+   "why": "With strong skew or outliers the median is usually a better summary of a typical case."
+  },
+  {
+   "s": "In a positively skewed distribution the mean is usually larger than the median.",
+   "t": "T",
+   "why": "The long tail of high scores pulls the mean toward it. The median resists extreme scores."
+  },
+  {
+   "s": "The standard deviation is the average of the deviation scores.",
+   "t": "F",
+   "why": "The average of deviation scores is zero. The standard deviation squares the deviations first, averages them, and takes the square root."
+  },
+  {
+   "s": "A distribution can have more than one mode.",
+   "t": "T",
+   "why": "Two or more scores can tie for the highest frequency. We call such distributions bimodal or multimodal."
+  },
+  {
+   "s": "A larger standard deviation means the scores are more spread out.",
+   "t": "T",
+   "why": "That is its purpose. Compare standard deviations only for the same variable measured the same way."
+  },
+  {
+   "s": "You can compute a meaningful mean for any variable that has numbers attached.",
+   "t": "F",
+   "why": "Numbers that label categories, such as jersey numbers or diagnosis codes, have no meaningful mean."
+  },
+  {
+   "s": "Adding one extreme score to a data set changes the median as much as it changes the mean.",
+   "t": "F",
+   "why": "The median shifts by at most one position in the ordering. The mean moves with the size of the extreme value."
+  },
+  {
+   "s": "Whether you report the mean or the median for household income",
+   "t": "D",
+   "why": "Income is usually positively skewed, so the median describes a typical household better. It depends on what you want to communicate and on the shape of the data."
+  }
+ ]
+}

@@ -1,0 +1,7 @@
+{
+ "type": "compute",
+ "title": "Module 7 Practice: The One-Sample t Test",
+ "budget": "20",
+ "gen": "ttest1",
+ "intro": "Compute s, the estimated standard error, t, and d from raw scores, and make the decision."
+}

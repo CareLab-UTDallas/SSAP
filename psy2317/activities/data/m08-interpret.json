@@ -1,0 +1,58 @@
+{
+ "type": "quiz",
+ "title": "Module 8 Interpretation Check",
+ "budget": "8",
+ "intro": "Each item gives you a short research situation. Decide what the evidence supports.",
+ "items": [
+  {
+   "q": "Two groups of 8 have M1 = 24 (s = 6) and M2 = 19 (s = 5). What is the pooled variance?",
+   "o": [
+    "30.5",
+    "61",
+    "11",
+    "5.5"
+   ],
+   "why": "With equal n, pooled variance = (36 + 25)/2 = 30.5."
+  },
+  {
+   "q": "What is the estimated standard error of the difference?",
+   "o": [
+    "2.76",
+    "5.52",
+    "30.5",
+    "0.35"
+   ],
+   "why": "The square root of (30.5/8 + 30.5/8) = the square root of 7.625 = 2.76."
+  },
+  {
+   "q": "What is the independent-measures t, and the degrees of freedom?",
+   "o": [
+    "t = 1.81, df = 14",
+    "t = 5.00, df = 16",
+    "t = 1.81, df = 15",
+    "t = 0.55, df = 14"
+   ],
+   "why": "t = (24 minus 19)/2.76 = 1.81, and df = 8 + 8 minus 2 = 14. The critical t at .05 two-tailed is 2.145, so the result is not significant."
+  },
+  {
+   "q": "Cohen's d, using the pooled SD, is about",
+   "o": [
+    ".91 (large)",
+    ".19",
+    "1.81",
+    "5.00"
+   ],
+   "why": "d = 5 divided by the square root of 30.5 (5.52) = .905. A large effect that the small groups cannot confirm."
+  },
+  {
+   "q": "A researcher says, \"Because my groups were not significantly different, they must have had equal means.\" What is wrong?",
+   "o": [
+    "The sample means differed by 5. The test only shows the difference is not distinguishable from sampling error",
+    "Nothing is wrong",
+    "The groups should have been larger",
+    "The mean difference is the standard error"
+   ],
+   "why": "Non-significance concerns the population. The sample means still differ, and the data are compatible with a real difference."
+  }
+ ]
+}

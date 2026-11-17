@@ -1,0 +1,58 @@
+{
+ "type": "quiz",
+ "title": "Module 12 Interpretation Check",
+ "budget": "8",
+ "intro": "Each item gives you a short research situation. Decide what the evidence supports.",
+ "items": [
+  {
+   "q": "A university finds r = .10 between SAT scores and first year GPA among admitted students, but the national r is higher. What is the most likely reason?",
+   "o": [
+    "Range restriction. Admitted students have a narrow range of SAT scores",
+    "The SAT is useless",
+    "GPA is not reliable",
+    "The sample is too large"
+   ],
+   "why": "Admission removes low scorers, so the data do not cover the full range of SAT scores."
+  },
+  {
+   "q": "A scatterplot shows a clear arch. Pearson r is near 0. What is the right conclusion?",
+   "o": [
+    "The variables are strongly related in a curved way that r cannot capture",
+    "The variables are unrelated",
+    "The sample is biased",
+    "Add more outliers"
+   ],
+   "why": "Pearson r is blind to nonlinear patterns."
+  },
+  {
+   "q": "A researcher reports r = .85 for 30 points, but one point is far from the rest. What should be done first?",
+   "o": [
+    "Examine the scatterplot and check how r changes with the outlier removed",
+    "Report r as is",
+    "Remove the point without saying so",
+    "Switch to a t test"
+   ],
+   "why": "Report both analyses and justify any exclusion. One point should not decide the conclusion."
+  },
+  {
+   "q": "Two reliable measures correlate at r = .50. A third measure with poor reliability correlates with the first at r = .15. What is a plausible explanation?",
+   "o": [
+    "Measurement error in the third measure weakens the observed correlation",
+    "The first measure is invalid",
+    "There is no relationship",
+    "The sample size was too small for any correlation"
+   ],
+   "why": "Low reliability caps the correlation you can observe."
+  },
+  {
+   "q": "Hospital A's patients show r = .40 between age and days in the hospital, and Hospital B's patients also show r = .40. When the data from both hospitals are pooled, r = .15. What explains this?",
+   "o": [
+    "Group differences on the variables can change a pooled correlation",
+    "Pooling always increases r",
+    "A computational error must have occurred",
+    "Hospital differences are irrelevant"
+   ],
+   "why": "The pooled r reflects the relation within groups plus the offset between groups."
+  }
+ ]
+}

@@ -1,0 +1,7 @@
+{
+ "type": "compute",
+ "title": "Module 11 Practice: The Two-Factor ANOVA",
+ "budget": "30",
+ "gen": "anova2",
+ "intro": "Partition SS into factor A, factor B, the interaction, and error, and test all three F ratios."
+}

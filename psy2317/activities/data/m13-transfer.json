@@ -1,0 +1,41 @@
+{
+ "type": "transfer",
+ "title": "Module 13 Challenge: A Correlation With a Decision Attached",
+ "budget": "15",
+ "scenario": "<p>A researcher gives 30 students a short scale of academic self-efficacy and records their course grades. The correlation is r = .41. The researcher uses alpha = .05, two-tailed. A second researcher with a sample of 12 students from another course finds r = .41 on the same measures. A department chair reads both and says, \"One is significant and the other is not, so these studies disagree.\"</p>",
+ "parts": [
+  {
+   "type": "mc",
+   "q": "For the study with n = 30, what is the decision?",
+   "o": [
+    "Reject the null. The critical r for df = 28 is about .361",
+    "Retain the null because r is under .50",
+    "Reject the null because r squared is .41",
+    "Retain the null because n is small"
+   ],
+   "why": ".41 exceeds .361."
+  },
+  {
+   "type": "mc",
+   "q": "The second study (n = 12) has the same r. What is the critical r at df = 10, alpha = .05 two-tailed?",
+   "o": [
+    "About .576, so r = .41 is not significant",
+    "About .361, so r = .41 is significant",
+    "About .20, so r = .41 is significant",
+    "About .80, so r = .41 is not significant"
+   ],
+   "why": "With df = 10 the critical value is .576. The same r is not significant in the smaller sample."
+  },
+  {
+   "type": "write",
+   "q": "Respond to the chair. Explain why the two studies actually agree, what each result tells you about the size of the relationship, and what would give a more precise estimate.",
+   "model": "The two studies found the same correlation, r = .41, which accounts for about 17 percent of the variability in grades. The difference in significance arises only from sample size. With 30 students the critical r is .36, so .41 is significant. With 12 students the critical r is .58, so .41 is not. The estimates agree. The smaller study simply has too little precision to separate .41 from zero. A confidence interval for r in each study would show wide overlap. The best way to settle the question is to combine the information, for example with a larger sample or by pooling the two studies, which gives a more precise estimate of the true correlation.",
+   "check": [
+    "I said the studies agree on the size of r",
+    "I attributed the difference in significance to sample size",
+    "I mentioned r squared or an interval to describe size or precision",
+    "I suggested more data or pooling"
+   ]
+  }
+ ]
+}

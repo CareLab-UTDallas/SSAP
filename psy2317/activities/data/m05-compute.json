@@ -1,0 +1,7 @@
+{
+ "type": "compute",
+ "title": "Module 5 Practice: Standard Error and z for a Sample Mean",
+ "budget": "20",
+ "gen": "se",
+ "intro": "Compute the standard error, locate a sample mean on the distribution of means, and find a probability."
+}

@@ -1,0 +1,58 @@
+{
+ "type": "quiz",
+ "title": "Module 4 Interpretation Check",
+ "budget": "8",
+ "intro": "Each item gives you a short research situation. Decide what the evidence supports.",
+ "items": [
+  {
+   "q": "Anna scored 82 on a test with mean 70 and SD 8. Ben scored 88 on a test with mean 78 and SD 5. Who did better relative to their class?",
+   "o": [
+    "Ben, because his z = 2.00 exceeds Anna's z = 1.50",
+    "Anna, because 82 is lower",
+    "They did equally well",
+    "The answer cannot be determined"
+   ],
+   "why": "Anna z = (82 minus 70)/8 = 1.50. Ben z = (88 minus 78)/5 = 2.00."
+  },
+  {
+   "q": "Scores on a scale have mean 50 and SD 10 and are normally distributed. About what proportion score below 45?",
+   "o": [
+    "About .31",
+    "About .69",
+    "About .50",
+    "About .16"
+   ],
+   "why": "z = (45 minus 50)/10 = −0.50. The tail beyond z = 0.50 is .3085."
+  },
+  {
+   "q": "A score has z = +1.00. What proportion of a normal distribution scores higher?",
+   "o": [
+    "About .16",
+    "About .34",
+    "About .84",
+    "About .68"
+   ],
+   "why": "The tail beyond z = 1.00 is .1587. The .84 is the proportion below."
+  },
+  {
+   "q": "A student computes z = (60 minus 50)/10 = 1 and says \"60 is 1 point above the mean.\" What is wrong?",
+   "o": [
+    "The z of 1 means one standard deviation, which here is 10 points",
+    "Nothing is wrong",
+    "The z should be 10",
+    "The score is below the mean"
+   ],
+   "why": "Always translate z back to units. One SD equals 10 raw points in this example."
+  },
+  {
+   "q": "Which z score is the most unusual in a normal distribution?",
+   "o": [
+    "−2.40",
+    "+1.10",
+    "−0.30",
+    "+0.00"
+   ],
+   "why": "The farther z is from zero in either direction, the smaller the tail area and the more unusual the score."
+  }
+ ]
+}

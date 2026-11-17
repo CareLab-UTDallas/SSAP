@@ -1,0 +1,48 @@
+{
+ "type": "sort",
+ "title": "Module 13 Misconception Sort",
+ "budget": "8",
+ "intro": "Decide whether each statement is true, false, or depends. These are the misconceptions that cost students points on exams.",
+ "items": [
+  {
+   "s": "A statistically significant correlation must be strong.",
+   "t": "F",
+   "why": "With a large sample, a very small r can be significant. Report r and r squared too."
+  },
+  {
+   "s": "A reliable measure is automatically a valid measure.",
+   "t": "F",
+   "why": "A scale can give consistent scores and still measure the wrong thing."
+  },
+  {
+   "s": "A measure cannot be valid unless it is reasonably reliable.",
+   "t": "T",
+   "why": "Inconsistent scores cannot reflect a stable construct."
+  },
+  {
+   "s": "The same r can be significant with n = 100 but not significant with n = 15.",
+   "t": "T",
+   "why": "The critical value of r decreases as n increases."
+  },
+  {
+   "s": "Spearman's correlation is a better choice than Pearson's when the data are ordinal.",
+   "t": "T",
+   "why": "It uses the ranks and does not assume interval scale data."
+  },
+  {
+   "s": "A significant correlation means the null hypothesis that rho = 0 is proven false.",
+   "t": "F",
+   "why": "It means the data are unlikely if rho = 0. It is not proof."
+  },
+  {
+   "s": "Test-retest reliability is shown by correlating scores from the same people at two times.",
+   "t": "T",
+   "why": "A high correlation indicates stable scores."
+  },
+  {
+   "s": "Whether a significant but small correlation of .10 is meaningful",
+   "t": "D",
+   "why": "It depends on context, since small effects can matter for large populations. It accounts for only 1 percent of the variance, so it predicts individuals poorly."
+  }
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "type": "sort",
+ "title": "Module 10 Misconception Sort",
+ "budget": "8",
+ "intro": "Decide whether each statement is true, false, or depends. These are the misconceptions that cost students points on exams.",
+ "items": [
+  {
+   "s": "A significant F means every group differs from every other group.",
+   "t": "F",
+   "why": "It indicates at least one difference. Post hoc tests identify which."
+  },
+  {
+   "s": "F can be negative.",
+   "t": "F",
+   "why": "F is a ratio of two variances, which are never negative."
+  },
+  {
+   "s": "ANOVA with two groups gives the same conclusion as an independent t test.",
+   "t": "T",
+   "why": "In that case F equals t squared and the p values match."
+  },
+  {
+   "s": "A bigger F always means a bigger effect.",
+   "t": "F",
+   "why": "F depends on sample size as well as effect. Use eta squared for the size of the effect."
+  },
+  {
+   "s": "When groups differ a lot, MS within gets larger.",
+   "t": "F",
+   "why": "MS within reflects variability among people in the same condition. Group differences raise MS between."
+  },
+  {
+   "s": "The total SS equals SS between plus SS within.",
+   "t": "T",
+   "why": "ANOVA partitions the total variability into these two parts."
+  },
+  {
+   "s": "You should run Tukey tests regardless of whether F is significant.",
+   "t": "F",
+   "why": "Post hoc tests follow a significant omnibus F."
+  },
+  {
+   "s": "ANOVA assumes the populations have equal variances.",
+   "t": "T",
+   "why": "Homogeneity of variance is one of the assumptions, along with independence and approximate normality."
+  }
+ ]
+}
