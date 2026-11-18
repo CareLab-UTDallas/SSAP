@@ -1,7 +1,7 @@
 {
  "type": "transfer",
  "title": "Module 4 Challenge: Is This Score Unusual?",
- "budget": "12",
+ "budget": "10",
  "scenario": "<p>A concentration test is scaled so scores in the population are normally distributed with a mean of 50 and a standard deviation of 10. A clinic says that anyone scoring below 45 \"has serious concentration problems\" and that a score of 70 \"is a once in a lifetime result.\"</p>",
  "parts": [
   {

@@ -1,7 +1,7 @@
 {
  "type": "compute",
  "title": "Module 1 Practice: Frequency Tables",
- "budget": "15",
+ "budget": "10",
  "gen": "freq",
  "intro": "Build a frequency table and read proportions and percentiles from it. Each stage uses new numbers."
 }

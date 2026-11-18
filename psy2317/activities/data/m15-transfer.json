@@ -1,7 +1,7 @@
 {
  "type": "transfer",
  "title": "Module 15 Challenge: Which Test, and What Does It Say?",
- "budget": "20",
+ "budget": "10",
  "scenario": "<p>A psychology department asks 60 students whether they studied for the last exam in a group or alone, and records whether each passed. In the group condition, 20 of 30 passed. Alone, 10 of 30 passed. The department head says, \"Group study obviously works. Look at the percentages.\" A faculty member answers, \"Percentages can be misleading at small samples.\"</p>",
  "parts": [
   {

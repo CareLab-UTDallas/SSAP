@@ -1,7 +1,7 @@
 {
  "type": "compute",
  "title": "Module 9 Practice: The Related-Samples t Test",
- "budget": "25",
+ "budget": "15",
  "gen": "trel",
  "intro": "Compute difference scores, the standard error of the mean difference, t, and d from before and after scores."
 }

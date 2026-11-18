@@ -1,7 +1,7 @@
 {
  "type": "transfer",
  "title": "Module 14 Challenge: Predict and Explain",
- "budget": "15",
+ "budget": "10",
  "scenario": "<p>An advisor predicts first-year GPA from two variables for 40 students: weekly study hours and high school GPA. Together the predictors give R squared = .30, F(2, 37) = 7.93, p = .001. The advisor tells a student, \"You need about five more hours of studying a week to raise your GPA by half a point, because the model proves that studying causes higher grades.\"</p>",
  "parts": [
   {

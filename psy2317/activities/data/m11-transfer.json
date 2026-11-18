@@ -1,7 +1,7 @@
 {
  "type": "transfer",
  "title": "Module 11 Challenge: When Does Practice Pay Off?",
- "budget": "15",
+ "budget": "10",
  "scenario": "<p>A researcher compares two study methods across two test delays with 10 students in each of the four cells. The numbers below are illustrative. Mean test scores were 16 (reread, immediate), 8 (reread, one week), 14 (retrieval, immediate), and 12 (retrieval, one week). With MS within = 15 and df within = 36, the ANOVA gave F for method = 0.67 (p = .42), F for delay = 16.67 (p &lt; .001), and F for the interaction = 6.00 (p = .019).</p>",
  "parts": [
   {

@@ -1,7 +1,7 @@
 {
  "type": "compute",
  "title": "Module 4 Practice: z Scores",
- "budget": "15",
+ "budget": "10",
  "gen": "z",
  "intro": "Convert raw scores to z scores and back, then locate scores on the distribution."
 }

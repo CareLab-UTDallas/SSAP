@@ -1,7 +1,7 @@
 {
  "type": "compute",
  "title": "Module 10 Practice: One-Factor ANOVA",
- "budget": "30",
+ "budget": "20",
  "gen": "anova",
  "intro": "Partition SS into between and within, compute the mean squares and F, and decide."
 }

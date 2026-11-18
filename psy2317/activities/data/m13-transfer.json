@@ -1,7 +1,7 @@
 {
  "type": "transfer",
  "title": "Module 13 Challenge: A Correlation With a Decision Attached",
- "budget": "15",
+ "budget": "10",
  "scenario": "<p>A researcher gives 30 students a short scale of academic self-efficacy and records their course grades. The correlation is r = .41. The researcher uses alpha = .05, two-tailed. A second researcher with a sample of 12 students from another course finds r = .41 on the same measures. A department chair reads both and says, \"One is significant and the other is not, so these studies disagree.\"</p>",
  "parts": [
   {

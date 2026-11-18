@@ -1,7 +1,7 @@
 {
  "type": "transfer",
  "title": "Module 1 Challenge: Read a Research Claim",
- "budget": "12",
+ "budget": "10",
  "scenario": "<p>A university counseling center emails every student and gets 500 replies out of 12,000 invited. Respondents report a mean of 6.1 hours of sleep per night. The center announces: \"University students average only 6.1 hours of sleep, and students who sleep less report more stress, so we should push later class times to reduce student stress.\"</p>",
  "parts": [
   {

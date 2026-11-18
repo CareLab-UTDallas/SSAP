@@ -1,7 +1,7 @@
 {
  "type": "transfer",
  "title": "Module 6 Challenge: Run and Interpret a Hypothesis Test",
- "budget": "15",
+ "budget": "10",
  "scenario": "<p>A school psychologist wants to know whether a new reading program changes scores on a standardized test. Scores in the district follow a normal distribution with a mean of 75 and a standard deviation of 12. She gives the program to 36 students and finds a sample mean of 79. She uses alpha = .05, two-tailed.</p>",
  "parts": [
   {

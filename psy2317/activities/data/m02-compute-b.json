@@ -1,7 +1,7 @@
 {
  "type": "compute",
  "title": "Module 2 Practice: SS, Variance, and Standard Deviation",
- "budget": "20",
+ "budget": "10",
  "gen": "ssvar",
  "intro": "Work from deviations to SS to variance to standard deviation for a population."
 }

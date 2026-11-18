@@ -20,7 +20,7 @@ tr.hit td{background:var(--amber);font-weight:600}
 .codebox{margin-top:12px;padding:12px 16px;border:2px solid var(--green);border-radius:10px;font-size:18px}.codebox strong{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:24px;letter-spacing:2px;color:var(--green)}
 @media(max-width:520px){.wrap{padding:10px 10px 30px}}
 </style></head><body><div class="wrap"><main>
-<h1>The p-Hacking Lab</h1><div class="budget">Budget: 20 min &middot; Complete every part</div>
+<h1>The p-Hacking Lab</h1><div class="budget">Budget: 15 min &middot; Complete every part</div>
 <p>Here, nothing is real. Every number below is random noise, so there is no true difference anywhere. A test at &alpha; = .05 should still flag about 5 percent of such comparisons. This lab shows what happens when a researcher keeps looking until something works. Everything is simulated for practice.</p>
 
 <div class="card"><h2>Part 1. You are the researcher</h2>
@@ -80,7 +80,7 @@ mk($('q3'),[
 </script>
 <script>(function(){function hash(s){let h=2166136261;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619)}return h>>>0}
 const CODE=hash('psy2317|sim-phack').toString(36).toUpperCase().slice(-5);const slot=document.getElementById('codeSlot');
-function ok(){if(!document.querySelector('#tb tr')||!document.querySelector('#p1res tr'))return false;const cards=[].slice.call(document.querySelectorAll('#q1 .card,#q2 .card,#q3 .card'));return cards.length&&cards.every(function(c){const f=c.querySelector('.fb');return f&&f.textContent.trim().length>0})}
+function ok(){if(!document.querySelector('#tb tr')||!document.querySelector('#p1res tr')||!document.getElementById('nx').disabled)return false;const cards=[].slice.call(document.querySelectorAll('#q1 .card,#q2 .card,#q3 .card'));return cards.length&&cards.every(function(c){const f=c.querySelector('.fb');return f&&f.textContent.trim().length>0})}
 function chk(){if(ok()&&!slot.firstChild){slot.innerHTML='<div class="codebox">Completion code: <strong>'+CODE+'</strong><br><span class="small">Enter this code in the Activity Log quiz for this module.</span></div>'}}
 new MutationObserver(chk).observe(document.body,{subtree:true,childList:true,attributes:true,attributeFilter:['class']});})();</script>
 </body></html>

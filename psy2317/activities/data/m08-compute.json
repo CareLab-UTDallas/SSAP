@@ -1,7 +1,7 @@
 {
  "type": "compute",
  "title": "Module 8 Practice: The Independent-Measures t Test",
- "budget": "25",
+ "budget": "20",
  "gen": "tind",
  "intro": "Compute pooled variance, the standard error of the difference, t, d, and the decision for two independent groups."
 }

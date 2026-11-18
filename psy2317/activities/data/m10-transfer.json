@@ -1,7 +1,7 @@
 {
  "type": "transfer",
  "title": "Module 10 Challenge: Three Treatments",
- "budget": "15",
+ "budget": "10",
  "scenario": "<p>Thirty participants with insomnia are randomly assigned to one of three conditions for four weeks: sleep hygiene education only (Group 1), sleep hygiene plus relaxation training (Group 2), or sleep hygiene plus a structured cognitive behavioral program (Group 3). The outcome is hours of additional sleep per week. Each group has 10 people. The means are 10, 12, and 15. SS between = 126.67 and SS within = 270. The analysis gives F(2, 27) = 6.33, p = .006, and eta squared = .32.</p>",
  "parts": [
   {

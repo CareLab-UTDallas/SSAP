@@ -1,7 +1,7 @@
 {
  "type": "compute",
  "title": "Module 13 Practice: Computing and Testing a Correlation",
- "budget": "25",
+ "budget": "15",
  "gen": "corr",
  "intro": "Compute r from paired scores, find df, compare to the critical value, and decide."
 }

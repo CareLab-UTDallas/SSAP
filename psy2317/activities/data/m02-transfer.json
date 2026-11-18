@@ -1,7 +1,7 @@
 {
  "type": "transfer",
  "title": "Module 2 Challenge: Describe a Distribution Honestly",
- "budget": "12",
+ "budget": "10",
  "scenario": "<p>A fitness app reports the number of minutes ten users spent exercising last week: 15, 20, 20, 25, 30, 30, 35, 40, 45, and 240. The company's marketing line reads \"The average user exercises 50 minutes a week.\"</p>",
  "parts": [
   {

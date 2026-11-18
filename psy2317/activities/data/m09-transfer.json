@@ -1,7 +1,7 @@
 {
  "type": "transfer",
  "title": "Module 9 Challenge: Before and After",
- "budget": "15",
+ "budget": "10",
  "scenario": "<p>A counseling center offers a workshop on test anxiety. Twelve students complete an anxiety scale before and after the workshop. The mean change is a drop of 3.0 points (anxiety went down), and the standard deviation of the difference scores is 4.2. The analysis gives t(11) = 2.47, p = .031, d = .71, and a 95 percent CI for the mean drop of .33 to 5.67. The center advertises: \"Our workshop reduces anxiety for every participant.\"</p>",
  "parts": [
   {

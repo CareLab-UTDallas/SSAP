@@ -1,7 +1,7 @@
 {
  "type": "transfer",
  "title": "Module 12 Challenge: Why Does the Correlation Look Weak?",
- "budget": "15",
+ "budget": "10",
  "scenario": "<p>A selective graduate program admits only applicants who score in the top 15 percent on an entrance exam. The program's researchers find a correlation of r = .12 between exam score and first year grades among admitted students. A faculty member says the exam \"clearly doesn't predict success, so we should drop it.\" In a nationwide sample of all applicants, a validation study found r = .58 between exam scores and first year grades.</p>",
  "parts": [
   {

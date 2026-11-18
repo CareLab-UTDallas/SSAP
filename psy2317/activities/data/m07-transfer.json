@@ -1,7 +1,7 @@
 {
  "type": "transfer",
  "title": "Module 7 Challenge: A Small Sample, a Medium Effect",
- "budget": "15",
+ "budget": "10",
  "scenario": "<p>A clinic wants to know whether a brief mindfulness program changes scores on a well-validated wellbeing scale. The scale has a published mean of 50 in the general population. Ten participants complete the program and score a mean of 55 with a standard deviation of 8. The clinic uses alpha = .05, two-tailed, and finds t(9) = 1.98, p = .08. The staff concludes, \"The program does nothing.\"</p>",
  "parts": [
   {

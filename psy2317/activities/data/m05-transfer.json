@@ -1,7 +1,7 @@
 {
  "type": "transfer",
  "title": "Module 5 Challenge: How Surprising Is This Sample?",
- "budget": "12",
+ "budget": "10",
  "scenario": "<p>A national exam has a population mean of 25 and a standard deviation of 10. A school district that tried a new tutoring program tested 64 students and found a mean of 27.5. The district claims the program \"obviously works because the students scored 2.5 points above the national mean.\"</p>",
  "parts": [
   {

@@ -1,7 +1,7 @@
 {
  "type": "transfer",
  "title": "Module 8 Challenge: Two Groups, One Decision",
- "budget": "15",
+ "budget": "10",
  "scenario": "<p>A psychologist randomly assigns 16 students to study either by rereading notes or by testing themselves on the material. Each group has 8 students. After one week, the rereading group scores M = 19 (s = 5) and the self-testing group scores M = 24 (s = 6). The researcher tests with alpha = .05, two-tailed, and obtains t(14) = 1.81, p = .09. A student in the lab says the data prove self-testing \"makes no difference.\"</p>",
  "parts": [
   {
