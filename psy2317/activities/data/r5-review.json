@@ -1,0 +1,239 @@
+{
+ "type": "quiz",
+ "title": "Cumulative Review 5: Modules 1 to 15",
+ "budget": "15",
+ "intro": "Spaced review mixes questions from earlier modules. Retrieving older material now is what makes it stick. Items you miss come back for a retry round.",
+ "items": [
+  {
+   "q": "What is F, and is it significant at alpha = .05?",
+   "o": [
+    "F = 6.33 with df (2, 27). It exceeds the critical value of 3.35, so yes",
+    "F = 0.16, no",
+    "F = 6.33, but it is not significant",
+    "F = 63.3, yes"
+   ],
+   "why": "F = 63.33/10 = 6.33. The critical F(2, 27) at .05 is 3.354. The exact p is about .006.",
+   "ctx": "<span class=\"small\">From Module 10</span>"
+  },
+  {
+   "q": "The Spearman correlation is used when",
+   "o": [
+    "The data are ranks or the relationship is monotonic but not linear",
+    "Both variables are nominal",
+    "There are three variables",
+    "The data are normal"
+   ],
+   "why": "It applies Pearson's formula to ranks.",
+   "ctx": "<span class=\"small\">From Module 13</span>"
+  },
+  {
+   "q": "Multiple regression uses",
+   "o": [
+    "Two or more predictors to predict one outcome",
+    "One predictor",
+    "Two outcomes",
+    "No predictors"
+   ],
+   "why": "Each coefficient reflects the unique contribution of that predictor with the others held constant.",
+   "ctx": "<span class=\"small\">From Module 14</span>"
+  },
+  {
+   "q": "A researcher reports r = .85 for 30 points, but one point is far from the rest. What should be done first?",
+   "o": [
+    "Examine the scatterplot and check how r changes with the outlier removed",
+    "Report r as is",
+    "Remove the point without saying so",
+    "Switch to a t test"
+   ],
+   "why": "Report both analyses and justify any exclusion. One point should not decide the conclusion.",
+   "ctx": "<span class=\"small\">From Module 12</span>"
+  },
+  {
+   "q": "Degrees of freedom for testing a Pearson correlation are",
+   "o": [
+    "n minus 2",
+    "n minus 1",
+    "n",
+    "2n"
+   ],
+   "why": "Two means are estimated, one for each variable.",
+   "ctx": "<span class=\"small\">From Module 13</span>"
+  },
+  {
+   "q": "Population mean is 25, sigma = 10, and n = 64. A sample has M = 27.5. What is its z score?",
+   "o": [
+    "+2.00",
+    "+0.25",
+    "+1.25",
+    "+2.50"
+   ],
+   "why": "z = (27.5 minus 25)/1.25 = 2.00.",
+   "ctx": "<span class=\"small\">From Module 5</span>"
+  },
+  {
+   "q": "With MS within = 15 and df within = 36, SS for delay is 250 with df = 1. What is F for delay?",
+   "o": [
+    "16.67",
+    "250",
+    "1.00",
+    "0.07"
+   ],
+   "why": "MS delay = 250/1 = 250 and F = 250/15 = 16.67. The critical F(1, 36) at .05 is 4.11.",
+   "ctx": "<span class=\"small\">From Module 11</span>"
+  },
+  {
+   "q": "The regression line always passes through",
+   "o": [
+    "The point (mean of X, mean of Y)",
+    "The origin",
+    "The highest point",
+    "The median of both variables"
+   ],
+   "why": "This follows from how the intercept is computed.",
+   "ctx": "<span class=\"small\">From Module 14</span>"
+  },
+  {
+   "q": "An odds ratio of 4 means the odds of the outcome in the first group are",
+   "o": [
+    "Four times the odds in the second group",
+    "Four percent higher",
+    "Equal to a probability of .25",
+    "Four times the probability"
+   ],
+   "why": "Odds and probability are different. Odds of 4 correspond to a probability of .80.",
+   "ctx": "<span class=\"small\">From Module 15</span>"
+  },
+  {
+   "q": "In the equation Y-hat = bX + a, b is",
+   "o": [
+    "The slope, the predicted change in Y for each one unit increase in X",
+    "The intercept",
+    "The correlation",
+    "The standard error"
+   ],
+   "why": "The slope is computed as SP divided by SS of X.",
+   "ctx": "<span class=\"small\">From Module 14</span>"
+  },
+  {
+   "q": "Anna scored 82 on a test with mean 70 and SD 8. Ben scored 88 on a test with mean 78 and SD 5. Who did better relative to their class?",
+   "o": [
+    "Ben, because his z = 2.00 exceeds Anna's z = 1.50",
+    "Anna, because 82 is lower",
+    "They did equally well",
+    "The answer cannot be determined"
+   ],
+   "why": "Anna z = (82 minus 70)/8 = 1.50. Ben z = (88 minus 78)/5 = 2.00.",
+   "ctx": "<span class=\"small\">From Module 4</span>"
+  },
+  {
+   "q": "A chi-square test is used when the data are",
+   "o": [
+    "Frequencies in categories",
+    "Numeric scores",
+    "Ranks only",
+    "Correlations"
+   ],
+   "why": "It compares observed frequencies with expected frequencies.",
+   "ctx": "<span class=\"small\">From Module 15</span>"
+  },
+  {
+   "q": "The 95 percent CI for the population mean is 55 plus or minus 2.262(2.53). What are the limits?",
+   "o": [
+    "About 49.3 to 60.7",
+    "About 50.0 to 60.0",
+    "About 52.5 to 57.5",
+    "About 47.0 to 63.0"
+   ],
+   "why": "2.262 times 2.53 is 5.72. The CI runs from 49.28 to 60.72 and includes 50, matching the nonsignificant test.",
+   "ctx": "<span class=\"small\">From Module 7</span>"
+  },
+  {
+   "q": "A study records each participant's diagnosis (depression, anxiety, none). Which graph and summary fit this variable?",
+   "o": [
+    "A bar graph and the mode",
+    "A histogram and the mean",
+    "A line graph and the median",
+    "A scatterplot and r"
+   ],
+   "why": "Nominal categories are summarized with counts or proportions and the mode. A mean of diagnoses has no meaning.",
+   "ctx": "<span class=\"small\">From Module 1</span>"
+  },
+  {
+   "q": "For the same study, Cohen's d is the mean difference divided by sigma. What is d?",
+   "o": [
+    "About .33",
+    "About 2.00",
+    "About 12.00",
+    "About 4.00"
+   ],
+   "why": "d = (79 minus 75)/12 = .33, a small to medium effect. The z of 2.00 mixes effect size with sample size.",
+   "ctx": "<span class=\"small\">From Module 6</span>"
+  },
+  {
+   "q": "Ice cream sales and drownings are positively correlated across months. What best explains this?",
+   "o": [
+    "A third variable, warm weather, likely drives both",
+    "Ice cream causes drowning",
+    "Drowning raises ice cream sales",
+    "The correlation must be a calculation error"
+   ],
+   "why": "Season is a classic confounding variable. A correlation alone cannot separate these explanations.",
+   "ctx": "<span class=\"small\">From Module 3</span>"
+  },
+  {
+   "q": "Degrees of freedom for a goodness-of-fit test with C categories are",
+   "o": [
+    "C minus 1",
+    "C",
+    "N minus 1",
+    "C times 2"
+   ],
+   "why": "df for a test of independence is (rows minus 1) times (columns minus 1).",
+   "ctx": "<span class=\"small\">From Module 15</span>"
+  },
+  {
+   "q": "Scores are 4, 6, 8, 10, and 12. A student says the SD is 8 because the mean is 8. The error is",
+   "o": [
+    "Confusing the mean with the SD. Variability must come from deviations from the mean",
+    "None. The student is right",
+    "Using the median",
+    "Forgetting to add the scores"
+   ],
+   "why": "The mean is 8, and the SD is about 3.16 (SS = 40, sample variance = 10). The SD measures spread, not center.",
+   "ctx": "<span class=\"small\">From Module 2</span>"
+  },
+  {
+   "q": "Twelve students are tested before and after a workshop. The mean change is +3.0, and the SD of the difference scores is 4.2. What is the estimated standard error?",
+   "o": [
+    "1.21",
+    "4.20",
+    "0.35",
+    "3.00"
+   ],
+   "why": "sMD = 4.2 divided by the square root of 12 = 1.21.",
+   "ctx": "<span class=\"small\">From Module 9</span>"
+  },
+  {
+   "q": "What is the estimated standard error of the difference?",
+   "o": [
+    "2.76",
+    "5.52",
+    "30.5",
+    "0.35"
+   ],
+   "why": "The square root of (30.5/8 + 30.5/8) = the square root of 7.625 = 2.76.",
+   "ctx": "<span class=\"small\">From Module 8</span>"
+  },
+  {
+   "q": "The phi coefficient relates",
+   "o": [
+    "Two dichotomous variables",
+    "Two numeric variables",
+    "A nominal variable with three levels and a numeric variable",
+    "Ranks"
+   ],
+   "why": "It is Pearson r computed on two variables coded 0 and 1.",
+   "ctx": "<span class=\"small\">From Module 13</span>"
+  }
+ ]
+}

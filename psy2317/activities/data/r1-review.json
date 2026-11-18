@@ -1,0 +1,140 @@
+{
+ "type": "quiz",
+ "title": "Cumulative Review 1: Modules 1 to 3",
+ "budget": "10",
+ "intro": "Spaced review mixes questions from earlier modules. Retrieving older material now is what makes it stick. Items you miss come back for a retry round.",
+ "items": [
+  {
+   "q": "Which measure of variability depends only on two scores?",
+   "o": [
+    "Range",
+    "Variance",
+    "Standard deviation",
+    "SS"
+   ],
+   "why": "The range uses only the highest and lowest scores, which makes it sensitive to outliers.",
+   "ctx": "<span class=\"small\">From Module 2</span>"
+  },
+  {
+   "q": "The mode is",
+   "o": [
+    "The most frequently occurring score or category",
+    "The balance point",
+    "The middle score",
+    "The range"
+   ],
+   "why": "The mode is the only measure of central tendency that works for nominal data.",
+   "ctx": "<span class=\"small\">From Module 2</span>"
+  },
+  {
+   "q": "A statistic that is unbiased",
+   "o": [
+    "Averages out to the population value across many samples",
+    "Always equals the population value",
+    "Is computed from the whole population",
+    "Has no sampling error"
+   ],
+   "why": "Unbiased does not mean any single estimate is correct. It means the long run average is right.",
+   "ctx": "<span class=\"small\">From Module 3</span>"
+  },
+  {
+   "q": "Temperature in degrees Fahrenheit is measured on which scale?",
+   "o": [
+    "Interval",
+    "Ordinal",
+    "Ratio",
+    "Nominal"
+   ],
+   "why": "Equal intervals but no true zero. Zero degrees Fahrenheit does not mean no temperature, so 80 is not twice as hot as 40.",
+   "ctx": "<span class=\"small\">From Module 1</span>"
+  },
+  {
+   "q": "A deviation score is",
+   "o": [
+    "A score minus the mean",
+    "A score divided by the mean",
+    "The square root of the variance",
+    "The difference between the highest and lowest scores"
+   ],
+   "why": "X minus the mean. Deviations from the mean always sum to zero.",
+   "ctx": "<span class=\"small\">From Module 2</span>"
+  },
+  {
+   "q": "The sum of products (SP) in the correlation formula",
+   "o": [
+    "Adds up, for each person, the X deviation times the Y deviation",
+    "Is the sum of squared X deviations",
+    "Equals SS for Y",
+    "Is always positive"
+   ],
+   "why": "SP captures how X and Y deviate together. Positive products dominate when high X goes with high Y.",
+   "ctx": "<span class=\"small\">From Module 3</span>"
+  },
+  {
+   "q": "The sum of squared deviations from the mean is abbreviated",
+   "o": [
+    "SS",
+    "SD",
+    "IQR",
+    "MS"
+   ],
+   "why": "SS stands for sum of squares. It is the starting point for variance and standard deviation.",
+   "ctx": "<span class=\"small\">From Module 2</span>"
+  },
+  {
+   "q": "The difference between a sample statistic and the population parameter it estimates is",
+   "o": [
+    "Sampling error",
+    "A bias in the instrument",
+    "A type of variable",
+    "Random assignment"
+   ],
+   "why": "Sampling error is the natural discrepancy that arises because a sample is only part of the population.",
+   "ctx": "<span class=\"small\">From Module 1</span>"
+  },
+  {
+   "q": "Degrees of freedom for a single sample variance equal",
+   "o": [
+    "n minus 1",
+    "n",
+    "n plus 1",
+    "n squared"
+   ],
+   "why": "Once the sample mean is fixed, only n minus 1 scores are free to vary.",
+   "ctx": "<span class=\"small\">From Module 3</span>"
+  },
+  {
+   "q": "Which design includes random assignment of participants to conditions?",
+   "o": [
+    "Experimental",
+    "Correlational",
+    "Nonexperimental",
+    "Quasi-experimental"
+   ],
+   "why": "Random assignment is what defines a true experiment and is what supports cause and effect claims.",
+   "ctx": "<span class=\"small\">From Module 1</span>"
+  },
+  {
+   "q": "Reaction time in milliseconds is measured on which scale?",
+   "o": [
+    "Ratio",
+    "Interval",
+    "Ordinal",
+    "Nominal"
+   ],
+   "why": "Zero means no time, and ratios make sense. 600 ms is twice as long as 300 ms.",
+   "ctx": "<span class=\"small\">From Module 1</span>"
+  },
+  {
+   "q": "Which correlation is strongest?",
+   "o": [
+    "−.85",
+    "+.60",
+    "+.10",
+    "0"
+   ],
+   "why": "Strength depends on the absolute value, not the sign.",
+   "ctx": "<span class=\"small\">From Module 3</span>"
+  }
+ ]
+}

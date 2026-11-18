@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The p-Hacking Lab</title>
+<style>
+:root{--green:#154734;--orange:#e87500;--ink:#1f2a24;--muted:#4a5a52;--line:#c9d8cf;--tint:#eef3f0;--good:#e3f2e8;--goodb:#2e7d4f;--bad:#fdecea;--badb:#b3261e;--amber:#fff4e0;--amberb:#b25e00}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Arial,sans-serif;color:var(--ink);line-height:1.5}
+.wrap{max-width:840px;margin:0 auto;padding:14px 16px 40px}h1{font-family:Georgia,serif;font-size:24px;color:var(--green);margin:4px 0}h2{font-size:18px;color:var(--green);margin:0 0 6px}
+.budget{display:inline-block;background:var(--tint);border-radius:999px;padding:3px 12px;font-size:14px;color:var(--green);margin-bottom:10px}
+.card{border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:12px 0;overflow-x:auto}
+button{font:inherit;cursor:pointer;border-radius:8px;border:1px solid var(--green);background:var(--green);color:#fff;padding:7px 14px;margin:4px 6px 4px 0;min-height:44px}button.alt{background:#fff;color:var(--green)}
+button:disabled{opacity:.5;cursor:default}
+button.opt{display:block;width:100%;text-align:left;background:#fff;color:var(--ink);border:1px solid var(--line);margin:6px 0;padding:10px 12px}button.opt:hover:not(:disabled){background:var(--tint)}
+button.opt.right{background:var(--good);border-color:var(--goodb)}button.opt.wrong{background:var(--bad);border-color:var(--badb)}
+select,input[type=text]{font:inherit;font-size:16px;min-height:40px;padding:6px 8px;border:1px solid #8aa597;border-radius:6px}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
+table{border-collapse:collapse;width:100%;font-size:15px}th,td{border:1px solid var(--line);padding:5px 9px;text-align:left}th{background:var(--green);color:#fff}
+tr.hit td{background:var(--amber);font-weight:600}
+.fb{margin-top:8px;padding:8px 12px;border-radius:8px}.fb.good{background:var(--good);border-left:4px solid var(--goodb)}.fb.bad{background:var(--bad);border-left:4px solid var(--badb)}.fb.hint{background:var(--amber);border-left:4px solid var(--amberb)}
+.small{font-size:14px;color:var(--muted)}.big{font-size:22px;font-weight:700;color:var(--green)}
+.codebox{margin-top:12px;padding:12px 16px;border:2px solid var(--green);border-radius:10px;font-size:18px}.codebox strong{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:24px;letter-spacing:2px;color:var(--green)}
+@media(max-width:520px){.wrap{padding:10px 10px 30px}}
+</style></head><body><div class="wrap"><main>
+<h1>The p-Hacking Lab</h1><div class="budget">Budget: 20 min &middot; Complete every part</div>
+<p>Here, nothing is real. Every number below is random noise, so there is no true difference anywhere. A test at &alpha; = .05 should still flag about 5 percent of such comparisons. This lab shows what happens when a researcher keeps looking until something works. Everything is simulated for practice.</p>
+
+<div class="card"><h2>Part 1. You are the researcher</h2>
+<p>A study compares two groups of 20 people on up to 20 different outcome measures. The groups do not differ on any of them. Test the outcomes one at a time, and stop as soon as you find a result you could publish.</p>
+<button id="nx">Test the next outcome</button><button id="nw" class="alt">Start a new study</button>
+<div id="p1res" aria-live="polite"></div>
+<div class="small" id="p1sum"></div></div>
+<div id="q1"></div>
+
+<div class="card"><h2>Part 2. How often does hunting find something?</h2>
+<p>Choose how many outcomes a researcher tests per study. The lab runs 1,000 studies with no true effect and counts how many contain at least one p below .05.</p>
+<label for="kk"><strong>Outcomes tested per study</strong></label> <select id="kk"><option>1</option><option>3</option><option>5</option><option selected>10</option><option>20</option></select>
+<button id="run">Run 1,000 studies</button>
+<table aria-label="Results of the simulations"><thead><tr><th scope="col">Outcomes tested</th><th scope="col">Studies with a p below .05</th><th scope="col">Predicted by 1 &minus; .95<sup>k</sup></th><th scope="col">Studies with p below .05 / k</th></tr></thead><tbody id="tb"></tbody></table>
+<p class="small">The last column uses the corrected cutoff, .05 divided by the number of outcomes (a Bonferroni correction).</p></div>
+<div id="q2"></div>
+
+<div class="card"><h2>Part 3. What pre-registration does</h2>
+<p>Pre-registration means writing down your question, your variables, your test, and your cutoff before you see the results. You cannot go hunting afterward, because the plan is already on record. You will pre-register your own project plan in the Research Project module.</p></div>
+<div id="q3"></div>
+</main></div>
+<div class="wrap" id="codeSlot" aria-live="polite"></div>
+<script src="stats.js"></script>
+<script>
+const $=id=>document.getElementById(id);
+function rn(){let u=0,v=0;while(!u)u=Math.random();while(!v)v=Math.random();return Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*v)}
+function study(){const n=20,a=[],b=[];for(let i=0;i<n;i++){a.push(rn());b.push(rn())}const m=x=>x.reduce((p,q)=>p+q)/x.length,v=(x,mm)=>x.reduce((p,q)=>p+(q-mm)*(q-mm),0)/(x.length-1);
+ const ma=m(a),mb=m(b),sp=(v(a,ma)+v(b,mb))/2,se=Math.sqrt(sp*2/n),t=(ma-mb)/se;return {t:t,p:STATS.pT2(t,2*n-2),d:(ma-mb)/Math.sqrt(sp)}}
+/* part 1 */
+let tests=[],stopped=false;
+function p1draw(){const rows=tests.map((r,i)=>'<tr'+(r.p<.05?' class="hit"':'')+'><td>Outcome '+(i+1)+'</td><td>'+r.t.toFixed(2)+'</td><td>'+(r.p<.001?'< .001':r.p.toFixed(3))+'</td><td>'+r.d.toFixed(2)+'</td><td>'+(r.p<.05?'p < .05':'not significant')+'</td></tr>').join('');
+ $('p1res').innerHTML=tests.length?'<table aria-label="Outcomes tested so far"><thead><tr><th scope="col">Test</th><th scope="col">t(38)</th><th scope="col">p</th><th scope="col">d</th><th scope="col">Result</th></tr></thead><tbody>'+rows+'</tbody></table>':'';
+ const last=tests[tests.length-1];
+ if(last&&last.p<.05){$('p1sum').innerHTML='<div class="fb bad"><strong>You found a significant result on test '+tests.length+'.</strong> If you now wrote "the groups differ on outcome '+tests.length+'" and left out the other '+(tests.length-1)+' tests, you would report a false positive as a finding. There is no true difference. The p value below .05 was produced by looking '+tests.length+' times.</div>';$('nx').disabled=true}
+ else if(tests.length>=20){$('p1sum').innerHTML='<div class="fb good">You tested all 20 outcomes and found nothing. That happens in about '+(Math.pow(.95,20)*100).toFixed(0)+' percent of studies like this one. Start a new study to see how often a hunt succeeds.</div>';$('nx').disabled=true}
+ else $('p1sum').textContent=tests.length?'Tests run so far: '+tests.length+'. No significant result yet.':''}
+$('nx').onclick=()=>{tests.push(study());p1draw()};
+$('nw').onclick=()=>{tests=[];$('nx').disabled=false;p1draw();$('nx').focus()};
+/* part 2 */
+const done={};
+$('run').onclick=()=>{const k=+$('kk').value,N=1000;let raw=0,adj=0;for(let s=0;s<N;s++){let any=false,anyAdj=false;for(let j=0;j<k;j++){const r=study();if(r.p<.05)any=true;if(r.p<.05/k)anyAdj=true}if(any)raw++;if(anyAdj)adj++}
+ done[k]={raw:raw,adj:adj};const keys=Object.keys(done).map(Number).sort((a,b)=>a-b);
+ $('tb').innerHTML=keys.map(q=>'<tr><td>'+q+'</td><td>'+(done[q].raw/10).toFixed(1)+'%</td><td>'+((1-Math.pow(.95,q))*100).toFixed(1)+'%</td><td>'+(done[q].adj/10).toFixed(1)+'%</td></tr>').join('')};
+/* questions */
+function mk(box,qs){qs.forEach((q,i)=>{const c=document.createElement('div');c.className='card';c.innerHTML='<div><strong>'+q.t+'</strong> '+q.p+'</div>';const fb=document.createElement('div');let dn=false;
+ const idx=q.o.map((t,k)=>k).sort(()=>Math.random()-.5);idx.forEach(k=>{const b=document.createElement('button');b.type='button';b.className='opt';b.textContent=q.o[k];b.onclick=()=>{if(dn)return;dn=true;c.querySelectorAll('button.opt').forEach((e,j)=>{e.disabled=true;if(idx[j]===0)e.classList.add('right')});if(k!==0)b.classList.add('wrong');fb.className='fb '+(k===0?'good':'bad');fb.innerHTML='<strong>'+(k===0?'Correct.':'Not quite.')+'</strong> '+q.why};c.appendChild(b)});c.appendChild(fb);box.appendChild(c)})}
+mk($('q1'),[
+ {t:'Question 1.',p:'In Part 1, the groups truly do not differ. What does a p below .05 on one of your tests tell you?',o:['Nothing reliable. With enough tests, a p below .05 turns up by chance alone','The groups really differ on that outcome','The effect must be large','The null hypothesis is false'],why:'A p value is the probability of data this extreme if the null is true. When you run many tests, small p values appear by chance.'},
+ {t:'Question 2.',p:'Which practice is closest to what you did in Part 1?',o:['Testing many outcomes and reporting only the one that worked','Running a single planned test and reporting it','Replicating a finding in a new sample','Using a larger sample'],why:'Selective reporting of the tests that worked, and hiding the ones that did not, is the core of p-hacking.'}]);
+mk($('q2'),[
+ {t:'Question 3.',p:'With 10 outcomes tested per study and no true effects, about what percent of studies find at least one p below .05?',o:['About 40 percent','About 5 percent','About 10 percent','About 95 percent'],why:'The chance is 1 minus .95 to the power 10, which is about .40. Run it in Part 2 and compare.'},
+ {t:'Question 4.',p:'Using .05 divided by the number of tests as the cutoff keeps the chance of at least one false positive near what level?',o:['About 5 percent, the level you set','About 0 percent','About 50 percent','About 95 percent'],why:'That is the Bonferroni correction. It protects the overall false positive rate, at the cost of power for each single test.'},
+ {t:'Question 5.',p:'A researcher tests 20 outcomes, finds one with p = .03, and reports "the treatment improved sleep quality." What should a careful reader think?',o:['It is weak evidence. With 20 tests, one p below .05 is expected by chance about 64 percent of the time','It is strong evidence because p is below .05','It proves the treatment works','It is impossible'],why:'Reading the number of tests behind a result matters as much as reading the p value.'}]);
+mk($('q3'),[
+ {t:'Question 6.',p:'How does pre-registering your project plan reduce p-hacking?',o:['You commit to the variables, test, and cutoff before seeing results, so choices cannot be adjusted to get significance','It guarantees significant results','It makes the sample bigger','It removes the need for statistics'],why:'Pre-registration separates planned tests from exploratory ones. You can still explore, but you label it as exploratory.'},
+ {t:'Question 7.',p:'You pre-register one test, but while looking at your data you notice an interesting extra pattern. What is the honest way to handle it?',o:['Report it as exploratory and say it was not part of the plan','Present it as if it had been planned','Hide the planned test and report only the pattern','Drop it silently'],why:'Exploration is fine when it is labeled. It becomes a problem when it is presented as confirmation.'}]);
+</script>
+<script>(function(){function hash(s){let h=2166136261;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619)}return h>>>0}
+const CODE=hash('psy2317|sim-phack').toString(36).toUpperCase().slice(-5);const slot=document.getElementById('codeSlot');
+function ok(){if(!document.querySelector('#tb tr')||!document.querySelector('#p1res tr'))return false;const cards=[].slice.call(document.querySelectorAll('#q1 .card,#q2 .card,#q3 .card'));return cards.length&&cards.every(function(c){const f=c.querySelector('.fb');return f&&f.textContent.trim().length>0})}
+function chk(){if(ok()&&!slot.firstChild){slot.innerHTML='<div class="codebox">Completion code: <strong>'+CODE+'</strong><br><span class="small">Enter this code in the Activity Log quiz for this module.</span></div>'}}
+new MutationObserver(chk).observe(document.body,{subtree:true,childList:true,attributes:true,attributeFilter:['class']});})();</script>
+</body></html>

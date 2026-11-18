@@ -41,6 +41,12 @@ select{font:inherit;padding:6px;border-radius:6px}
 .done-box{background:var(--tint);border-radius:10px;padding:14px 16px;margin-top:14px}
 ul.ck{list-style:none;padding:0}
 ul.ck li{margin:4px 0}
+button{min-height:44px}
+input[type=text],textarea,select{font-size:16px;min-height:40px}
+.card{overflow-x:auto}
+.codebox{margin-top:12px;padding:12px 16px;border:2px solid var(--green);border-radius:10px;background:#fff;font-size:18px}
+.codebox strong{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:24px;letter-spacing:2px;color:var(--green)}
+@media (max-width:520px){.wrap{padding:10px 10px 30px}h1{font-size:21px}.card{padding:12px}input[type=text]{width:100%}}
 @media (prefers-reduced-motion:reduce){.bar>div{transition:none}}
 </style></head>
 <body><div class="wrap"><main id="app" aria-live="polite"><p>Loading…</p></main></div>
@@ -73,19 +79,21 @@ function quiz(d){
       if(o.i===correct){right++;bt.classList.add('right');fb.className='fb good';fb.innerHTML='<strong>Correct.</strong> '+(it.why||'')}
       else{missed.push(order[pos]);bt.classList.add('wrong');fb.className='fb bad';fb.innerHTML='<strong>Not quite.</strong> '+(it.why||'');}
       const nx=$('button','','Next');nx.onclick=()=>{pos++;show()};fb.appendChild($('div')).appendChild(nx);nx.focus()};c.appendChild(bt)});
-    c.appendChild(fb);box.appendChild(c)}
+    c.appendChild(fb);box.appendChild(c);if(pos>0||round>1){const f=c.querySelector('button.opt');if(f)f.focus({preventScroll:true})}}
   function end(){
     const b=bar();b.set(1);box.appendChild(b.el);
     const n=order.length;const c=$('div','done-box');
     c.innerHTML='<h2 style="margin-top:0">Round complete</h2><p>You answered <strong>'+right+' of '+n+'</strong> correctly'+(round>1?' in this retry':' on the first try')+'.</p>';
     if(missed.length){const p=$('p','','Items to revisit: '+missed.length+'. Retrying the ones you missed is the fastest way to make them stick.');c.appendChild(p);
       const bt=$('button','','Retry the '+missed.length+' missed item'+(missed.length>1?'s':''));bt.onclick=()=>{order=missed.slice();missed=[];right=0;pos=0;round++;show()};c.appendChild(bt)}
-    else c.appendChild($('p','','Every item is correct. Mark this page done in Canvas and move on.'));
+    else{c.appendChild($('p','','Every item is correct. Copy your completion code into the Activity Log, mark this page done in Canvas, and move on.'));c.appendChild(codeBox())}
     box.appendChild(c)}
   show()}
 
 /* ---------- compute with stages ---------- */
 function hash(s){let h=2166136261;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619)}return h>>>0}
+const CODE=hash('psy2317|'+id).toString(36).toUpperCase().slice(-5);
+const codeBox=()=>{const e=$('div','codebox','Completion code: <strong>'+CODE+'</strong><br><span class="small">Enter this code in the Activity Log quiz for this module.</span>');return e};
 function compute(d){
   const base=hash(id);const names=['Study a worked example','Try one with hints','Do one on your own'];let stage=0;const nav=$('div','stages');app.appendChild(nav);const box=$('div');app.appendChild(box);
   const done=[false,false,false];
@@ -129,7 +137,7 @@ function compute(d){
     function finish(){b.set(1);const c=$('div','done-box');c.innerHTML='<h2 style="margin-top:0">Stage '+(stage+1)+' complete</h2><p>You got <strong>'+clean+' of '+total+'</strong> steps right on the first try and used help on '+helped+'.</p>';
       done[stage]=true;navr();
       if(stage<2){const bt=$('button','','Start stage '+(stage+2));bt.onclick=()=>{stage++;start()};c.appendChild(bt)}
-      else{c.appendChild($('p','','Try another problem with new numbers if any step felt shaky. Then mark this page done in Canvas.'));const bt=$('button','alt','New problem');bt.onclick=()=>start();c.appendChild(bt)}
+      else{c.appendChild($('p','','Try another problem with new numbers if any step felt shaky. Then mark this page done in Canvas.'));c.appendChild(codeBox());const bt=$('button','alt','New problem');bt.onclick=()=>start();c.appendChild(bt)}
       holder.appendChild(c)}
     next()}
   start()}
@@ -137,7 +145,7 @@ function compute(d){
 /* ---------- transfer challenge ---------- */
 function transfer(d){
   app.appendChild($('div','card',d.scenario));let i=0;const box=$('div');app.appendChild(box);const b=bar();app.insertBefore(b.el,box);
-  function show(){box.innerHTML='';b.set(i/d.parts.length);if(i>=d.parts.length){const c=$('div','done-box','<h2 style="margin-top:0">Challenge complete</h2><p>Reread your own written answers next to the expert analysis. Whatever surprised you is the thing to study again. Then mark this page done in Canvas.</p>');box.appendChild(c);b.set(1);return}
+  function show(){box.innerHTML='';b.set(i/d.parts.length);if(i>=d.parts.length){const c=$('div','done-box','<h2 style="margin-top:0">Challenge complete</h2><p>Reread your own written answers next to the expert analysis. Whatever surprised you is the thing to study again. Then mark this page done in Canvas.</p>');c.appendChild(codeBox());box.appendChild(c);b.set(1);return}
     const p=d.parts[i],c=$('div','card cur');c.appendChild($('div','small','Question '+(i+1)+' of '+d.parts.length));c.appendChild($('div','lbl',p.q));
     if(p.type==='mc'){const fb=$('div');let ans=false;const list=shuffle(p.o.map((t,k)=>({t,k})));
       list.forEach(o=>{const bt=$('button','opt',o.t);bt.onclick=()=>{if(ans)return;ans=true;c.querySelectorAll('button.opt').forEach((e,k)=>{e.disabled=true;if(list[k].k===0)e.classList.add('right')});

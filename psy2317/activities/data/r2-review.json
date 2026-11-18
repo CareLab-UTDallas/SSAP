@@ -1,0 +1,140 @@
+{
+ "type": "quiz",
+ "title": "Cumulative Review 2: Modules 1 to 6",
+ "budget": "10",
+ "intro": "Spaced review mixes questions from earlier modules. Retrieving older material now is what makes it stick. Items you miss come back for a retry round.",
+ "items": [
+  {
+   "q": "A Type I error occurs when",
+   "o": [
+    "The null is true and we reject it",
+    "The null is false and we fail to reject it",
+    "The null is false and we reject it",
+    "The null is true and we retain it"
+   ],
+   "why": "A false alarm. Its probability equals alpha when the null is true.",
+   "ctx": "<span class=\"small\">From Module 6</span>"
+  },
+  {
+   "q": "The central limit theorem says that the distribution of sample means",
+   "o": [
+    "Approaches a normal shape as n increases, whatever the population shape",
+    "Always equals the population distribution",
+    "Is always skewed",
+    "Has a mean equal to zero"
+   ],
+   "why": "With n of about 30 or more, the distribution of means is close to normal even for skewed populations.",
+   "ctx": "<span class=\"small\">From Module 5</span>"
+  },
+  {
+   "q": "A z score for a sample mean is computed as",
+   "o": [
+    "(M minus mu) divided by the standard error",
+    "(X minus mu) divided by sigma",
+    "M divided by sigma",
+    "(M minus mu) times n"
+   ],
+   "why": "The standard error replaces the standard deviation because we are locating a mean in the distribution of means.",
+   "ctx": "<span class=\"small\">From Module 5</span>"
+  },
+  {
+   "q": "A study finds r = +.62 between hours studied and exam score. What proportion of exam score variability is accounted for by study time in this linear relationship?",
+   "o": [
+    "About .38",
+    ".62",
+    ".79",
+    ".24"
+   ],
+   "why": ".62 squared = .384. The other roughly 62 percent comes from everything else, including prior knowledge and test conditions.",
+   "ctx": "<span class=\"small\">From Module 3</span>"
+  },
+  {
+   "q": "Participants are randomly assigned to practice a task for 10 or 30 minutes, then tested. Which conclusion is justified if the 30-minute group scores higher?",
+   "o": [
+    "Longer practice caused better performance, subject to sampling error",
+    "The result applies to everyone",
+    "The groups must have differed in motivation",
+    "Nothing can be concluded"
+   ],
+   "why": "Random assignment makes the groups equivalent on average before treatment, which supports a causal claim.",
+   "ctx": "<span class=\"small\">From Module 1</span>"
+  },
+  {
+   "q": "The mean of the distribution of sample means equals",
+   "o": [
+    "The population mean",
+    "The sample mean of one sample",
+    "Zero",
+    "The standard error"
+   ],
+   "why": "Sample means are unbiased. They center on the population mean.",
+   "ctx": "<span class=\"small\">From Module 5</span>"
+  },
+  {
+   "q": "To find the raw score that goes with a given z, you compute",
+   "o": [
+    "X = mean + z times SD",
+    "X = z divided by SD",
+    "X = SD minus z",
+    "X = mean times z"
+   ],
+   "why": "This reverses the z formula. Start from the mean and move z standard deviations.",
+   "ctx": "<span class=\"small\">From Module 4</span>"
+  },
+  {
+   "q": "Standardizing scores makes it possible to",
+   "o": [
+    "Compare scores from different scales on a common metric",
+    "Make the data normal",
+    "Remove outliers",
+    "Increase the SD"
+   ],
+   "why": "Standardizing changes the units and leaves the shape alone. It does not make skewed data normal.",
+   "ctx": "<span class=\"small\">From Module 4</span>"
+  },
+  {
+   "q": "A teacher adds 5 bonus points to every exam score. What happens to the mean and standard deviation?",
+   "o": [
+    "The mean rises by 5 and the SD is unchanged",
+    "Both rise by 5",
+    "The mean is unchanged and the SD rises by 5",
+    "Both are unchanged"
+   ],
+   "why": "Every score moves up together, so the center moves and the spread does not.",
+   "ctx": "<span class=\"small\">From Module 2</span>"
+  },
+  {
+   "q": "The mean of a complete set of z scores is",
+   "o": [
+    "0",
+    "1",
+    "The original mean",
+    "Undefined"
+   ],
+   "why": "Standardizing centers the distribution at zero. The SD of z scores is 1.",
+   "ctx": "<span class=\"small\">From Module 4</span>"
+  },
+  {
+   "q": "The alternative hypothesis states that",
+   "o": [
+    "There is an effect or difference in the population",
+    "The null is true",
+    "The sample is biased",
+    "The p value is large"
+   ],
+   "why": "It is the research claim. We never prove it. We decide whether the data are inconsistent with the null.",
+   "ctx": "<span class=\"small\">From Module 6</span>"
+  },
+  {
+   "q": "A p value is",
+   "o": [
+    "The probability of results at least this extreme if the null were true",
+    "The probability the null is true",
+    "The probability the result will replicate",
+    "The size of the effect"
+   ],
+   "why": "It is a statement about the data given the null, not about the null given the data.",
+   "ctx": "<span class=\"small\">From Module 6</span>"
+  }
+ ]
+}

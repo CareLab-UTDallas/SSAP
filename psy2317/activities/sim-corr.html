@@ -14,6 +14,7 @@ button.opt.right{background:var(--good);border-color:var(--goodb)}button.opt.wro
 button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
 .read{font-size:22px;font-weight:700;color:var(--green)}.fb{margin-top:8px;padding:8px 12px;border-radius:8px}.fb.good{background:var(--good);border-left:4px solid var(--goodb)}.fb.bad{background:var(--bad);border-left:4px solid var(--badb)}
 svg{width:100%;height:auto;display:block;background:#fff}.small{font-size:14px;color:var(--muted)}
+button{min-height:44px}input[type=text],select,textarea{font-size:16px;min-height:40px}.codebox{margin-top:12px;padding:12px 16px;border:2px solid var(--green);border-radius:10px;font-size:18px}.codebox strong{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:24px;letter-spacing:2px;color:var(--green)}@media(max-width:520px){.wrap{padding:10px 10px 30px}input[type=text]{width:100%}}
 </style></head><body><div class="wrap"><main>
 <h1>Correlation Lab</h1><div class="budget">Budget: 20 min &middot; Complete all three parts</div>
 <p>A single number can hide what a scatterplot shows. In this lab you change the data and watch r respond. Everything is simulated for practice.</p>
@@ -55,7 +56,7 @@ $('gb').onclick=()=>{const v=parseFloat($('gi').value);if(isNaN(v)||v<-1||v>1){$
  const e=Math.abs(v-G.act);errs.push(e);round++;$('gi').disabled=true;$('gb').disabled=true;
  $('gf').innerHTML='<div class="fb '+(e<=0.15?'good':'bad')+'">The actual r is <strong>'+G.act.toFixed(2)+'</strong>. You were off by '+e.toFixed(2)+'.'+(round>=5?' <br>After five rounds your average error was <strong>'+(errs.reduce((a,b)=>a+b)/errs.length).toFixed(2)+'</strong>. People usually start around .15 to .25 and improve with practice.':'')+'</div>';
  if(round<5){$('gn').style.display='inline-block'}};
-$('gn').onclick=newg;newg();
+$('gn').onclick=newg;$('gi').addEventListener('keydown',e=>{if(e.key==='Enter')$('gb').click()});newg();
 function mk(box,qs){qs.forEach((q,i)=>{const c=document.createElement('div');c.className='card';c.innerHTML='<div><strong>'+q.t+'</strong> '+q.p+'</div>';const fb=document.createElement('div');let done=false;
  const idx=q.o.map((t,k)=>k).sort(()=>Math.random()-.5);idx.forEach(k=>{const b=document.createElement('button');b.type='button';b.className='opt';b.textContent=q.o[k];b.onclick=()=>{if(done)return;done=true;c.querySelectorAll('button.opt').forEach((e,j)=>{e.disabled=true;if(idx[j]===0)e.classList.add('right')});if(k!==0)b.classList.add('wrong');fb.className='fb '+(k===0?'good':'bad');fb.innerHTML='<strong>'+(k===0?'Correct.':'Not quite.')+'</strong> '+q.why};c.appendChild(b)});c.appendChild(fb);box.appendChild(c)})}
 mk($('q1'),[
@@ -65,4 +66,10 @@ mk($('q1'),[
  {t:'Question 4.',p:'Press "Switch to a curved pattern." The points follow a clear arch. What is r, and what does it mean?',o:['r is near 0, but the variables are clearly related. Pearson r only detects straight lines','r is near 1','r is near −1'],why:'A correlation of zero means no linear relationship. It does not mean no relationship.'}]);
 mk($('q2'),[
  {t:'Part 3. Reflection.',p:'Two variables correlate r = .90 across a city. A reporter writes that one causes the other. Which response is best?',o:['Correlation alone cannot show cause. It could run the other way, or a third variable could produce both','A correlation that strong proves causation','The reporter is right if the sample was random'],why:'Only an experiment with random assignment supports a causal claim. A random sample supports generalizing, not causation.'}]);
-</script></body></html>
+</script><div class="wrap" id="codeSlot" aria-live="polite"></div>
+<script>(function(){function hash(s){let h=2166136261;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619)}return h>>>0}
+const CODE=hash('psy2317|sim-corr').toString(36).toUpperCase().slice(-5);const slot=document.getElementById('codeSlot');
+function ok(){const cards=[].slice.call(document.querySelectorAll('#q1 .card, #q2 .card'));if(!cards.length)return false;return cards.every(function(c){const f=c.querySelector('.fb');return f&&f.textContent.trim().length>0})}
+function chk(){if(ok()&&!slot.firstChild){slot.innerHTML='<div class="codebox">Completion code: <strong>'+CODE+'</strong><br><span class="small">Enter this code in the Activity Log quiz for this module.</span></div>'}}
+new MutationObserver(chk).observe(document.body,{subtree:true,childList:true,attributes:true,attributeFilter:['class']});})();</script>
+</body></html>

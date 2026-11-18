@@ -1,0 +1,206 @@
+{
+ "type": "quiz",
+ "title": "Cumulative Review 4: Modules 1 to 12",
+ "budget": "15",
+ "intro": "Spaced review mixes questions from earlier modules. Retrieving older material now is what makes it stick. Items you miss come back for a retry round.",
+ "items": [
+  {
+   "q": "Measurement error in either variable tends to",
+   "o": [
+    "Lower the observed correlation",
+    "Raise the observed correlation",
+    "Make r negative",
+    "Not affect r"
+   ],
+   "why": "Noise in the scores weakens the observable association, which is why reliability matters.",
+   "ctx": "<span class=\"small\">From Module 12</span>"
+  },
+  {
+   "q": "In a class of 400 students, 40 are chosen at random and their mean exam score is 78. The class mean is 80. This 2 point gap is",
+   "o": [
+    "Sampling error",
+    "A mistake in data entry",
+    "Evidence the sample was biased",
+    "A parameter"
+   ],
+   "why": "Random samples differ from the population by chance. A small gap like this is exactly what sampling error looks like.",
+   "ctx": "<span class=\"small\">From Module 1</span>"
+  },
+  {
+   "q": "For the same study, Cohen's d is the mean difference divided by sigma. What is d?",
+   "o": [
+    "About .33",
+    "About 2.00",
+    "About 12.00",
+    "About 4.00"
+   ],
+   "why": "d = (79 minus 75)/12 = .33, a small to medium effect. The z of 2.00 mixes effect size with sample size.",
+   "ctx": "<span class=\"small\">From Module 6</span>"
+  },
+  {
+   "q": "The F ratio is",
+   "o": [
+    "Variance between groups divided by variance within groups",
+    "Variance within divided by variance between",
+    "The mean difference divided by SD",
+    "SS total divided by SS between"
+   ],
+   "why": "F = MS between divided by MS within. Under the null it is near 1.",
+   "ctx": "<span class=\"small\">From Module 10</span>"
+  },
+  {
+   "q": "A 2 by 2 design has how many cells?",
+   "o": [
+    "4",
+    "2",
+    "3",
+    "6"
+   ],
+   "why": "Multiply the number of levels of each factor.",
+   "ctx": "<span class=\"small\">From Module 11</span>"
+  },
+  {
+   "q": "A researcher says, \"Because my groups were not significantly different, they must have had equal means.\" What is wrong?",
+   "o": [
+    "The sample means differed by 5. The test only shows the difference is not distinguishable from sampling error",
+    "Nothing is wrong",
+    "The groups should have been larger",
+    "The mean difference is the standard error"
+   ],
+   "why": "Non-significance concerns the population. The sample means still differ, and the data are compatible with a real difference.",
+   "ctx": "<span class=\"small\">From Module 8</span>"
+  },
+  {
+   "q": "In a scatterplot, a strong positive linear relationship looks like",
+   "o": [
+    "Points close to a line rising from lower left to upper right",
+    "Points scattered evenly",
+    "Points close to a line falling",
+    "Points in a circle"
+   ],
+   "why": "The tighter the points cluster around the line, the larger the absolute value of r.",
+   "ctx": "<span class=\"small\">From Module 12</span>"
+  },
+  {
+   "q": "Which sample mean is more surprising if the population mean is 100 and sigma is 15?",
+   "o": [
+    "M = 108 with n = 36",
+    "M = 108 with n = 9",
+    "They are equally surprising",
+    "Neither is surprising"
+   ],
+   "why": "With n = 36, SE = 2.5 and z = 3.2. With n = 9, SE = 5 and z = 1.6. The same difference is more surprising with a larger sample.",
+   "ctx": "<span class=\"small\">From Module 5</span>"
+  },
+  {
+   "q": "With df = 9 and alpha = .05 two-tailed, the critical t is 2.262. What is the decision?",
+   "o": [
+    "Retain the null, because 1.98 is below 2.262",
+    "Reject the null, because t is positive",
+    "Reject the null, because the mean difference is 5",
+    "The test cannot be used"
+   ],
+   "why": "The obtained t falls outside the critical region. The exact p value is about .08.",
+   "ctx": "<span class=\"small\">From Module 7</span>"
+  },
+  {
+   "q": "A factorial design has an advantage over two separate one-factor studies because it",
+   "o": [
+    "Tests how factors combine, which separate studies cannot",
+    "Needs no random assignment",
+    "Is always cheaper",
+    "Eliminates error"
+   ],
+   "why": "Only a factorial design can reveal whether one factor's effect depends on another.",
+   "ctx": "<span class=\"small\">From Module 11</span>"
+  },
+  {
+   "q": "A correlation measures",
+   "o": [
+    "The association between variables, not causation",
+    "Cause and effect",
+    "Differences between group means",
+    "Percentages of agreement"
+   ],
+   "why": "Experimental manipulation is needed for causal claims.",
+   "ctx": "<span class=\"small\">From Module 12</span>"
+  },
+  {
+   "q": "Why not run several t tests instead of one ANOVA for three groups?",
+   "o": [
+    "Each extra test raises the overall Type I error rate",
+    "ANOVA is faster",
+    "t tests need equal variances",
+    "t tests cannot compare means"
+   ],
+   "why": "With three tests at .05 the chance of at least one false alarm is about 14 percent, not 5.",
+   "ctx": "<span class=\"small\">From Module 10</span>"
+  },
+  {
+   "q": "A student computes z = (60 minus 50)/10 = 1 and says \"60 is 1 point above the mean.\" What is wrong?",
+   "o": [
+    "The z of 1 means one standard deviation, which here is 10 points",
+    "Nothing is wrong",
+    "The z should be 10",
+    "The score is below the mean"
+   ],
+   "why": "Always translate z back to units. One SD equals 10 raw points in this example.",
+   "ctx": "<span class=\"small\">From Module 4</span>"
+  },
+  {
+   "q": "A histogram has a long tail to the left, and most scores are bunched at the high end. The skew is",
+   "o": [
+    "Negative",
+    "Positive",
+    "Zero",
+    "Bimodal"
+   ],
+   "why": "Skew is named for the tail. A long left tail means negative skew, and the mean falls below the median.",
+   "ctx": "<span class=\"small\">From Module 2</span>"
+  },
+  {
+   "q": "A main effect is",
+   "o": [
+    "The overall effect of one factor, averaging across the levels of the other",
+    "The effect of both factors together",
+    "The difference within a single cell",
+    "The effect of random error"
+   ],
+   "why": "It is evaluated using the marginal means.",
+   "ctx": "<span class=\"small\">From Module 11</span>"
+  },
+  {
+   "q": "What is t, and what are the degrees of freedom?",
+   "o": [
+    "t = 2.47, df = 11",
+    "t = 3.00, df = 12",
+    "t = 2.47, df = 22",
+    "t = 0.71, df = 11"
+   ],
+   "why": "t = 3.0/1.212 = 2.474 with df = 12 minus 1 = 11. The critical t at .05 two-tailed is 2.201, so the result is significant (p = .031).",
+   "ctx": "<span class=\"small\">From Module 9</span>"
+  },
+  {
+   "q": "If the null hypothesis is true, the expected value of F is about",
+   "o": [
+    "1",
+    "0",
+    "The number of groups",
+    "The sample size"
+   ],
+   "why": "Both mean squares estimate the same error variance.",
+   "ctx": "<span class=\"small\">From Module 10</span>"
+  },
+  {
+   "q": "A study finds r = +.62 between hours studied and exam score. What proportion of exam score variability is accounted for by study time in this linear relationship?",
+   "o": [
+    "About .38",
+    ".62",
+    ".79",
+    ".24"
+   ],
+   "why": ".62 squared = .384. The other roughly 62 percent comes from everything else, including prior knowledge and test conditions.",
+   "ctx": "<span class=\"small\">From Module 3</span>"
+  }
+ ]
+}

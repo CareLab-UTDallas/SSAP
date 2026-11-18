@@ -1,0 +1,173 @@
+{
+ "type": "quiz",
+ "title": "Cumulative Review 3: Modules 1 to 9",
+ "budget": "10",
+ "intro": "Spaced review mixes questions from earlier modules. Retrieving older material now is what makes it stick. Items you miss come back for a retry round.",
+ "items": [
+  {
+   "q": "Researchers survey 300 volunteers who responded to a flyer in a gym about exercise habits. A reporter concludes that most adults exercise regularly. The main problem is",
+   "o": [
+    "The volunteer sample may not represent all adults, so the statistic may miss the parameter",
+    "The sample is too large",
+    "Exercise is measured on a nominal scale",
+    "Descriptive statistics were used"
+   ],
+   "why": "Gym volunteers are likely more active than the general population. A biased sample produces error that a larger sample would not fix.",
+   "ctx": "<span class=\"small\">From Module 1</span>"
+  },
+  {
+   "q": "The null hypothesis for a related-samples t is",
+   "o": [
+    "The mean difference in the population is zero",
+    "The two sample means are equal",
+    "The correlation is zero",
+    "The variances are equal"
+   ],
+   "why": "Written mu D = 0.",
+   "ctx": "<span class=\"small\">From Module 9</span>"
+  },
+  {
+   "q": "The t statistic is a ratio of",
+   "o": [
+    "The obtained mean difference to the estimated standard error",
+    "The mean to the SD",
+    "Two variances",
+    "The sample size to df"
+   ],
+   "why": "It is how many estimated standard errors the sample mean is from the hypothesized mean.",
+   "ctx": "<span class=\"small\">From Module 7</span>"
+  },
+  {
+   "q": "Which sample mean is more surprising if the population mean is 100 and sigma is 15?",
+   "o": [
+    "M = 108 with n = 36",
+    "M = 108 with n = 9",
+    "They are equally surprising",
+    "Neither is surprising"
+   ],
+   "why": "With n = 36, SE = 2.5 and z = 3.2. With n = 9, SE = 5 and z = 1.6. The same difference is more surprising with a larger sample.",
+   "ctx": "<span class=\"small\">From Module 5</span>"
+  },
+  {
+   "q": "Cohen's d for a related-samples t is commonly computed as",
+   "o": [
+    "Mean difference divided by the SD of the difference scores",
+    "Mean difference divided by the standard error",
+    "t divided by n",
+    "Mean difference divided by the sample mean"
+   ],
+   "why": "It expresses the average change in units of the standard deviation of the changes.",
+   "ctx": "<span class=\"small\">From Module 9</span>"
+  },
+  {
+   "q": "A researcher tests whether a program changes test scores in a population with mean 75 and sigma 12. A sample of 36 has M = 79. The z is 2.00. At alpha = .05 two-tailed, what is the decision?",
+   "o": [
+    "Reject the null, since 2.00 exceeds the critical value of 1.96",
+    "Retain the null, since 2.00 is small",
+    "Accept the alternative as proven",
+    "The decision depends on the effect size"
+   ],
+   "why": "The critical values at alpha = .05 two-tailed are plus and minus 1.96. The test statistic falls in the critical region.",
+   "ctx": "<span class=\"small\">From Module 6</span>"
+  },
+  {
+   "q": "A larger difference between sample means, with all else equal, will",
+   "o": [
+    "Increase the t statistic",
+    "Decrease the t statistic",
+    "Not affect t",
+    "Change the degrees of freedom"
+   ],
+   "why": "The mean difference is the numerator of t.",
+   "ctx": "<span class=\"small\">From Module 8</span>"
+  },
+  {
+   "q": "A one-sample t test compares",
+   "o": [
+    "A sample mean with a hypothesized population mean",
+    "Two sample means",
+    "Three or more means",
+    "Two correlations"
+   ],
+   "why": "It is used when the population mean is known or hypothesized but sigma is not.",
+   "ctx": "<span class=\"small\">From Module 7</span>"
+  },
+  {
+   "q": "Degrees of freedom for a related-samples t test are",
+   "o": [
+    "n minus 1, where n is the number of pairs or difference scores",
+    "n1 plus n2 minus 2",
+    "2n minus 2",
+    "n"
+   ],
+   "why": "df depends on the number of difference scores.",
+   "ctx": "<span class=\"small\">From Module 9</span>"
+  },
+  {
+   "q": "A researcher says, \"My correlation was r = −.45, so something went wrong because the effect should be positive.\" What is the best reply?",
+   "o": [
+    "A negative r is not an error. It means one variable tends to go down as the other goes up",
+    "Correlations must be positive",
+    "The sign does not matter at all",
+    "Take the absolute value and ignore the direction"
+   ],
+   "why": "The sign tells you the direction. A negative correlation can be perfectly meaningful, for example more practice and fewer errors.",
+   "ctx": "<span class=\"small\">From Module 3</span>"
+  },
+  {
+   "q": "An independent-measures design uses",
+   "o": [
+    "Separate groups of participants in each condition",
+    "The same participants in each condition",
+    "Matched pairs",
+    "A single sample"
+   ],
+   "why": "Different people provide the scores in each condition, so the scores are independent.",
+   "ctx": "<span class=\"small\">From Module 8</span>"
+  },
+  {
+   "q": "Eight response times (seconds) are 2, 3, 3, 4, 5, 5, 6, and 40. The mean is 8.5 and the median is 4.5. Which summary describes a typical response best?",
+   "o": [
+    "The median, because one extreme score pulls the mean upward",
+    "The mean, because it uses every score",
+    "The mode, because it is largest",
+    "Neither, because the data are nominal"
+   ],
+   "why": "The score of 40 distorts the mean. The median stays near where most responses fall.",
+   "ctx": "<span class=\"small\">From Module 2</span>"
+  },
+  {
+   "q": "Random assignment of participants to two groups helps ensure that",
+   "o": [
+    "The groups are comparable before treatment, supporting causal inference",
+    "The samples are representative of the population",
+    "The variances are equal",
+    "The null hypothesis is true"
+   ],
+   "why": "It controls for pre-existing differences on average, which is what gives the design its causal leverage.",
+   "ctx": "<span class=\"small\">From Module 8</span>"
+  },
+  {
+   "q": "If a 95 percent CI for the mean difference includes the null value, the two-tailed test at alpha = .05",
+   "o": [
+    "Fails to reject the null",
+    "Rejects the null",
+    "Cannot be performed",
+    "Has p less than .05"
+   ],
+   "why": "The CI and the test agree. A null value inside the interval is a plausible value.",
+   "ctx": "<span class=\"small\">From Module 7</span>"
+  },
+  {
+   "q": "Scores on a scale have mean 50 and SD 10 and are normally distributed. About what proportion score below 45?",
+   "o": [
+    "About .31",
+    "About .69",
+    "About .50",
+    "About .16"
+   ],
+   "why": "z = (45 minus 50)/10 = −0.50. The tail beyond z = 0.50 is .3085.",
+   "ctx": "<span class=\"small\">From Module 4</span>"
+  }
+ ]
+}
